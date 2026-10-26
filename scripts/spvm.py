@@ -143,3 +143,20 @@ def mtm8(lat, lon):
     y = k0 * (M + N * math.tan(phi) * (A ** 2 / 2 + (5 - T + 9 * C + 4 * C ** 2) * A ** 4 / 24
                                        + (61 - 58 * T + T ** 2 + 600 * C - 330 * ep2) * A ** 6 / 720))
     return x, y
+
+
+LABELS = {'CHRISTOPHE COLOMB': 'Christophe-Colomb', 'ST ZOTIQUE': 'Saint-Zotique', 'ST ZOTIQUE E': 'Saint-Zotique E.', 'ST PIERRE': 'Saint-Pierre', 'BERGE DU CANAL': 'berge du canal',
+          'MAURICE DUPLESSIS': 'Maurice-Duplessis', 'MARC AURELE FORTIN': 'Marc-Aurèle-Fortin', 'DE LA MONTAGNE': 'de la Montagne', 'N-D': 'Notre-Dame', 'COTE DES NEIGES': 'Côte-des-Neiges',
+          'AV PARC': 'av. du Parc', 'RENE LEVESQUE': 'René-Lévesque', 'ST DENIS': 'Saint-Denis', 'DES CARRIERES': 'des Carrières', 'ST DENIS FACE': 'Saint-Denis', 'SHERBROOKE O': 'Sherbrooke O.',
+          'RIV DES PRAIRIES': 'Rivière-des-Prairies', 'DE LA MARTINIERE': 'de la Martinière', 'BD ROSEMONT': 'boul. Rosemont', 'BELANGER': 'Bélanger', '6E AV': '6e Av.', 'AV DU PARC': 'av. du Parc',
+          'AV DES PINS': 'av. des Pins', 'VOIE CAMILIEN HOUDE': 'voie Camillien-Houde', 'CREMAZIE': 'Crémazie', '23E AV': '23e Av.', '19E AV': '19e Av.', 'FORDEN CRESCENT': 'Forden Cres. (Westmount)',
+          'FORDEN': 'Forden', 'AV PAPINEAU': 'av. Papineau', 'CH DE L ANSE A L ORME': "ch. de l'Anse-à-l'Orme", 'BD GOUIN O': 'boul. Gouin O.', 'PARC DU AVEN': 'av. du Parc', 'MONT-ROYAL DU O AVEN': 'av. du Mont-Royal O.',
+          'NOTRE-DAME RUE': 'Notre-Dame', 'ST-PIERRE AVEN': 'Saint-Pierre', 'ST-LAURENT BOUL': 'boul. Saint-Laurent', 'LIEGE DE O RUE': 'de Liège O.'}
+
+
+def street_label(s) -> str:
+    """A readable form of a street field for labels (known spellings mapped, the rest title-cased)."""
+    if not isinstance(s, str):
+        return ''
+    s = s.strip()
+    return LABELS.get(s, s.title())

@@ -5,12 +5,15 @@
 View « severity »: every collision of the extent, marker shape = mode (pedestrian, bicycle, motorcycle, occupants only),
 colour and size = severity of the collision (its GRAVITE); fatal collisions drawn last, white with a ring.
 View « vehicle »: collisions involving a bicycle, coloured by the other vehicle recorded (car or light truck, heavy
-truck, bus, other). Legend with the count per class and the total; title with the extent's name, its area and the
+truck, bus, other). View « bike_fatal » (island): the 31 collisions in which a cyclist was killed, numbered in date
+order with a dated key beside the map, coloured by the other vehicle. View « bike » (corridor): every collision
+involving a bicycle on rue de Terrebonne (within 25 m of the lane axis or named Terrebonne), each labelled with its
+date, coloured by severity. Legend with the count per class and the total; title with the extent's name, its area and the
 period; scale bar; dark basemap credited on the map. Output: derived/figures/maps/<extent>_<view>_<lang>.png (+ .svg
 except for the island, whose point count makes the SVG impractical).
 """
 from __future__ import annotations
-import argparse, math
+import argparse, math, textwrap
 from pathlib import Path
 import numpy as np, pandas as pd
 import matplotlib
@@ -32,10 +35,10 @@ MODE_LABEL = {'en': {'ped': 'pedestrian', 'bike': 'bicycle', 'moto': 'motorcycle
 VEH = {'car': '#3987e5', 'heavy': '#d95926', 'bus': '#199e70', 'other': '#f0efec'}
 VEH_LABEL = {'en': {'car': 'car or light truck', 'heavy': 'heavy truck or tractor-trailer', 'bus': 'bus or minibus', 'other': 'other or none recorded'},
              'fr': {'car': 'automobile ou camion léger', 'heavy': 'camion lourd ou tracteur routier', 'bus': 'autobus ou minibus', 'other': 'autre ou non précisé'}}
-TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_veh='Collisions involving a bicycle, by the other vehicle',
+TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_veh='Collisions involving a bicycle, by the other vehicle', title_bf='Collisions in which a cyclist was killed', title_bike='Collisions involving a bicycle on rue de Terrebonne', bike_sel='within 25 m of the lane axis or with Terrebonne in the street fields; label = date', bf_key='by date; colour = the other vehicle',
                    total='total', area='area', scale='1 km', source='Source: Ville de Montréal, open data « Collisions routières » (SPVM reports), CC BY 4.0. Basemap', corridor_note='within 25 m of the lane axis',
                    mode='mode (shape)', severity='severity (colour, size)', filter_name='by street name', n_fmt='{:,}'),
-        'fr': dict(title_sev='Collisions déclarées à la police, par gravité', title_veh='Collisions impliquant une bicyclette, selon l’autre véhicule',
+        'fr': dict(title_sev='Collisions déclarées à la police, par gravité', title_veh='Collisions impliquant une bicyclette, selon l’autre véhicule', title_bf='Collisions où un ou une cycliste a été tué(e)', title_bike='Collisions impliquant une bicyclette sur la rue de Terrebonne', bike_sel='à 25 m ou moins de l’axe de la piste ou avec Terrebonne dans les champs de rue ; étiquette = date', bf_key='par date ; couleur = l’autre véhicule',
                    total='total', area='superficie', scale='1 km', source='Source : Ville de Montréal, données ouvertes « Collisions routières » (rapports du SPVM), CC BY 4.0. Fond de carte', corridor_note='à 25 m ou moins de l’axe de la piste',
                    mode='mode (forme)', severity='gravité (couleur, taille)', filter_name='par nom de rue', n_fmt='{:,}')}
 NAME = {'island': {'en': 'Montréal agglomeration (SPVM territory)', 'fr': 'Agglomération de Montréal (territoire du SPVM)'},
@@ -47,6 +50,25 @@ ZOOM = {'island': 12, 'ndg': 15, 'h4c': 16, 'corridor': 16}
 def fmt(n, lang):
     s = f'{n:,}'
     return s.replace(',', ' ') if lang == 'fr' else s
+
+
+def place_labels(ax, fig, X, Y, texts, fontsize, dx=5, dy=4):
+    """Annotate points, pushing a label down in 11-pt steps while it would overlap one already placed (greedy, in pixels)."""
+    fig.canvas.draw()
+    placed = []
+    px_per_pt = fig.dpi / 72
+    for x, y, t in zip(X, Y, texts):
+        bx, by = ax.transData.transform((x, y))
+        w = len(t) * fontsize * 0.58 * px_per_pt; h = fontsize * 1.3 * px_per_pt
+        off = 0
+        for _ in range(12):
+            x0, y0 = bx + dx * px_per_pt, by + (dy - off) * px_per_pt
+            if all(x0 + w < qx or qx + qw < x0 or y0 + h < qy or qy + qh < y0 for qx, qy, qw, qh in placed):
+                break
+            off += 11
+        placed.append((x0, y0, w, h))
+        ax.annotate(t, (x, y), xytext=(dx, dy - off), textcoords='offset points', color='#f0efec', fontsize=fontsize, zorder=5,
+                    bbox=dict(boxstyle='round,pad=0.12', fc='#1a1a19', ec='none', alpha=0.75))
 
 
 def spread(X, Y, step, rank=None):
@@ -88,18 +110,24 @@ def draw(d, extent, view, lang):
     s, box = select(d, extent)
     if view == 'vehicle':
         s = s[s.bike]
+    if view == 'bike_fatal':
+        s = s[s.NB_DECES_VELO.fillna(0) > 0].sort_values('date')
+    if view == 'bike':
+        A = spvm.mtm8(45.45974, -73.64080); B = spvm.mtm8(45.47833, -73.62487)
+        s = d[((spvm.dist_to_segment_m(d, A, B) <= 25) | spvm.on_street(d, 'TERREBONNE', 'TERREBONE')) & d.bike].sort_values('date')
     if box is None:
-        lat0, lat1, lon0, lon1 = spvm.extent_bounds(s); pad = 0.01
+        lat0, lat1, lon0, lon1 = spvm.extent_bounds(d[d.LOC_LAT.notna()]); pad = 0.01
         lat0 -= pad; lat1 += pad; lon0 -= pad * 1.4; lon1 += pad * 1.4
     else:
         (lat0, lat1), (lon0, lon1) = box
-    area = spvm.box_area_km2(lat0, lat1, lon0, lon1) if extent != 'island' else spvm.box_area_km2(*spvm.extent_bounds(s))
+    area = spvm.box_area_km2(lat0, lat1, lon0, lon1) if extent != 'island' else spvm.box_area_km2(*spvm.extent_bounds(d[d.LOC_LAT.notna()]))
     img, ext = basemap.basemap(lon0, lon1, lat0, lat1, ZOOM[extent])
     x0, y0 = basemap.merc(lon0, lat0); x1, y1 = basemap.merc(lon1, lat1)
     aspect = (y1 - y0) / (x1 - x0)
-    W = 11.0; axw = 0.66 * W; axh = axw * aspect; H = axh + 1.9
+    keyh = 2.3 if view == 'bike_fatal' else 0.0
+    W = 11.0; axw = 0.66 * W; axh = axw * aspect; H = axh + 1.9 + keyh
     fig = plt.figure(figsize=(W, H), dpi=150, facecolor='#1a1a19')
-    ax = fig.add_axes([0.03, 1.05 / H, 0.66, axh / H]); ax.set_facecolor('#1a1a19')
+    ax = fig.add_axes([0.03, (1.05 + keyh) / H, 0.66, axh / H]); ax.set_facecolor('#1a1a19')
     ax.imshow(img, extent=ext, interpolation='bilinear', zorder=0)
     X, Y = basemap.merc(s.LOC_LONG.values, s.LOC_LAT.values)
     ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_xticks([]); ax.set_yticks([])
@@ -134,6 +162,29 @@ def draw(d, extent, view, lang):
             n = sum(v for (a, b), v in counts.items() if b == mode)
             handles.append(Line2D([], [], marker=marker, color='none', markerfacecolor='#c3c2b7', markersize=7, label=f"{MODE_LABEL[lang][mode]}: {fmt(n, lang)}"))
         title = T['title_sev']; total = len(s)
+    elif view == 'bike_fatal':
+        cls = np.where(s.nb_camionLourd_tractRoutier.fillna(0) > 0, 'heavy', np.where(s.nb_tous_autobus_minibus.fillna(0) > 0, 'bus', np.where(s.nb_automobile_camion_leger.fillna(0) > 0, 'car', 'other')))
+        for k in ['car', 'other', 'bus', 'heavy']:
+            m = cls == k; n = int(m.sum()); counts[k] = n
+            if n: ax.scatter(X[m], Y[m], s=70, c=VEH[k], marker='o', linewidths=1.0, edgecolors='#1a1a19', zorder=3)
+        place_labels(ax, fig, X, Y, [str(i) for i in range(1, len(X) + 1)], 7.5)
+        for k in ['car', 'heavy', 'bus', 'other']:
+            handles.append(Line2D([], [], marker='o', color='none', markerfacecolor=VEH[k], markeredgecolor='#1a1a19', markersize=8, label=f"{VEH_LABEL[lang][k]}: {fmt(counts[k], lang)}"))
+        key = [f"{i}. {r.date.date().isoformat()}  {spvm.street_label(r.RUE_ACCDN)}" + (f" / {spvm.street_label(r.ACCDN_PRES_DE)}" if isinstance(r.ACCDN_PRES_DE, str) and r.ACCDN_PRES_DE not in ('FACE', 'OPP') else '') for i, r in enumerate(s.itertuples(), 1)]
+        fig.text(0.03, (1.0 + keyh) / H, T['bf_key'], color='#f0efec', fontsize=8.5, va='top')
+        for c in range(3):
+            fig.text(0.03 + c * 0.323, (0.78 + keyh) / H, '\n'.join(key[c * 11:(c + 1) * 11]), color='#c3c2b7', fontsize=7.6, va='top', linespacing=1.35)
+        title = T['title_bf']; total = len(s)
+    elif view == 'bike':
+        for sev in ['damage', 'light', 'severe', 'fatal']:
+            st = SEV[sev]; m = (s.severity == sev).values; n = int(m.sum()); counts[(sev, 'bike')] = n
+            if n: ax.scatter(SX[m], SY[m], s=max(st['size'], 14) * scale_pts, c=st['color'], marker='s', linewidths=0.8, edgecolors='#1a1a19', zorder=st['z'])
+        place_labels(ax, fig, SX, SY, [dt.date().isoformat() for dt in s.date], 7.2, dx=6, dy=-3)
+        handles.append(Line2D([], [], color='none', label=T['severity'].split(' (')[0] + (' (colour)' if lang == 'en' else ' (couleur)')))
+        for sev in ['fatal', 'severe', 'light', 'damage']:
+            n = counts.get((sev, 'bike'), 0)
+            handles.append(Line2D([], [], marker='s', color='none', markerfacecolor=SEV[sev]['color'], markeredgecolor='#1a1a19', markersize=7, label=f"{SEV_LABEL[lang][sev]}: {fmt(n, lang)}"))
+        title = T['title_bike']; total = len(s)
     else:
         cls = np.where(s.nb_camionLourd_tractRoutier.fillna(0) > 0, 'heavy', np.where(s.nb_tous_autobus_minibus.fillna(0) > 0, 'bus', np.where(s.nb_automobile_camion_leger.fillna(0) > 0, 'car', 'other')))
         for k in ['car', 'other', 'bus', 'heavy']:
@@ -143,15 +194,17 @@ def draw(d, extent, view, lang):
         for k in ['car', 'heavy', 'bus', 'other']:
             handles.append(Line2D([], [], marker='o', color='none', markerfacecolor=VEH[k], markersize=7, label=f"{VEH_LABEL[lang][k]}: {fmt(counts[k], lang)}"))
         title = T['title_veh']; total = len(s)
-    top = (1.05 + axh) / H
+    top = (1.05 + keyh + axh) / H
     leg = fig.legend(handles=handles, loc='upper left', bbox_to_anchor=(0.705, top - 0.3 / H), frameon=False, labelcolor='#f0efec', fontsize=10, handletextpad=0.6, borderaxespad=0)
     fig.text(0.705, top - 0.15 / H, f"{T['total']}: {fmt(total, lang)}", color='#f0efec', fontsize=12, fontweight='bold', va='bottom')
     import textwrap
-    if extent != 'island':
+    if view == 'bike':
+        fig.text(0.705, top - 1.9 / H, textwrap.fill(T['bike_sel'], 44), color='#c3c2b7', fontsize=8.5, va='top', linespacing=1.4)
+    if extent != 'island' and view != 'bike':
         note = {'en': 'Collisions recorded at the same point (the police locate a collision at the intersection) are spread in a small spiral around it so that every marker is visible; the position of a marker within a cluster carries no meaning.',
                 'fr': 'Les collisions enregistrées au même point (la police situe une collision à l’intersection) sont étalées en une petite spirale autour de ce point pour que chaque marqueur soit visible ; la position d’un marqueur dans un groupe n’a pas de signification.'}[lang]
         fig.text(0.705, top - 4.0 / H, textwrap.fill(note, 44), color='#8f8e87', fontsize=8.5, va='top', linespacing=1.4)
-    if extent == 'corridor':
+    if extent == 'corridor' and view in ('severity', 'vehicle'):
         byname = d[spvm.on_street(d, 'TERREBONNE', 'TERREBONE')]
         if view == 'vehicle': byname = byname[byname.bike]
         cmp = {'en': f"Comparison, by street name (RUE_ACCDN or ACCDN_PRES_DE contains TERREBONNE): {fmt(len(byname), lang)} collisions, {int(byname.fatal.sum())} fatal, {int((byname.severity == 'severe').sum())} severe injury, {int(byname.bike.sum())} with a bicycle, {int(byname.ped.sum())} with a pedestrian victim. Dashed line: the lane axis, Belmore to Girouard.",
@@ -179,10 +232,12 @@ def draw(d, extent, view, lang):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--extent', nargs='*', default=['island', 'ndg', 'h4c', 'corridor'])
-    ap.add_argument('--view', nargs='*', default=['severity', 'vehicle']); ap.add_argument('--lang', nargs='*', default=['en', 'fr'])
+    ap.add_argument('--view', nargs='*', default=['severity', 'vehicle', 'bike_fatal', 'bike'], choices=['severity', 'vehicle', 'bike_fatal', 'bike']); ap.add_argument('--lang', nargs='*', default=['en', 'fr'])
     a = ap.parse_args()
     d = spvm.load()
     for e in a.extent:
         for v in a.view:
+            if (v == 'bike_fatal' and e != 'island') or (v == 'bike' and e != 'corridor'):
+                continue
             for l in a.lang:
                 t, c = draw(d, e, v, l); print(e, v, l, 'total', t, {k: v for k, v in c.items() if v} if v == 'vehicle' else '')
