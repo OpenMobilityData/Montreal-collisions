@@ -49,6 +49,31 @@ def fmt(n, lang):
     return s.replace(',', ' ') if lang == 'fr' else s
 
 
+def spread(X, Y, step, rank=None):
+    """Deterministic offsets for points that share a recorded location (the police fix a collision at the intersection):
+    each group is laid out on a Fermat spiral with the given spacing (map units), so that no marker hides another;
+    with a rank array, the highest rank (the most severe) takes the outermost position. Returns new X, Y arrays."""
+    X = X.copy(); Y = Y.copy()
+    if step <= 0:
+        return X, Y
+    key = np.round(X / 2.0).astype(np.int64) * 1_000_003 + np.round(Y / 2.0).astype(np.int64)
+    order = np.argsort(key, kind='stable'); ks = key[order]
+    golden = np.pi * (3 - np.sqrt(5))
+    start = 0
+    for i in range(1, len(ks) + 1):
+        if i == len(ks) or ks[i] != ks[start]:
+            n = i - start
+            if n > 1:
+                idx = order[start:i]
+                if rank is not None:
+                    idx = idx[np.argsort(rank[idx], kind='stable')]
+                k = np.arange(n)
+                r = step * np.sqrt(k); th = k * golden
+                X[idx] = X[idx] + r * np.cos(th); Y[idx] = Y[idx] + r * np.sin(th)
+            start = i
+    return X, Y
+
+
 def select(d, extent):
     if extent == 'island':
         return d[d.LOC_LAT.notna()], None
@@ -84,8 +109,10 @@ def draw(d, extent, view, lang):
     if extent == 'corridor':
         ax_, ay_ = basemap.merc(np.array([-73.64080, -73.62487]), np.array([45.45974, 45.47833]))
         ax.plot(ax_, ay_, color='#c3c2b7', lw=1.0, ls=(0, (4, 3)), zorder=1, alpha=0.8)
-    rng = np.random.default_rng(1)
-    jitter = 0 if extent == 'island' else 6.0  # metres, so stacked points at one intersection do not hide each other
+    px = (x1 - x0) / (axw * 150)  # map units per pixel at 150 dpi
+    step = 0 if extent == 'island' else 6.5 * px  # spacing between markers that share one recorded point
+    rank = s.severity.map({'damage': 0, 'light': 1, 'severe': 2, 'fatal': 3}).fillna(0).values
+    SX, SY = spread(X, Y, step, rank)
     if view == 'severity':
         for sev in ['damage', 'light', 'severe', 'fatal']:
             st = SEV[sev]
@@ -93,9 +120,8 @@ def draw(d, extent, view, lang):
                 m = (s.severity == sev).values & s[mode].values if mode != 'occupants_only' else (s.severity == sev).values & s.occupants_only.values
                 n = int(m.sum()); counts[(sev, mode)] = n
                 if n == 0: continue
-                jx = rng.normal(0, jitter, n); jy = rng.normal(0, jitter, n)
-                ax.scatter(X[m] + jx, Y[m] + jy, s=st['size'] * scale_pts, c=st['color'], marker=marker, linewidths=0.8 if sev == 'fatal' else 0,
-                           edgecolors='#1a1a19' if sev == 'fatal' else 'none', alpha=0.9 if sev != 'damage' else 0.6, zorder=st['z'], rasterized=True)
+                ax.scatter(SX[m], SY[m], s=st['size'] * scale_pts, c=st['color'], marker=marker, linewidths=0.8 if sev in ('fatal', 'severe') else 0,
+                           edgecolors='#1a1a19' if sev in ('fatal', 'severe') else 'none', alpha=0.9 if sev != 'damage' else 0.6, zorder=st['z'], rasterized=True)
         # legend: severity (colour) then mode (shape)
         handles.append(Line2D([], [], color='none', label=T['severity']))
         for sev in ['fatal', 'severe', 'light', 'damage']:
@@ -113,8 +139,7 @@ def draw(d, extent, view, lang):
         for k in ['car', 'other', 'bus', 'heavy']:
             m = cls == k; n = int(m.sum()); counts[k] = n
             if n == 0: continue
-            jx = rng.normal(0, jitter, n); jy = rng.normal(0, jitter, n)
-            ax.scatter(X[m] + jx, Y[m] + jy, s=(7 if k == 'car' else 18) * scale_pts, c=VEH[k], marker='o', linewidths=0, alpha=0.8, zorder=2 if k == 'car' else 3, rasterized=True)
+            ax.scatter(SX[m], SY[m], s=(7 if k == 'car' else 18) * scale_pts, c=VEH[k], marker='o', linewidths=0, alpha=0.8, zorder=2 if k == 'car' else 3, rasterized=True)
         for k in ['car', 'heavy', 'bus', 'other']:
             handles.append(Line2D([], [], marker='o', color='none', markerfacecolor=VEH[k], markersize=7, label=f"{VEH_LABEL[lang][k]}: {fmt(counts[k], lang)}"))
         title = T['title_veh']; total = len(s)
