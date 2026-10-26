@@ -5,8 +5,8 @@ distinct cyclist collisions 8685 | by GRAVITE {'light': 6287, 'damage': 2088, 's
 2024 pedestrian classes sum 10814 (2024: 10814) | distinct 10722
 2024 moto classes sum 2963 (2024: 2963) | distinct 2947
 2024 auto classes sum 196211 | grand sum of all 2024 classes 218685 (2024: 218685) | distinct rows 218272
-NDG box: 22062 collisions | fatal by mode (collision GRAVITE): ped 18, bike 3, moto 1, occupants only 6 | severe: ped 83, bike 18 | area of the points' bounds 50.3 km² (2024 formula 100.6); of the box itself 50.3
-H4C box: 3733 collisions | fatal by mode (collision GRAVITE): ped 2, bike 0, moto 0, occupants only 0 | severe: ped 7, bike 3 | area of the points' bounds 4.0 km² (2024 formula 5.2); of the box itself 4.1
+NDG box: 22062 collisions | fatal by mode (collision GRAVITE): ped 18, bike 3, moto 1, motor vehicles only 6 | severe: ped 83, bike 18 | area of the points' bounds 50.3 km² (2024 formula 100.6); of the box itself 50.3
+H4C box: 3733 collisions | fatal by mode (collision GRAVITE): ped 2, bike 0, moto 0, motor vehicles only 0 | severe: ped 7, bike 3 | area of the points' bounds 4.0 km² (2024 formula 5.2); of the box itself 4.1
 Terrebonne & Somerled by name: 515 (2024: 516) | fatal 2 | bounds area 5.4 km² (2024 formula 7.0; printed 7.0)
   by severity x mode: {'damage': {'ped': 0, 'bike': 7, 'moto': 2, 'occ': 382, 'n': 391}, 'fatal': {'ped': 2, 'bike': 0, 'moto': 0, 'occ': 0, 'n': 2}, 'light': {'ped': 33, 'bike': 19, 'moto': 4, 'occ': 61, 'n': 116}, 'severe': {'ped': 2, 'bike': 1, 'moto': 0, 'occ': 3, 'n': 6}}
 Terrebonne by name: 197 | fatal 1 severe 4 bike 15 ped 11 | TERREBONE-only rows 2

@@ -2,7 +2,7 @@
 
   python3 scripts/maps.py [--extent island|ndg|h4c|corridor ...] [--view severity|vehicle ...] [--lang en|fr ...]
 
-View « severity »: every collision of the extent, marker shape = mode (pedestrian, bicycle, motorcycle, occupants only),
+View « severity »: every collision of the extent, marker shape = mode (pedestrian, bicycle, motorcycle, motor vehicles only),
 colour and size = severity of the collision (its GRAVITE); fatal collisions drawn last, white with a ring.
 View « vehicle »: collisions involving a bicycle, coloured by the other vehicle recorded (car or light truck, heavy
 truck, bus, other). View « bike_fatal » (island): the 31 collisions in which a cyclist was killed, numbered in date
@@ -29,18 +29,18 @@ SEV = {'damage': dict(color='#3987e5', size=5, z=1), 'light': dict(color='#199e7
        'severe': dict(color='#d95926', size=22, z=3), 'fatal': dict(color='#f0efec', size=60, z=4)}
 SEV_LABEL = {'en': {'damage': 'property damage', 'light': 'light injury', 'severe': 'severe injury', 'fatal': 'fatal'},
              'fr': {'damage': 'dommages matériels', 'light': 'blessure légère', 'severe': 'blessure grave', 'fatal': 'mortelle'}}
-MODE = {'ped': 'v', 'bike': 's', 'moto': 'D', 'occupants_only': 'o'}
-MODE_LABEL = {'en': {'ped': 'pedestrian', 'bike': 'bicycle', 'moto': 'motorcycle', 'occupants_only': 'occupants only'},
-              'fr': {'ped': 'piéton', 'bike': 'bicyclette', 'moto': 'motocyclette', 'occupants_only': 'occupants seulement'}}
+MODE = {'ped': 'v', 'bike': 's', 'moto': 'D', 'motor_only': 'o'}
+MODE_LABEL = {'en': {'ped': 'pedestrian', 'bike': 'bicycle', 'moto': 'motorcycle', 'motor_only': 'motor vehicles only'},
+              'fr': {'ped': 'piéton', 'bike': 'bicyclette', 'moto': 'motocyclette', 'motor_only': 'véhicules motorisés seulement'}}
 VEH = {'car': '#3987e5', 'heavy': '#d95926', 'bus': '#199e70', 'other': '#f0efec'}
 VEH_LABEL = {'en': {'car': 'car or light truck', 'heavy': 'heavy truck or tractor-trailer', 'bus': 'bus or minibus', 'other': 'other or none recorded'},
              'fr': {'car': 'automobile ou camion léger', 'heavy': 'camion lourd ou tracteur routier', 'bus': 'autobus ou minibus', 'other': 'autre ou non précisé'}}
 TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_veh='Collisions involving a bicycle, by the other vehicle', title_bf='Collisions in which a cyclist was killed', title_bike='Collisions involving a bicycle on rue de Terrebonne', bike_sel='within 25 m of the lane axis or with Terrebonne in the street fields; label = date', bf_key='by date; colour = the other vehicle',
                    total='total', area='area', scale='1 km', source='Source: Ville de Montréal, open data « Collisions routières » (SPVM reports), CC BY 4.0. Basemap', corridor_note='within 25 m of the lane axis',
-                   mode='mode (shape)', severity='severity (colour, size)', filter_name='by street name', n_fmt='{:,}'),
+                   mode='road users involved (shape)', severity='severity (colour, size)', filter_name='by street name', n_fmt='{:,}'),
         'fr': dict(title_sev='Collisions déclarées à la police, par gravité', title_veh='Collisions impliquant une bicyclette, selon l’autre véhicule', title_bf='Collisions où un ou une cycliste a été tué(e)', title_bike='Collisions impliquant une bicyclette sur la rue de Terrebonne', bike_sel='à 25 m ou moins de l’axe de la piste ou avec Terrebonne dans les champs de rue ; étiquette = date', bf_key='par date ; couleur = l’autre véhicule',
                    total='total', area='superficie', scale='1 km', source='Source : Ville de Montréal, données ouvertes « Collisions routières » (rapports du SPVM), CC BY 4.0. Fond de carte', corridor_note='à 25 m ou moins de l’axe de la piste',
-                   mode='mode (forme)', severity='gravité (couleur, taille)', filter_name='par nom de rue', n_fmt='{:,}')}
+                   mode='usagers impliqués (forme)', severity='gravité (couleur, taille)', filter_name='par nom de rue', n_fmt='{:,}')}
 NAME = {'island': {'en': 'Montréal agglomeration (SPVM territory)', 'fr': 'Agglomération de Montréal (territoire du SPVM)'},
         'ndg': {'en': 'NDG box', 'fr': 'Rectangle NDG'}, 'h4c': {'en': 'H4C box', 'fr': 'Rectangle H4C'},
         'corridor': {'en': 'Rue de Terrebonne corridor', 'fr': 'Corridor de la rue de Terrebonne'}}
@@ -145,7 +145,7 @@ def draw(d, extent, view, lang):
         for sev in ['damage', 'light', 'severe', 'fatal']:
             st = SEV[sev]
             for mode, marker in MODE.items():
-                m = (s.severity == sev).values & s[mode].values if mode != 'occupants_only' else (s.severity == sev).values & s.occupants_only.values
+                m = (s.severity == sev).values & s[mode].values if mode != 'motor_only' else (s.severity == sev).values & s.motor_only.values
                 n = int(m.sum()); counts[(sev, mode)] = n
                 if n == 0: continue
                 ax.scatter(SX[m], SY[m], s=st['size'] * scale_pts, c=st['color'], marker=marker, linewidths=0.8 if sev in ('fatal', 'severe') else 0,

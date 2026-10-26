@@ -76,7 +76,7 @@ def load(path: Path | str = DEFAULT_CSV) -> pd.DataFrame:
     d['bike'] = (z('nb_bicyclette') > 0) | (z('NB_VICTIMES_VELO') > 0)
     d['ped'] = z('NB_VICTIMES_PIETON') > 0
     d['moto'] = (z('nb_motocyclette') > 0) | (z('NB_VICTIMES_MOTO') > 0)
-    d['occupants_only'] = ~(d['bike'] | d['ped'] | d['moto'])
+    d['motor_only'] = ~(d['bike'] | d['ped'] | d['moto'])
     d['fatal'] = z('NB_MORTS') > 0
     return d
 

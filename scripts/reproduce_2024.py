@@ -37,12 +37,12 @@ print('2024 auto classes sum', asum, '| grand sum of all 2024 classes', asum + (
 for key in ['ndg', 'h4c']:
     e = spvm.EXTENTS[key]; m = spvm.in_box(d, e['box']); s = d[m]
     b = spvm.extent_bounds(s)
-    print(f"{e['name']}: {m.sum()} collisions | fatal by mode (collision GRAVITE): ped {int((s.fatal & s.ped).sum())}, bike {int((s.fatal & s.bike).sum())}, moto {int((s.fatal & s.moto).sum())}, occupants only {int((s.fatal & s.occupants_only).sum())}"
+    print(f"{e['name']}: {m.sum()} collisions | fatal by mode (collision GRAVITE): ped {int((s.fatal & s.ped).sum())}, bike {int((s.fatal & s.bike).sum())}, moto {int((s.fatal & s.moto).sum())}, motor vehicles only {int((s.fatal & s.motor_only).sum())}"
           f" | severe: ped {int(((s.severity=='severe') & s.ped).sum())}, bike {int(((s.severity=='severe') & s.bike).sum())}"
           f" | area of the points' bounds {spvm.box_area_km2(*b):.1f} km² (2024 formula {spvm.box_area_km2_2024(*b):.1f}); of the box itself {spvm.box_area_km2(*e['box'][0], *e['box'][1]):.1f}")
 m = spvm.on_street(d, 'TERREBONNE', 'TERREBONE', 'SOMERLED'); s = d[m]; b = spvm.extent_bounds(s)
 print(f"Terrebonne & Somerled by name: {m.sum()} (2024: 516) | fatal {int(s.fatal.sum())} | bounds area {spvm.box_area_km2(*b):.1f} km² (2024 formula {spvm.box_area_km2_2024(*b):.1f}; printed 7.0)")
-print('  by severity x mode:', s.groupby(['severity']).agg(ped=('ped','sum'), bike=('bike','sum'), moto=('moto','sum'), occ=('occupants_only','sum'), n=('bike','size')).to_dict('index'))
+print('  by severity x mode:', s.groupby(['severity']).agg(ped=('ped','sum'), bike=('bike','sum'), moto=('moto','sum'), occ=('motor_only','sum'), n=('bike','size')).to_dict('index'))
 t = spvm.on_street(d, 'TERREBONNE', 'TERREBONE'); s = d[t]
 print(f"Terrebonne by name: {t.sum()} | fatal {int(s.fatal.sum())} severe {int((s.severity=='severe').sum())} bike {int(s.bike.sum())} ped {int(s.ped.sum())} | TERREBONE-only rows {int((spvm.on_street(d,'TERREBONE') & ~spvm.on_street(d,'TERREBONNE')).sum())}")
 b = spvm.extent_bounds(d); print(f"Montréal bounds area {spvm.box_area_km2(*b):.1f} km² (2024 formula {spvm.box_area_km2_2024(*b):.1f}; printed 1942.3)")

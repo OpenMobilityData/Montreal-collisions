@@ -1,16 +1,8 @@
 island severity en total 218261 
 island severity fr total 218261 
-island vehicle en total 8685 {'car': 7591, 'other': 709, 'bus': 128, 'heavy': 257}
-island vehicle fr total 8685 {'car': 7591, 'other': 709, 'bus': 128, 'heavy': 257}
 ndg severity en total 22062 
 ndg severity fr total 22062 
-ndg vehicle en total 694 {'car': 635, 'other': 31, 'bus': 11, 'heavy': 17}
-ndg vehicle fr total 694 {'car': 635, 'other': 31, 'bus': 11, 'heavy': 17}
 h4c severity en total 3733 
 h4c severity fr total 3733 
-h4c vehicle en total 164 {'car': 143, 'other': 12, 'bus': 2, 'heavy': 7}
-h4c vehicle fr total 164 {'car': 143, 'other': 12, 'bus': 2, 'heavy': 7}
 corridor severity en total 142 
 corridor severity fr total 142 
-corridor vehicle en total 13 {'car': 12, 'heavy': 1}
-corridor vehicle fr total 13 {'car': 12, 'heavy': 1}

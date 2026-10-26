@@ -12,7 +12,7 @@ START = pd.Timestamp('2012-01-01')
 d = spvm.load()
 d = d[d.date.notna()].copy()
 RADII = (100, 250)
-MODES = ['ped', 'bike', 'moto', 'occupants_only']
+MODES = ['ped', 'bike', 'moto', 'motor_only']
 
 
 def record(prior: pd.DataFrame, prefix: str) -> dict:
