@@ -110,7 +110,7 @@ def draw(d, extent, view, lang):
         ax_, ay_ = basemap.merc(np.array([-73.64080, -73.62487]), np.array([45.45974, 45.47833]))
         ax.plot(ax_, ay_, color='#c3c2b7', lw=1.0, ls=(0, (4, 3)), zorder=1, alpha=0.8)
     px = (x1 - x0) / (axw * 150)  # map units per pixel at 150 dpi
-    step = 0 if extent == 'island' else 6.5 * px  # spacing between markers that share one recorded point
+    step = 0 if extent == 'island' else 5.5 * px  # spacing between markers that share one recorded point
     rank = s.severity.map({'damage': 0, 'light': 1, 'severe': 2, 'fatal': 3}).fillna(0).values
     SX, SY = spread(X, Y, step, rank)
     if view == 'severity':
@@ -146,13 +146,17 @@ def draw(d, extent, view, lang):
     top = (1.05 + axh) / H
     leg = fig.legend(handles=handles, loc='upper left', bbox_to_anchor=(0.705, top - 0.3 / H), frameon=False, labelcolor='#f0efec', fontsize=10, handletextpad=0.6, borderaxespad=0)
     fig.text(0.705, top - 0.15 / H, f"{T['total']}: {fmt(total, lang)}", color='#f0efec', fontsize=12, fontweight='bold', va='bottom')
+    import textwrap
+    if extent != 'island':
+        note = {'en': 'Collisions recorded at the same point (the police locate a collision at the intersection) are spread in a small spiral around it so that every marker is visible; the position of a marker within a cluster carries no meaning.',
+                'fr': 'Les collisions enregistrées au même point (la police situe une collision à l’intersection) sont étalées en une petite spirale autour de ce point pour que chaque marqueur soit visible ; la position d’un marqueur dans un groupe n’a pas de signification.'}[lang]
+        fig.text(0.705, top - 4.0 / H, textwrap.fill(note, 44), color='#8f8e87', fontsize=8.5, va='top', linespacing=1.4)
     if extent == 'corridor':
         byname = d[spvm.on_street(d, 'TERREBONNE', 'TERREBONE')]
         if view == 'vehicle': byname = byname[byname.bike]
         cmp = {'en': f"Comparison, by street name (RUE_ACCDN or ACCDN_PRES_DE contains TERREBONNE): {fmt(len(byname), lang)} collisions, {int(byname.fatal.sum())} fatal, {int((byname.severity == 'severe').sum())} severe injury, {int(byname.bike.sum())} with a bicycle, {int(byname.ped.sum())} with a pedestrian victim. Dashed line: the lane axis, Belmore to Girouard.",
                'fr': f"Comparaison, par nom de rue (RUE_ACCDN ou ACCDN_PRES_DE contient TERREBONNE) : {fmt(len(byname), lang)} collisions, {int(byname.fatal.sum())} mortelle(s), {int((byname.severity == 'severe').sum())} blessure(s) grave(s), {int(byname.bike.sum())} avec bicyclette, {int(byname.ped.sum())} avec victime piétonne. Tireté : l’axe de la piste, de Belmore à Girouard."}[lang]
-        import textwrap
-        fig.text(0.705, top - 4.2 / H, textwrap.fill(cmp, 42), color='#c3c2b7', fontsize=8.5, va='top', linespacing=1.4)
+        fig.text(0.705, top - 5.2 / H, textwrap.fill(cmp, 44), color='#c3c2b7', fontsize=8.5, va='top', linespacing=1.4)
     sub = f"{NAME[extent][lang]}" + (f" ({T['corridor_note']})" if extent == 'corridor' else '') + f" · {T['area']} {area:,.1f} km² · {PERIOD[lang]}"
     fig.text(0.03, top + 0.42 / H, title, ha='left', va='bottom', color='#f0efec', fontsize=15, fontweight='bold')
     fig.text(0.03, top + 0.12 / H, sub.replace(',', '\u202f') if lang == 'fr' else sub, color='#c3c2b7', fontsize=10.5, ha='left', va='bottom')
