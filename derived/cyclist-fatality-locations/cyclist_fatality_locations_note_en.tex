@@ -1,0 +1,114 @@
+% The earlier collision record at the 31 locations where a cyclist was killed, Montréal 2012–2021 (SPVM open data).
+% Built by build.py (tables regenerated from the CSVs, version stamped, pdflatex twice).
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[letterpaper,top=0.9in,bottom=0.95in,left=0.9in,right=0.9in]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{seqsplit}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}\def\UrlBreaks{\do\_\do\-}
+\newcommand{\code}[1]{\texttt{\seqsplit{#1}}}
+\urlstyle{same}
+\newcommand{\docversion}{2026-10-26-18-23-18} % set by build (America/Toronto)
+\hypersetup{pdfsubject={version \docversion}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\linespread{1.03}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.6em}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{1.1em}{0.4em}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.25em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{gray}Montreal-collisions -- the record before each cyclist fatality, 2012--2021 -- page \thepage}
+\fancyfoot[R]{\tiny\color{gray}v.\,\docversion}
+
+\newcommand{\repourl}{https://github.com/OpenMobilityData/Montreal-collisions}
+\newcommand{\repo}[1]{\href{\repourl}{#1}}
+\newcommand{\doc}[2]{\href{\repourl/blob/main/#1}{#2}}
+
+\begin{document}
+
+{\LARGE\bfseries Before a cyclist was killed: the earlier collision record at the 31 locations, Montréal 2012--2021}
+
+{\large Police-reported collisions (SPVM open data), with rue de Terrebonne measured on the same scale}
+
+\medskip
+Data note, October 26, 2026. Repository: \repo{\repourl}. Version \docversion.
+
+\section*{Summary}
+
+The City of Montréal's open data on police-reported road collisions covers January 1, 2012 to December 31, 2021: 218,272 collisions, 8,685 of them involving a bicycle, 31 of those with a cyclist killed. This note asks, for each of the 31, what the police record at that location looked like before the death. The location is taken three ways: the same street name, a circle of 100\,m and a circle of 250\,m around the point recorded by the police (a fourth, the same pair of street names, is given for comparison). ``Earlier'' means from the start of the data to the day before the death, so the years of record run from a few weeks for the first case to almost ten years for the last.
+
+Under the 100\,m definition, 30 of the 31 deaths occurred at a location where no fatal collision of any kind had been recorded since 2012; under 250\,m, 28 of 31; on the same street name, 13 of 31 (the street-name match covers a whole street, however long). At the same locations the non-fatal record was rarely empty: within 100\,m the median earlier record was 31 collisions, 6 of them with an injury, and 1 involving a bicycle; within 250\,m, 80 collisions, 15 with an injury, 4 with a bicycle. Among the 18 deaths from 2015 on, with at least three years of record, no location had an empty 100\,m record, and the median was 42 collisions, 11 with an injury.
+
+Rue de Terrebonne (Notre-Dame-de-Grâce) is given on the same scale. Before the pedestrian death at avenue Girouard on September 3, 2019, the record within 100\,m of that intersection was 41 collisions, 19 with an injury, 3 with a bicycle, 3 with a pedestrian victim, and no fatal collision: a fuller record than the median of the 31 cyclist-fatality locations, with the same absence of an earlier death. The whole street, by name, counts 197 collisions in ten years (1 fatal, 4 with a severe injury, 53 with a light injury, 15 involving a bicycle, 11 with a pedestrian victim).
+
+The note describes the record; it draws no conclusion about any street. What the figures show is the shape of the record that precedes a cyclist fatality in this dataset: an earlier fatal collision at the same place is the exception, an earlier record of injuries is the rule.
+
+\section{Data}
+
+\textbf{Source.} Ville de Montréal, open-data set \emph{Collisions routières} (\href{https://donnees.montreal.ca/dataset/collisions-routieres}{donnees.montreal.ca/dataset/collisions-routieres}), the CSV resource dated October 6, 2022 on the portal, downloaded May 29, 2024 and found byte-identical to the resource served on October 26, 2026 (SHA-256 \texttt{d71904aa…38ce}). Licence CC~BY~4.0. The file holds the police reports (SPVM) of collisions on the territory of the Montréal agglomeration, 2012--2021, one row per collision, with the SAAQ's coding of severity and of the vehicles and victims, and a location fixed by the City (\code{LOC\_X}, \code{LOC\_Y} in MTM zone~8 and the same point in latitude and longitude; a flag \code{LOC\_IMPRECISION} on 19,196 rows). Eleven rows have no coordinates. The City's two data dictionaries are kept beside the file in the repository.
+
+\textbf{Fields used.} Date (\code{DT\_ACCDN}); the street (\code{RUE\_ACCDN}) and the cross street or landmark (\code{ACCDN\_PRES\_DE}); severity of the collision (\code{GRAVITE}: \emph{Mortel}, \emph{Grave}, \emph{Léger}, and two property-damage classes, merged here as \emph{damage}); the vehicle counts by type (\code{nb\_bicyclette}, \code{nb\_motocyclette}, \code{nb\_automobile\_camion\_leger}, \code{nb\_camionLourd\_tractRoutier}, \code{nb\_tous\_autobus\_minibus}); the victim counts by mode (\code{NB\_VICTIMES\_PIETON}, \code{NB\_VICTIMES\_VELO}, \code{NB\_VICTIMES\_MOTO}, and the deaths \code{NB\_DECES\_*}); the totals \code{NB\_MORTS} and \code{NB\_BLESSES\_GRAVES}.
+
+\textbf{Classes.} A collision \emph{involves a bicycle} when a bicycle is among the vehicles or a cyclist among the victims (8,685 collisions); \emph{a pedestrian} when a pedestrian is among the victims (10,722); \emph{a motorcycle} when a motorcycle is among the vehicles or a motorcyclist among the victims (2,947); \emph{occupants only} otherwise. A collision can be in more than one of the first three classes. \emph{Fatal} means \code{NB\_MORTS} $>$ 0 (263 collisions; the same 263 rows carry \emph{Mortel}). The 31 cases are the rows with \code{NB\_DECES\_VELO} $>$ 0; each records exactly one death. Cyclist deaths by year, 2012 to 2021: 5, 6, 2, 3, 2, 4, 3, 0, 1, 5.
+
+\section{Method}
+
+For each of the 31 collisions, the \emph{earlier} record is every other row dated strictly before it (from January 1, 2012). Four definitions of ``the same location'' are applied to that record:
+
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{Same street name.} The street of the fatal collision, reduced to a key (upper case, accents and hyphens removed, generic words such as \emph{rue}, \emph{av}, \emph{boul}, \emph{O}, \emph{E} dropped, \emph{St} written \emph{Saint}, \emph{N-D} written \emph{Notre Dame}), matched against the key of either street field of the earlier row. This is a whole-street match: for a long street it counts collisions kilometres away.
+\item \textbf{Same intersection.} Both street keys of the fatal collision equal both keys of the earlier row, in either order. Not defined when the fatal collision carries one street only (mid-block, or a landmark instead of a cross street).
+\item \textbf{Within 100 m} and \item \textbf{within 250 m} of the recorded point, as a planar distance on the City's metric coordinates. The eleven rows without coordinates cannot be counted under these definitions.
+\end{enumerate}
+
+Under each definition the earlier fatal collisions of any kind are counted. Under the two radii the whole earlier record is tabulated by severity (fatal, severe, light, damage) and by mode (pedestrian, bicycle, motorcycle, occupants only), with the victim totals. Because the years of record differ from case to case, each row carries that duration and the summary gives a per-year figure; a second summary is restricted to the 18 deaths from 2015 on, each with at least three years of record. For rue de Terrebonne the same two blocks are computed for the pedestrian death of September 3, 2019 at avenue Girouard (as for the 31: the record before that date), then for the whole 2012--2021 period around four intersections of the street (Girouard, Cavendish, Kensington, Grand, from the City's géobase), and for the whole street by name and within 25\,m of the lane's axis from Belmore to Girouard. Everything is produced by \doc{scripts/cyclist\_fatality\_locations.py}{scripts/cyclist\_fatality\_locations.py} from the loader \doc{scripts/spvm.py}{scripts/spvm.py}; the tables are the CSV files beside this note.
+
+\section{Results}
+
+\input{tables_generated.tex}
+
+
+\section{Reading the tables}
+
+\begin{itemize}[leftmargin=1.2em]
+\item \textbf{Earlier fatal collision at the same place.} Table~\ref{tab:fatal}: 1 of 31 within 100\,m (Notre-Dame / Saint-Pierre, October 27, 2021, where a fatal collision had been recorded earlier within the circle), 3 of 31 within 250\,m, 1 of 31 at the same pair of street names, 18 of 31 somewhere on a street of the same name.
+\item \textbf{Earlier injuries at the same place.} Within 100\,m, 25 of the 31 locations had at least one earlier injury collision, and 18 at least one earlier collision involving a bicycle. The six locations with no earlier injury collision within 100\,m are three of the 2012 cases and two of 2013 (each with under eighteen months of record) and Forden Crescent in Westmount (2020).
+\item \textbf{Years of record.} The first case has two weeks of record and the last almost ten years; the per-year medians (Table 3 and 4, last column) are the comparable figures across cases, and the 2015-onward subset removes the shortest windows.
+\item \textbf{Rue de Terrebonne.} Table~\ref{tab:terrebonne}: the record within 100\,m of Girouard before September 3, 2019 (41 collisions, 19 with an injury, 3 with a bicycle, 3 with a pedestrian victim, none fatal, over 7.7 years) sits above the median of the 31 fatality locations on each measure except the per-year rate of all collisions (5.3 a year against a median of 6.8). The other three Terrebonne intersections carry smaller records over ten years (Cavendish 31, Kensington 18, Grand 15 within 100\,m).
+\end{itemize}
+
+\section{Limits}
+
+\begin{itemize}[leftmargin=1.2em]
+\item The record starts on January 1, 2012. ``No earlier fatal collision'' means none in the file, not none ever: a death at Terrebonne and Grand on May 31, 2011, reported in the press, lies before the file begins.
+\item The file holds police-reported collisions on the SPVM's territory. Collisions not reported to the police, or reported elsewhere, are absent; the two property-damage classes changed in volume after 2013.
+\item No exposure measure (traffic, cycling volume, pedestrians) enters the tables; the counts are not rates per user.
+\item Two of the 31 locations carry the City's imprecise-location flag; their radii are drawn around the recorded point all the same and the rows are marked.
+\item The street-name key is a crude match and depends on how the police wrote the street; the two radii are the definitions to rely on.
+\item Eleven rows of the file have no coordinates and are outside every radius.
+\end{itemize}
+
+\section*{About}
+
+Written by Rick Hoge, a resident of Côte-des-Neiges--Notre-Dame-de-Grâce, from the City's open data, as a private citizen. The repository holds the data, the scripts and the tables so that every figure can be recomputed. Corrections through the repository's issue tracker.
+
+\end{document}

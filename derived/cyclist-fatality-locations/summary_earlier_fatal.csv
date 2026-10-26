@@ -1,0 +1,5 @@
+definition,with an earlier fatal collision,without,of
+same street name,18,13,31
+same intersection (both street names),1,30,31
+within 100 m,1,30,31
+within 250 m,3,28,31
