@@ -55,7 +55,7 @@ for lang in ('en', 'fr'):
     fig.suptitle(t['title'], x=0.045, y=0.975, ha='left', fontsize=12, color=INK, fontweight='bold')
     fig.text(0.045, 0.935, t['sub'], fontsize=8.5, color=INK2)
     import textwrap
-    fig.text(0.045, 0.075, textwrap.fill(t['note'], 175), fontsize=8, color=INK2, va='top', linespacing=1.4); fig.text(0.045, 0.012, t['src'], fontsize=7.5, color=INK2)
-    fig.subplots_adjust(left=0.045, right=0.97, top=0.91, bottom=0.17)
+    fig.text(0.045, 0.085, textwrap.fill(t['note'], 175), fontsize=8, color=INK2, va='top', linespacing=1.4); fig.text(0.045, 0.008, t['src'], fontsize=7.5, color=INK2, va='bottom')
+    fig.subplots_adjust(left=0.045, right=0.97, top=0.91, bottom=0.19)
     fig.savefig(HERE / f'point_rates_{lang}.png', dpi=150, facecolor=SURF); fig.savefig(HERE / f'point_rates_{lang}.svg', facecolor=SURF); plt.close(fig)
 print('written')
