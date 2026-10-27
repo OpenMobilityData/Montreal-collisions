@@ -1,0 +1,188 @@
+n,date,street,near,civic,other_vehicle
+1,2012-01-16,Christophe-Colomb,Saint-Zotique,,car
+2,2012-02-21,Ceres,,9711,car
+3,2012-02-23,Prieur,Papineau,,car
+4,2012-03-08,Pierre De Coubertin,Repentigny,,car
+5,2012-03-17,Bd Gouin E,De Bruxelles,3680,other
+6,2012-03-28,Bd St Laurent,Sherbrooke,,heavy
+7,2012-04-20,Denis Papin,St Michel,,car
+8,2012-05-21,Bd Newman,,6767,car
+9,2012-05-29,Chateaubriand,Jean Talon,,heavy
+10,2012-07-13,Dutrisac,Henri Bourassa,2034,other
+11,2012-07-23,Saint-Denis,Mt Royal,,car
+12,2012-07-24,Christophe-Colomb,Mistral,,heavy
+13,2012-07-27,Bd St Joseph,51E Av,5170,car
+14,2012-09-17,Saint-Pierre,berge du canal,,heavy
+15,2012-09-24,De La Savane,Ch Uhc Du Cimetiere Baron De Hisch,5015,heavy
+16,2012-09-28,St Joseph,Du Parc,,car
+17,2012-10-19,Duquesne,De Charette,,bus
+18,2012-10-22,Maurice-Duplessis,Marc-Aurèle-Fortin,,heavy
+19,2012-10-26,Cavendish,Kildare,,car
+20,2012-11-06,Remembrance,18E Av,,car
+21,2012-11-27,Tillemont,Marquette,,car
+22,2012-12-13,Alexis Nihon,Noel,,other
+23,2013-01-15,University,St Antoine O,,heavy
+24,2013-01-22,P E Lamarche,Langelier,,heavy
+25,2013-01-27,Cadillac,Pierre De Coubertin,,bus
+26,2013-02-06,Gouin O,Ranger,5855,car
+27,2013-04-03,Wellington,de la Montagne,,heavy
+28,2013-04-26,St Laurent Et De Castelneau,7333 St Laurent,,car
+29,2013-05-06,Notre-Dame,,6710,car
+30,2013-05-30,Côte-des-Neiges,Linton,,car
+31,2013-07-18,av. du Parc,,5570,bus
+32,2013-08-18,St Vallier,Rosemont,,bus
+33,2013-08-30,Metropolitain A Cote,,5650,car
+34,2013-09-05,René-Lévesque,Peel,,other
+35,2013-10-07,32Eme Av,,2355,heavy
+36,2013-10-24,Maisonneuve,Wood,,car
+37,2013-10-28,Terry Fox,Caravelle,,car
+38,2013-10-30,Castelnau,St Hubert,,heavy
+39,2013-11-01,Saint-Denis,Laurier,5110,car
+40,2013-11-21,Allard,Beaulieu,2540,car
+41,2014-01-09,Masson Face,,3322,car
+42,2014-02-05,Maurice-Duplessis,Louis J Lafontaine,,car
+43,2014-02-12,Cote Vertu Viad,Pl Cote Vertu,,car
+44,2014-04-03,Mackay,Ste Catherine O,,heavy
+45,2014-04-28,Saint-Denis,des Carrières,,other
+46,2014-05-02,Sherbrooke,Dickson,,car
+47,2014-05-06,Bélanger,De Chateaubriand,,heavy
+48,2014-06-17,Queen Mary,,4978,car
+49,2014-07-13,Dollar,Immeuble,2522,car
+50,2014-08-16,Ste Catherine O,,696,car
+51,2014-09-29,Monette,Orchard,172,car
+52,2014-10-07,,Arret Autobus Cote N Tr Pieton,,car
+53,2014-11-20,Lacordaire,Saint-Zotique,,heavy
+54,2014-11-27,Nazareth,Wellington,,heavy
+55,2015-01-26,Lavoie,Barclay,,car
+56,2015-02-12,Saint-Denis,Bellechasse,,bus
+57,2015-05-07,Lacordaire,Amos,,car
+58,2015-05-31,Henri Bourassa,St Michel,,bus
+59,2015-07-04,Henri Bourassa,Balzac,,car
+60,2015-07-30,,Brunswick Et Davignon,,car
+61,2015-08-20,Saint-Denis,De Bienville,4552,car
+62,2015-08-22,Saint-Denis,,7096,car
+63,2015-08-24,Sherbrooke O.,Stanley,,car
+64,2015-09-20,Masson,9E Av,,car
+65,2015-09-22,Isabella,Lavoie,,bus
+66,2015-09-25,Galt,,680,heavy
+67,2015-10-02,Lajeunesse,Legendre,,car
+68,2015-10-22,Ch Avon,Ballantyne,,car
+69,2015-11-26,Des Pins O,University,,car
+70,2016-01-05,Honore Beaugrand,Dubuisson,,heavy
+71,2016-01-07,Parc,Duluth,,car
+72,2016-01-23,Christophe-Colomb,,7310,car
+73,2016-01-27,Ch Fleet,Croissant Netherwood,,car
+74,2016-04-02,Maisonneuve E,Saint-Denis,,car
+75,2016-05-31,Rosemont,Chambord,,heavy
+76,2016-06-08,St Urbain,,920,heavy
+77,2016-06-15,Rivière-des-Prairies,de la Martinière,,heavy
+78,2016-08-02,av. du Parc,Bernard,,heavy
+79,2016-08-22,Iberville,boul. Rosemont,,heavy
+80,2016-09-12,Jarry,Viau,,car
+81,2016-09-25,St Urbain,Mt Royal,,car
+82,2016-11-13,Saint-Denis,,4872,car
+83,2016-11-17,Maurice-Duplessis,Av Jean Yves Bigras,,car
+84,2016-11-19,Sherbrooke,Face Au,3315,car
+85,2016-11-24,Côte-des-Neiges,,4804,heavy
+86,2016-12-10,Ch Cote St Luc,Arr,7151,car
+87,2016-12-19,Girouard,Sherbrooke,,heavy
+88,2017-01-11,Decarie,Jockey,7405,car
+89,2017-01-20,St Jacques,West Broadway,,car
+90,2017-02-25,Du C,Island,,car
+91,2017-03-03,Sherbrooke E,Bercy,,car
+92,2017-03-17,Pie Ix,,8200,other
+93,2017-04-10,Alexandre Deseve,De Maisonneuve,,car
+94,2017-04-12,Cote De Liesse,,10765,heavy
+95,2017-05-29,Beaubien,Pie Ix,,bus
+96,2017-06-30,Bd Leger,,6542,heavy
+97,2017-07-01,Monselet,Bruxelles,,heavy
+98,2017-07-14,Bélanger,6e Av.,,heavy
+99,2017-07-17,Rachel,St Urbain,,car
+100,2017-08-19,Bd Marcel Laurin,St Louis,,car
+101,2017-08-21,Notre-Dame,Saint-Pierre,,heavy
+102,2017-09-14,av. du Parc,av. des Pins,,bus
+103,2017-10-04,voie Camillien-Houde,,2100,car
+104,2017-10-26,St Roch,Birnam,960,car
+105,2017-10-27,Michel Jasmin,,470,car
+106,2017-12-08,Brunswick,Fairview,,car
+107,2017-12-11,L O David,,1801,car
+108,2018-01-30,Côte-des-Neiges,Belvedere,,other
+109,2018-02-04,Cote Vertu Arr,Montpellier,740,car
+110,2018-03-08,Beaubien,Pie Ix,,car
+111,2018-05-04,Bd Pierrefonds,Ste Anne,,car
+112,2018-05-11,De L Acadie,,8535,car
+113,2018-05-16,Saint-Zotique E.,23e Av.,,car
+114,2018-06-11,Saint-Zotique,19e Av.,,heavy
+115,2018-06-19,av. Papineau,Saint-Zotique,,car
+116,2018-07-08,Hochelaga,De Chambly,,car
+117,2018-07-10,De London,Gouin,,heavy
+118,2018-07-17,Bd Newman,Tsse Newman,,heavy
+119,2018-07-30,Sherbrooke O.,,475,car
+120,2018-08-14,Legare,,6820,heavy
+121,2018-08-22,Bd Marcel Laurin,,1515,heavy
+122,2018-09-09,René-Lévesque,Jeanne Mance,,car
+123,2018-09-10,,Cote Vertu Et Dutrisac,,car
+124,2018-09-13,Crémazie,Lajeunesse,,car
+125,2018-09-18,Renoir,Desy,,car
+126,2018-10-15,Gouin O,Grenet,,bus
+127,2018-11-04,Henri Julien,Jarry,8084,car
+128,2018-12-12,Atwater,Tupper,,heavy
+129,2019-01-22,av. du Parc,,4889,heavy
+130,2019-02-06,Du Havre,Ontario,,car
+131,2019-03-19,Viger O,St Urbain,,heavy
+132,2019-03-27,Laurendeau,,6570,car
+133,2019-03-29,De L Orimier,Jean Talon E,,car
+134,2019-05-05,Grenet,,1635,car
+135,2019-05-11,Saint-Denis,Duluth,3997,car
+136,2019-06-12,Saint-Zotique E.,Viau,,car
+137,2019-06-13,Henri Bourassa,Tache,,other
+138,2019-06-16,Sherbrooke E,53E Av,,car
+139,2019-06-28,St Urbain,Rachel,,car
+140,2019-07-02,Crémazie,,3555,car
+141,2019-07-28,Hochelaga,Iberville,,car
+142,2019-08-26,St Laurent,Sauve,,bus
+143,2019-09-03,De Terrebonne,Girouard Av,,heavy
+144,2019-10-25,Somerled,Mariette,,car
+145,2019-10-31,Armand Bombardier,Maurice-Duplessis,,car
+146,2019-11-01,Bd Cremazie E,Av De Chateaubriand,,car
+147,2019-11-13,Jean Talon,Buies,,heavy
+148,2019-11-15,Bd Decarie,Maisonneuve O,,car
+149,2019-11-19,St Vital,Face Au,10080,car
+150,2019-11-27,Des Pins,Prince Arthur O,,car
+151,2019-11-30,Henri Bourassa E,Papineau,,car
+152,2019-12-20,Bd St Michel,,9405,other
+153,2020-01-04,Bélanger,St Hubert,,car
+154,2020-01-04,Liege,Lajeunesse,,car
+155,2020-01-31,Bd Cote Vertu,,3495,heavy
+156,2020-02-12,Rondeau,Stat Priv,7440,car
+157,2020-02-22,av. du Parc,Milton,,other
+158,2020-02-27,St Michel,Villeray,,car
+159,2020-03-12,Hochelaga,De Lasalle,,car
+160,2020-03-12,De Bellechasse,Henri Julien Av,,heavy
+161,2020-06-15,Queen Mary,Circle,,other
+162,2020-06-16,Forden Cres. (Westmount),Forden,34,car
+163,2020-07-12,Ste Catherine O,,4026,car
+164,2020-07-22,St Ambroise,Sir George Etienne Cartier,,car
+165,2020-07-27,av. du Parc,Milton,,car
+166,2020-08-14,Rodney,Face Au 16 Rodney,16,car
+167,2020-08-19,Sherbrooke O.,Ste Famille,,car
+168,2020-08-31,Sherbrooke E,,5300,car
+169,2020-09-10,Decarie,Maisonneuve O,,car
+170,2020-10-14,Lavoisier,,6025,car
+171,2020-12-05,9E Av,,114,car
+172,2021-01-22,St-Antoine O Rue,Mansfield Rue,,bus
+173,2021-02-16,Jean Talon O,A L Arr Du 901 Jean Talon O,901,heavy
+174,2021-03-16,,Av Rene Descartes Et Av Rita Levi,,car
+175,2021-04-08,Maisonneuve De E Bd,,2033,other
+176,2021-04-08,av. Papineau,,4848,car
+177,2021-04-11,Des Jockeys Rue,,5385,car
+178,2021-05-17,Honore Beaugd,Av Souligny,,heavy
+179,2021-05-18,ch. de l'Anse-à-l'Orme,boul. Gouin O.,,car
+180,2021-06-17,Lalande Boul,Face Au,5070,car
+181,2021-06-22,Golf Du Boul,,9100,heavy
+182,2021-08-04,Viger E Aven,Sainte-Elisabeth Rue,,car
+183,2021-09-27,av. du Parc,av. du Mont-Royal O.,,heavy
+184,2021-10-25,Castelnau De E Rue,Chateaubriand De Aven,,bus
+185,2021-10-27,Notre-Dame,Saint-Pierre,,car
+186,2021-11-08,Papineau Aven,Maisonneuve De E Boul,,car
+187,2021-11-09,boul. Saint-Laurent,de Liège O.,,heavy
