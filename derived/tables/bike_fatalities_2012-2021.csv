@@ -1,0 +1,32 @@
+n,date,street,near,civic,other_vehicle
+1,2012-01-16,Christophe-Colomb,Saint-Zotique,,car
+2,2012-07-24,Christophe-Colomb,Mistral,,heavy
+3,2012-09-17,Saint-Pierre,berge du canal,,heavy
+4,2012-10-22,Maurice-Duplessis,Marc-Aurèle-Fortin,,heavy
+5,2012-11-27,Tillemont,Marquette,,car
+6,2013-04-03,Wellington,de la Montagne,,heavy
+7,2013-05-06,Notre-Dame,,6710,car
+8,2013-05-30,Côte-des-Neiges,Linton,,car
+9,2013-07-18,av. du Parc,,5570,bus
+10,2013-09-05,René-Lévesque,Peel,,other
+11,2013-11-01,Saint-Denis,Laurier,5110,car
+12,2014-04-28,Saint-Denis,des Carrières,,other
+13,2014-11-27,Nazareth,Wellington,,heavy
+14,2015-08-22,Saint-Denis,,7096,car
+15,2015-08-24,Sherbrooke O.,Stanley,,car
+16,2015-10-02,Lajeunesse,Legendre,,car
+17,2016-06-15,Rivière-des-Prairies,de la Martinière,,heavy
+18,2016-08-22,Iberville,boul. Rosemont,,heavy
+19,2017-07-01,Monselet,Bruxelles,,heavy
+20,2017-07-14,Bélanger,6e Av.,,heavy
+21,2017-09-14,av. du Parc,av. des Pins,,bus
+22,2017-10-04,voie Camillien-Houde,,2100,car
+23,2018-05-16,Saint-Zotique E.,23e Av.,,car
+24,2018-06-11,Saint-Zotique,19e Av.,,heavy
+25,2018-09-13,Crémazie,Lajeunesse,,car
+26,2020-06-16,Forden Cres. (Westmount),Forden,34,car
+27,2021-04-08,av. Papineau,,4848,car
+28,2021-05-18,ch. de l'Anse-à-l'Orme,boul. Gouin O.,,car
+29,2021-09-27,av. du Parc,av. du Mont-Royal O.,,heavy
+30,2021-10-27,Notre-Dame,Saint-Pierre,,car
+31,2021-11-09,boul. Saint-Laurent,de Liège O.,,heavy

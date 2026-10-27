@@ -1,8 +1,26 @@
 island severity en total 218261 
 island severity fr total 218261 
+island bike_vehicle en total 8685 {'car': 7591, 'other': 709, 'bus': 128, 'heavy': 257}
+island bike_vehicle fr total 8685 {'car': 7591, 'other': 709, 'bus': 128, 'heavy': 257}
+island ped_vehicle en total 10722 {'car': 9303, 'other': 798, 'bus': 295, 'heavy': 326}
+island ped_vehicle fr total 10722 {'car': 9303, 'other': 798, 'bus': 295, 'heavy': 326}
+island bike_fatal en total 31 {'car': 15, 'other': 2, 'bus': 2, 'heavy': 12}
+island bike_fatal fr total 31 {'car': 15, 'other': 2, 'bus': 2, 'heavy': 12}
+island ped_fatal en total 156 {'car': 101, 'other': 10, 'bus': 11, 'heavy': 34}
+island ped_fatal fr total 156 {'car': 101, 'other': 10, 'bus': 11, 'heavy': 34}
 ndg severity en total 22062 
 ndg severity fr total 22062 
-h4c severity en total 3733 
-h4c severity fr total 3733 
+ndg bike_vehicle en total 694 {'car': 635, 'other': 31, 'bus': 11, 'heavy': 17}
+ndg bike_vehicle fr total 694 {'car': 635, 'other': 31, 'bus': 11, 'heavy': 17}
+ndg ped_vehicle en total 1091 {'car': 961, 'other': 74, 'bus': 30, 'heavy': 26}
+ndg ped_vehicle fr total 1091 {'car': 961, 'other': 74, 'bus': 30, 'heavy': 26}
 corridor severity en total 142 
 corridor severity fr total 142 
+corridor bike_vehicle en total 13 {'car': 12, 'heavy': 1}
+corridor bike_vehicle fr total 13 {'car': 12, 'heavy': 1}
+corridor ped_vehicle en total 5 {'car': 4, 'heavy': 1}
+corridor ped_vehicle fr total 5 {'car': 4, 'heavy': 1}
+corridor bike en total 15 
+corridor bike fr total 15 
+corridor ped en total 11 
+corridor ped fr total 11 
