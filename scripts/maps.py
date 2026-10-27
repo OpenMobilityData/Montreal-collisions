@@ -13,6 +13,7 @@ Views (the default run draws every valid combination):
   bike, ped       corridor only: every collision involving a bicycle / a pedestrian on rue de Terrebonne (within 25 m
                   of the lane axis or with Terrebonne in a street field), each labelled with its date, by severity
   vru_vehicle, vru_fatal, vru   the same three for the two together (a bicycle involved or a pedestrian victim)
+  bike_severity, ped_severity, vru_severity   the severity view restricted to that mode, at every extent
 Extents: island (every collision with coordinates), ndg (the NDG box), corridor (25 m from the lane axis, Belmore to
 Girouard; the street-name selection printed beside as the comparison), h4c (the 2024 H4C box; on request only).
 Collisions recorded at one point are spread on a Fermat spiral (spacing in pixels, the most severe outermost) and a
@@ -44,7 +45,7 @@ MODE_LABEL = {'en': {'ped': 'pedestrian', 'bike': 'bicycle', 'moto': 'motorcycle
 VEH = {'car': '#3987e5', 'heavy': '#d95926', 'bus': '#199e70', 'other': '#f0efec'}
 VEH_LABEL = {'en': {'car': 'car or light truck', 'heavy': 'heavy truck or tractor-trailer', 'bus': 'bus or minibus', 'other': 'other or none recorded'},
              'fr': {'car': 'automobile ou camion léger', 'heavy': 'camion lourd ou tracteur routier', 'bus': 'autobus ou minibus', 'other': 'autre ou non précisé'}}
-TEXT = {'en': dict(title_sev='Police-reported collisions by severity',
+TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_msev={'bike': 'Collisions involving a bicycle, by severity', 'ped': 'Collisions with a pedestrian victim, by severity', 'vru': 'Collisions involving a bicycle or a pedestrian victim, by severity'},
                    title_veh={'bike': 'Collisions involving a bicycle, by the other vehicle', 'ped': 'Collisions with a pedestrian victim, by the vehicle', 'vru': 'Collisions involving a bicycle or a pedestrian victim, by the other vehicle'},
                    title_fatal={'bike': 'Collisions in which a cyclist was killed', 'ped': 'Collisions in which a pedestrian was killed', 'vru': 'Collisions in which a cyclist or a pedestrian was killed'},
                    title_corr={'bike': 'Collisions involving a bicycle on rue de Terrebonne', 'ped': 'Collisions with a pedestrian victim on rue de Terrebonne', 'vru': 'Collisions involving a bicycle or a pedestrian victim on rue de Terrebonne'},
@@ -55,7 +56,7 @@ TEXT = {'en': dict(title_sev='Police-reported collisions by severity',
                    mode='road users involved (shape)', severity='severity (colour, size)', severity_only='severity (colour)',
                    spread='Collisions recorded at the same point (the police locate a collision at the intersection) are spread in a small spiral around it so that every marker is visible; the position of a marker within a cluster carries no meaning.',
                    cmp='Comparison, by street name (RUE_ACCDN or ACCDN_PRES_DE contains TERREBONNE): {n} collisions, {f} fatal, {s} severe injury, {b} with a bicycle, {p} with a pedestrian victim. Dashed line: the lane axis, Belmore to Girouard.'),
-        'fr': dict(title_sev='Collisions déclarées à la police, par gravité',
+        'fr': dict(title_sev='Collisions déclarées à la police, par gravité', title_msev={'bike': 'Collisions impliquant une bicyclette, par gravité', 'ped': 'Collisions avec victime piétonne, par gravité', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne, par gravité'},
                    title_veh={'bike': 'Collisions impliquant une bicyclette, selon l’autre véhicule', 'ped': 'Collisions avec victime piétonne, selon le véhicule', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne, selon l’autre véhicule'},
                    title_fatal={'bike': 'Collisions où un ou une cycliste a été tué(e)', 'ped': 'Collisions où un piéton ou une piétonne a été tué(e)', 'vru': 'Collisions où un ou une cycliste ou un piéton ou une piétonne a été tué(e)'},
                    title_corr={'bike': 'Collisions impliquant une bicyclette sur la rue de Terrebonne', 'ped': 'Collisions avec victime piétonne sur la rue de Terrebonne', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne sur la rue de Terrebonne'},
@@ -71,7 +72,7 @@ NAME = {'island': {'en': 'Montréal agglomeration (SPVM territory)', 'fr': 'Aggl
         'corridor': {'en': 'Rue de Terrebonne corridor', 'fr': 'Corridor de la rue de Terrebonne'}}
 ZOOM = {'island': 12, 'ndg': 15, 'h4c': 16, 'corridor': 16}
 AXIS = (spvm.mtm8(45.45974, -73.64080), spvm.mtm8(45.47833, -73.62487))  # Belmore → Girouard, MTM 8
-VIEWS = ['severity', 'bike_vehicle', 'ped_vehicle', 'vru_vehicle', 'bike_fatal', 'ped_fatal', 'vru_fatal', 'bike', 'ped', 'vru']
+VIEWS = ['severity', 'bike_severity', 'ped_severity', 'vru_severity', 'bike_vehicle', 'ped_vehicle', 'vru_vehicle', 'bike_fatal', 'ped_fatal', 'vru_fatal', 'bike', 'ped', 'vru']
 MARK = {'bike': 's', 'ped': 'v', 'vru': 'o'}
 DEATHS = {'bike': ['NB_DECES_VELO'], 'ped': ['NB_DECES_PIETON'], 'vru': ['NB_DECES_VELO', 'NB_DECES_PIETON']}
 
@@ -148,7 +149,7 @@ def select(d, extent, view):
         if view in ('bike', 'ped', 'vru'):
             s = d[(near | spvm.on_street(d, 'TERREBONNE', 'TERREBONE'))]
     mode = view.split('_')[0] if view != 'severity' else None
-    if view.endswith('_vehicle') or view in ('bike', 'ped', 'vru'):
+    if view.endswith('_vehicle') or view.endswith('_severity') or view in ('bike', 'ped', 'vru'):
         s = s[s[mode]]
     if view.endswith('_fatal'):
         s = s[sum(s[c].fillna(0) for c in DEATHS[mode]) > 0]
@@ -194,7 +195,7 @@ def draw(d, extent, view, lang):
         ax_, ay_ = basemap.merc(np.array([-73.64080, -73.62487]), np.array([45.45974, 45.47833]))
         ax.plot(ax_, ay_, color='#c3c2b7', lw=1.0, ls=(0, (4, 3)), zorder=1, alpha=0.8)
     handles = []; counts = {}; notes = []
-    if view == 'severity':
+    if view == 'severity' or view.endswith('_severity'):
         for sev in ['damage', 'light', 'severe', 'fatal']:
             st = SEV[sev]
             for m_, marker in MODE.items():
@@ -212,8 +213,9 @@ def draw(d, extent, view, lang):
         handles.append(Line2D([], [], color='none', label=T['mode']))
         for m_, marker in MODE.items():
             n = sum(v for (a, b), v in counts.items() if b == m_)
+            if n == 0 and mode: continue
             handles.append(Line2D([], [], marker=marker, color='none', markerfacecolor='#c3c2b7', markersize=7, label=f"{MODE_LABEL[lang][m_]}: {fmt(n, lang)}"))
-        title = T['title_sev']
+        title = T['title_msev'][mode] if mode else T['title_sev']
     elif view.endswith('_vehicle') or view.endswith('_fatal'):
         cls = other_vehicle(s); fatal = view.endswith('_fatal')
         for k in ['car', 'other', 'bus', 'heavy']:
@@ -256,11 +258,11 @@ def draw(d, extent, view, lang):
     fig.text(0.705, top - 0.15 / H, f"{T['total']}: {fmt(total, lang)}", color='#f0efec', fontsize=12, fontweight='bold', va='bottom')
     if extent != 'island' and view not in ('bike', 'ped', 'vru'):
         notes.append(T['spread'])
-    if extent == 'corridor' and (view == 'severity' or view.endswith('_vehicle')):
+    if extent == 'corridor' and (view == 'severity' or view.endswith('_severity') or view.endswith('_vehicle')):
         byname = d[spvm.on_street(d, 'TERREBONNE', 'TERREBONE')]
         if mode: byname = byname[byname[mode]]
         notes.append(T['cmp'].format(n=fmt(len(byname), lang), f=int(byname.fatal.sum()), s=int((byname.severity == 'severe').sum()), b=int(byname.bike.sum()), p=int(byname.ped.sum())))
-    y = top - (2.0 + 0.32 * len(handles)) / H
+    y = min(top - (0.75 + 0.235 * len(handles)) / H, top - 1.2 / H)  # below the legend, within the map's height
     for note in notes:
         fig.text(0.705, y, textwrap.fill(note, 44), color='#8f8e87' if note == T['spread'] else '#c3c2b7', fontsize=8.5, va='top', linespacing=1.4)
         y -= (0.19 * (len(textwrap.wrap(note, 44)) + 1.2)) / H

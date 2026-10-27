@@ -1,26 +1,54 @@
 island severity en total 218261 
 island severity fr total 218261 
+island bike_severity en total 8685 
+island bike_severity fr total 8685 
+island ped_severity en total 10722 
+island ped_severity fr total 10722 
+island vru_severity en total 19403 
+island vru_severity fr total 19403 
 island bike_vehicle en total 8685 {'car': 7591, 'other': 709, 'bus': 128, 'heavy': 257}
 island bike_vehicle fr total 8685 {'car': 7591, 'other': 709, 'bus': 128, 'heavy': 257}
 island ped_vehicle en total 10722 {'car': 9303, 'other': 798, 'bus': 295, 'heavy': 326}
 island ped_vehicle fr total 10722 {'car': 9303, 'other': 798, 'bus': 295, 'heavy': 326}
+island vru_vehicle en total 19403 {'car': 16891, 'other': 1506, 'bus': 423, 'heavy': 583}
+island vru_vehicle fr total 19403 {'car': 16891, 'other': 1506, 'bus': 423, 'heavy': 583}
 island bike_fatal en total 31 {'car': 15, 'other': 2, 'bus': 2, 'heavy': 12}
 island bike_fatal fr total 31 {'car': 15, 'other': 2, 'bus': 2, 'heavy': 12}
 island ped_fatal en total 156 {'car': 101, 'other': 10, 'bus': 11, 'heavy': 34}
 island ped_fatal fr total 156 {'car': 101, 'other': 10, 'bus': 11, 'heavy': 34}
+island vru_fatal en total 187 {'car': 116, 'other': 12, 'bus': 13, 'heavy': 46}
+island vru_fatal fr total 187 {'car': 116, 'other': 12, 'bus': 13, 'heavy': 46}
 ndg severity en total 22062 
 ndg severity fr total 22062 
+ndg bike_severity en total 694 
+ndg bike_severity fr total 694 
+ndg ped_severity en total 1091 
+ndg ped_severity fr total 1091 
+ndg vru_severity en total 1785 
+ndg vru_severity fr total 1785 
 ndg bike_vehicle en total 694 {'car': 635, 'other': 31, 'bus': 11, 'heavy': 17}
 ndg bike_vehicle fr total 694 {'car': 635, 'other': 31, 'bus': 11, 'heavy': 17}
 ndg ped_vehicle en total 1091 {'car': 961, 'other': 74, 'bus': 30, 'heavy': 26}
 ndg ped_vehicle fr total 1091 {'car': 961, 'other': 74, 'bus': 30, 'heavy': 26}
+ndg vru_vehicle en total 1785 {'car': 1596, 'other': 105, 'bus': 41, 'heavy': 43}
+ndg vru_vehicle fr total 1785 {'car': 1596, 'other': 105, 'bus': 41, 'heavy': 43}
 corridor severity en total 142 
 corridor severity fr total 142 
+corridor bike_severity en total 13 
+corridor bike_severity fr total 13 
+corridor ped_severity en total 5 
+corridor ped_severity fr total 5 
+corridor vru_severity en total 18 
+corridor vru_severity fr total 18 
 corridor bike_vehicle en total 13 {'car': 12, 'heavy': 1}
 corridor bike_vehicle fr total 13 {'car': 12, 'heavy': 1}
 corridor ped_vehicle en total 5 {'car': 4, 'heavy': 1}
 corridor ped_vehicle fr total 5 {'car': 4, 'heavy': 1}
+corridor vru_vehicle en total 18 {'car': 16, 'heavy': 2}
+corridor vru_vehicle fr total 18 {'car': 16, 'heavy': 2}
 corridor bike en total 15 
 corridor bike fr total 15 
 corridor ped en total 11 
 corridor ped fr total 11 
+corridor vru en total 26 
+corridor vru fr total 26 
