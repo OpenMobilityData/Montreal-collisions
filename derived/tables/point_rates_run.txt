@@ -1,0 +1,27 @@
+                               Nom_Intersection       Date  hours  full_day  bikes  peds  autos
+                          Girouard / Terrebonne 2018-11-27     24      True      5  1444   8336
+                          Girouard / Terrebonne 2018-11-28     24      True      1  1485   8981
+                          Girouard / Terrebonne 2018-11-29     24      True      1  1595   9915
+                          Girouard / Terrebonne 2019-05-28     24      True    101  1449  10778
+                          Girouard / Terrebonne 2019-05-29     24      True    163  1742  10660
+                          Girouard / Terrebonne 2019-05-30     24      True    128  1704  11384
+                          Girouard / Terrebonne 2023-09-06     24      True   1023  1970  11776
+                          Girouard / Terrebonne 2023-09-07     24      True    868  2067  12267
+                          Girouard / Terrebonne 2023-09-08     24      True    658  1993  11625
+                          Girouard / Terrebonne 2023-09-09     24      True    872  2004  10040
+                          Girouard / Terrebonne 2023-09-10     24      True    431  1462   8090
+                          Girouard / Terrebonne 2023-09-11     24      True   1128  2122  10621
+                          Girouard / Terrebonne 2023-09-12     24      True   1003  2200  11360
+                            Draper / Terrebonne 2018-02-01     24      True      8   887   3401
+                   Grand Boulevard / Terrebonne 2019-02-20     10     False      1   761   4634
+             avenue Madison / rue de Terrebonne 2021-10-19     13     False    241   931   3088
+                         Cavendish / Terrebonne 2023-01-25      8     False     15   588   6369
+chemin de la Côte-Saint-Luc / rue de Terrebonne 2015-04-16     24      True     87   660  12160
+
+                                   intersection  count_days mode  mean_daily_crossings  min_daily  max_daily  collisions_within_100m_2012_2021  injury_collisions  million_crossings_2012_2021  rate_per_million  ci_low  ci_high  mean_daily_autos
+                          Girouard / Terrebonne          13 bike                 490.9          1       1128                                 3                  2                        1.793              1.67    0.34     4.89           10449.0
+                          Girouard / Terrebonne          13  ped                1787.5       1444       2200                                 4                  4                        6.530              0.61    0.17     1.57           10449.0
+                            Draper / Terrebonne           1 bike                   8.0          8          8                                 1                  1                        0.029             34.22    0.87   190.65            3401.0
+                            Draper / Terrebonne           1  ped                 887.0        887        887                                 1                  1                        3.240              0.31    0.01     1.72            3401.0
+chemin de la Côte-Saint-Luc / rue de Terrebonne           1 bike                  87.0         87         87                                 3                  3                        0.318              9.44    1.95    27.59           12160.0
+chemin de la Côte-Saint-Luc / rue de Terrebonne           1  ped                 660.0        660        660                                 2                  2                        2.411              0.83    0.10     3.00           12160.0

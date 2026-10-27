@@ -1,0 +1,7 @@
+intersection,count_days,count_dates,mode,mean_daily_crossings,collisions_within_100m_2012_2021,injury_collisions,min_daily,max_daily,million_crossings_2012_2021,rate_per_million,ci_low,ci_high,rate_if_exposure_at_max_daily,rate_if_exposure_at_min_daily,all_collisions_within_100m,mean_daily_autos
+Girouard / Terrebonne,13,2018-11-27 2018-11-28 2018-11-29 2019-05-28 2019-05-29 2019-05-30 2023-09-06 2023-09-07 2023-09-08 2023-09-09 2023-09-10 2023-09-11 2023-09-12,bike,490.9,3,2,1,1128,1.793,1.67,0.34,4.89,0.73,821.24,44,10449.0
+Girouard / Terrebonne,13,2018-11-27 2018-11-28 2018-11-29 2019-05-28 2019-05-29 2019-05-30 2023-09-06 2023-09-07 2023-09-08 2023-09-09 2023-09-10 2023-09-11 2023-09-12,ped,1787.5,4,4,1444,2200,6.53,0.61,0.17,1.57,0.5,0.76,44,10449.0
+Draper / Terrebonne,1,2018-02-01,bike,8.0,1,1,8,8,0.029,34.22,0.87,190.65,34.22,34.22,15,3401.0
+Draper / Terrebonne,1,2018-02-01,ped,887.0,1,1,887,887,3.24,0.31,0.01,1.72,0.31,0.31,15,3401.0
+chemin de la Côte-Saint-Luc / rue de Terrebonne,1,2015-04-16,bike,87.0,3,3,87,87,0.318,9.44,1.95,27.59,9.44,9.44,37,12160.0
+chemin de la Côte-Saint-Luc / rue de Terrebonne,1,2015-04-16,ped,660.0,2,2,660,660,2.411,0.83,0.1,3.0,0.83,0.83,37,12160.0

@@ -1,0 +1,19 @@
+Id_Intersection,Nom_Intersection,Date,bikes,peds,autos,lon,lat,hours,full_day
+118,Girouard / Terrebonne,2018-11-27,5,1444,8336,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2018-11-28,1,1485,8981,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2018-11-29,1,1595,9915,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2019-05-28,101,1449,10778,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2019-05-29,163,1742,10660,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2019-05-30,128,1704,11384,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-06,1023,1970,11776,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-07,868,2067,12267,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-08,658,1993,11625,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-09,872,2004,10040,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-10,431,1462,8090,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-11,1128,2122,10621,-73.624871,45.478338,24,True
+118,Girouard / Terrebonne,2023-09-12,1003,2200,11360,-73.624871,45.478338,24,True
+20,Draper / Terrebonne,2018-02-01,8,887,3401,-73.628718,45.474057,24,True
+24,Grand Boulevard / Terrebonne,2019-02-20,1,761,4634,-73.63175,45.470536,10,False
+3691,avenue Madison / rue de Terrebonne,2021-10-19,241,931,3088,-73.632883,45.469246,13,False
+8,Cavendish / Terrebonne,2023-01-25,15,588,6369,-73.635243,45.46674,8,False
+8173,chemin de la Côte-Saint-Luc / rue de Terrebonne,2015-04-16,87,660,12160,-73.624554,45.479286,24,True
