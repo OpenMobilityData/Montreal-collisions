@@ -1,4 +1,5 @@
                                Nom_Intersection       Date  hours  full_day  bikes  peds  autos
+                          Girouard / Terrebonne 2009-08-25      9     False    157   587   4910
                           Girouard / Terrebonne 2018-11-27     24      True      5  1444   8336
                           Girouard / Terrebonne 2018-11-28     24      True      1  1485   8981
                           Girouard / Terrebonne 2018-11-29     24      True      1  1595   9915
@@ -14,7 +15,9 @@
                           Girouard / Terrebonne 2023-09-12     24      True   1003  2200  11360
                             Draper / Terrebonne 2018-02-01     24      True      8   887   3401
                    Grand Boulevard / Terrebonne 2019-02-20     10     False      1   761   4634
+             avenue Madison / rue de Terrebonne 2021-06-16     13     False    427  1329   3244
              avenue Madison / rue de Terrebonne 2021-10-19     13     False    241   931   3088
+                         Cavendish / Terrebonne 2009-09-02      9     False    174   608   8885
                          Cavendish / Terrebonne 2023-01-25      8     False     15   588   6369
 chemin de la Côte-Saint-Luc / rue de Terrebonne 2015-04-16     24      True     87   660  12160
 
