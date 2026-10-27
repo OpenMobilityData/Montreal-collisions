@@ -4,7 +4,7 @@ daily count observed). Log axis. EN/FR."""
 from pathlib import Path
 import pandas as pd, numpy as np, matplotlib
 matplotlib.use('Agg'); import matplotlib.pyplot as plt
-HERE = Path(__file__).resolve().parent
+HERE = Path(__file__).resolve().parent; TABLES = HERE.parent.parent / 'tables'
 SURF = '#fcfcfb'; INK = '#0b0b0b'; INK2 = '#52514e'; GRID = '#e6e5e1'; C = {'bike': '#1baf7a', 'ped': '#2a78d6'}
 NAME = {'Girouard / Terrebonne': 'Girouard', 'Draper / Terrebonne': 'Draper', 'chemin de la Côte-Saint-Luc / rue de Terrebonne': 'Côte-Saint-Luc'}
 T = {'en': dict(title='Collisions per million crossings at Terrebonne’s counted intersections, 2012–2021', sub='Police-reported collisions within 100 m of the intersection, 2012–2021, against the City’s one-day counts scaled to the ten years',
@@ -19,7 +19,7 @@ T = {'en': dict(title='Collisions per million crossings at Terrebonne’s counte
                 lab='{k} coll. / {m:,.0f} passages par jour ({n} journée{s})',
                 note='L’exposition est le maillon faible : un comptage d’une journée n’est pas dix ans d’usage, et à Girouard le nombre de bicyclettes par jour est passé de 1 (novembre 2018) à 1 128 (septembre 2023). Draper et Côte-Saint-Luc reposent sur une seule journée. La figure est le premier chiffre tenant compte de l’exposition pour la rue, non une mesure du risque.',
                 src='Source : données ouvertes de la Ville de Montréal (« Collisions routières », « Comptages aux intersections », CC BY 4.0) ; scripts/point_rates.py.')}
-R = pd.read_csv(HERE / 'terrebonne_point_rates_2012-2021.csv')
+R = pd.read_csv(TABLES / 'terrebonne_point_rates_2012-2021.csv')
 order = ['Girouard / Terrebonne', 'chemin de la Côte-Saint-Luc / rue de Terrebonne', 'Draper / Terrebonne']
 for lang in ('en', 'fr'):
     t = T[lang]; fig, ax = plt.subplots(figsize=(11, 5.2), dpi=150, facecolor=SURF); ax.set_facecolor(SURF)

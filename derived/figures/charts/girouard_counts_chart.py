@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd, numpy as np, matplotlib
 matplotlib.use('Agg'); import matplotlib.pyplot as plt
-HERE = Path(__file__).resolve().parent
+HERE = Path(__file__).resolve().parent; TABLES = HERE.parent.parent / 'tables'
 SURF = '#fcfcfb'; INK = '#0b0b0b'; INK2 = '#52514e'; GRID = '#e6e5e1'; C = {'bikes': '#1baf7a', 'peds': '#2a78d6', 'autos': '#eb6834'}
 T = {'en': dict(title='Terrebonne / Girouard: the City’s count-days, 2018–2023', sub='Crossings per day at the intersection, all approaches and movements; 24-hour counts (Comptages aux intersections, Ville de Montréal, CC BY 4.0)',
                 bikes='bicycles', peds='pedestrians', autos='motor vehicles', y='per day', note='Police-reported collisions within 100 m, 2012–2021: 44 in all, 3 involving a bicycle, 4 with a pedestrian victim (1 fatal, 2019). The protected lane was built in 2024, after every count shown.',
@@ -10,7 +10,7 @@ T = {'en': dict(title='Terrebonne / Girouard: the City’s count-days, 2018–20
      'fr': dict(title='Terrebonne / Girouard : les journées de comptage de la Ville, 2018–2023', sub='Passages par jour à l’intersection, toutes approches et tous mouvements ; comptages de 24 heures (Comptages aux intersections, Ville de Montréal, CC BY 4.0)',
                 bikes='bicyclettes', peds='piétons', autos='véhicules motorisés', y='par jour', note='Collisions déclarées à la police à 100 m ou moins, 2012–2021 : 44 en tout, 3 impliquant une bicyclette, 4 avec victime piétonne (1 mortelle, 2019). La piste protégée a été aménagée en 2024, après tous les comptages montrés.',
                 src='Source : données ouvertes de la Ville de Montréal « Comptages des véhicules, cyclistes et piétons aux intersections » ; scripts/point_rates.py.')}
-d = pd.read_csv(HERE / 'terrebonne_intersection_counts_by_day.csv'); d = d[(d.Nom_Intersection == 'Girouard / Terrebonne') & d.full_day].sort_values('Date')
+d = pd.read_csv(TABLES / 'terrebonne_intersection_counts_by_day.csv'); d = d[(d.Nom_Intersection == 'Girouard / Terrebonne') & d.full_day].sort_values('Date')
 labels = [pd.Timestamp(x).strftime('%Y-%m-%d %a') for x in d.Date]
 for lang in ('en', 'fr'):
     t = T[lang]; fig, axes = plt.subplots(1, 3, figsize=(12, 4.4), dpi=150, facecolor=SURF)
