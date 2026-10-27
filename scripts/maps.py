@@ -187,7 +187,7 @@ def draw(d, extent, view, lang):
     W = 11.0; axw = 0.66 * W; axh = axw * aspect; H = axh + 1.9 + keyh
     fig = plt.figure(figsize=(W, H), dpi=150, facecolor='#1a1a19')
     ax = fig.add_axes([0.03, (1.05 + keyh) / H, 0.66, axh / H]); ax.set_facecolor('#1a1a19')
-    ax.imshow(img, extent=ext, interpolation='bilinear', zorder=0)
+    ax.imshow(np.clip(img * 1.45, 0, 1) if view.endswith('heat') else img, extent=ext, interpolation='bilinear', zorder=0)
     ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_xticks([]); ax.set_yticks([])
     for sp in ax.spines.values(): sp.set_edgecolor('#52514e')
     top = (1.05 + keyh + axh) / H
@@ -197,9 +197,12 @@ def draw(d, extent, view, lang):
     rank = s.severity.map({'damage': 0, 'light': 1, 'severe': 2, 'fatal': 3}).fillna(0).values
     SX, SY = spread(X, Y, step, rank)
     scale_pts = 2.2 if extent in ('corridor', 'h4c') else 1.0
-    if extent == 'corridor':
+    if extent in ('corridor', 'ndg'):
         ax_, ay_ = basemap.merc(np.array([-73.64080, -73.62487]), np.array([45.45974, 45.47833]))
-        ax.plot(ax_, ay_, color='#c3c2b7', lw=1.0, ls=(0, (4, 3)), zorder=1, alpha=0.8)
+        ax.plot(ax_, ay_, color='#f0efec', lw=1.2 if extent == 'ndg' else 1.0, ls=(0, (4, 3)), zorder=6 if extent == 'ndg' else 1, alpha=0.9)
+        if extent == 'ndg':
+            ax.annotate('rue de Terrebonne', (ax_[1], ay_[1]), xytext=(6, 2), textcoords='offset points', color='#f0efec', fontsize=8.5, zorder=7,
+                        bbox=dict(boxstyle='round,pad=0.2', fc='#1a1a19', ec='none', alpha=0.75))
     handles = []; counts = {}; notes = []
     if view.endswith('heat'):
         sigma_m = 250 if extent == 'island' else 100; res_m = 50 if extent == 'island' else 20
@@ -207,7 +210,7 @@ def draw(d, extent, view, lang):
         nx = int((x1 - x0) / (res_m * k_m)) + 1; ny = int((y1 - y0) / (res_m * k_m)) + 1
         Hc, xe, ye = np.histogram2d(X, Y, bins=[nx, ny], range=[[x0, x1], [y0, y1]])
         dens = gaussian_filter(Hc.T, sigma=sigma_m / res_m) / (res_m / 1000) ** 2  # collisions per km²
-        cmap = LinearSegmentedColormap.from_list('heat', [(0, (0.1, 0.1, 0.1, 0.0)), (0.15, (0.22, 0.53, 0.90, 0.55)), (0.6, (0.22, 0.53, 0.90, 0.95)), (1.0, (0.94, 0.94, 0.93, 1.0))])
+        cmap = LinearSegmentedColormap.from_list('heat', [(0, (0.22, 0.53, 0.90, 0.0)), (0.12, (0.22, 0.53, 0.90, 0.25)), (0.45, (0.22, 0.53, 0.90, 0.6)), (0.8, (0.55, 0.75, 0.97, 0.9)), (1.0, (0.97, 0.97, 0.95, 1.0))])
         vmax = float(np.percentile(dens[dens > 0], 99.5)) if (dens > 0).any() else 1.0
         im = ax.imshow(dens, extent=[x0, x1, y0, y1], origin='lower', cmap=cmap, vmin=0, vmax=vmax, interpolation='bilinear', zorder=2)
         cax = fig.add_axes([0.72, top - 0.95 / H, 0.22, 0.14 / H])
