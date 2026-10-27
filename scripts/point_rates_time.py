@@ -131,3 +131,68 @@ if __name__ == '__main__':
         E.to_csv(OUT / 'count_day_annualized_exposure.csv', index=False); V.to_csv(OUT / 'count_visit_annualized_exposure.csv', index=False)
         print('\nPer count-day:'); print(E.drop(columns=['visit']).to_string(index=False))
         print('\nPer visit:'); print(V.to_string(index=False))
+
+
+# ---------------------------------------------------------------- stage 3: windows and rates (rule approved Oct 27, 2026)
+WINTER = {12, 1, 2, 3}  # visits in these months are shown but left out of the primary exposure
+
+
+def ci(k, expo):
+    from scipy import stats
+    lo = stats.chi2.ppf(0.025, 2 * k) / 2 if k > 0 else 0.0; hi = stats.chi2.ppf(0.975, 2 * (k + 1)) / 2
+    return lo / expo, hi / expo
+
+
+def rate_table(E, d):
+    import spvm
+    coll = spvm.load(); coll = coll[coll.LOC_X.notna()]
+    pts = d[d.full_day].groupby(['street', 'Nom_Intersection']).agg(lat=('lat', 'first'), lon=('lon', 'first')).reset_index()
+    E = E.copy(); E['month'] = pd.to_datetime(E.date).dt.month; E['winter'] = E.month.isin(WINTER)
+    rows = []
+    for _, p in pts.iterrows():
+        x, y = spvm.mtm8(float(p.lat), float(p.lon)); near = coll[spvm.dist_m(coll, x, y) <= 100]
+        for mode in ('bike', 'ped'):
+            e = E[(E.intersection == p.Nom_Intersection) & (E['mode'] == mode)]
+            if e.empty:
+                continue
+            e = e[e.year <= 2021]  # a visit after the collision file's last year (2021) cannot enter a window; the 2023 Girouard week is reported apart
+            if e.empty:
+                continue
+            prim = e[~e.winter] if (~e.winter).any() else e  # primary exposure: non-winter visits; winter-only intersections keep theirs, flagged
+            winter_only = not (~e.winter).any()
+            years = sorted(prim.year.unique()); y0, y1 = max(2012, min(years) - 1), min(2021, max(years) + 1)
+            n_years = y1 - y0 + 1
+            daily = prim.implied_mean_daily.mean()  # day-weighted mean over the visits' count-days
+            expo = daily * 365.25 * n_years / 1e6
+            win = near[(near.year >= y0) & (near.year <= y1)]
+            k = int(win[mode].sum()); lo, hi = ci(k, expo)
+            visits = e.groupby(e.date.astype(str).str[:7]).agg(days=('count', 'size'), daily=('implied_mean_daily', 'mean'))
+            ex_hi = visits.daily.max() * 365.25 * n_years / 1e6; ex_lo = visits.daily.min() * 365.25 * n_years / 1e6
+            band_lo = k / ex_hi; band_hi = k / ex_lo; ci_hi_at_hi = ci(k, ex_hi)[1]; ci_hi_at_lo = ci(k, ex_lo)[1]
+            rows.append(dict(street=p.street, intersection=p.Nom_Intersection, mode=mode, count_years=' '.join(map(str, years)), window=f'{y0}-{y1}', window_years=n_years,
+                             visits=len(visits), count_days=int(prim['count'].size), winter_visits_excluded=int(e.winter.sum() > 0 and not winter_only), winter_only=int(winter_only),
+                             implied_mean_daily=round(daily, 1), implied_annual_crossings=int(round(daily * 365.25)), million_crossings_window=round(expo, 3),
+                             collisions_in_window=k, injury_collisions_in_window=int((win[mode] & win.severity.isin(['fatal', 'severe', 'light'])).sum()),
+                             rate_per_million=round(k / expo, 2), ci_low=round(lo, 2), ci_high=round(hi, 2),
+                             rate_at_highest_visit=round(band_lo, 2), rate_at_lowest_visit=round(band_hi, 2), ci_high_at_highest_visit=round(ci_hi_at_hi, 2), ci_high_at_lowest_visit=round(ci_hi_at_lo, 2),
+                             visit_daily=' '.join(f'{i}:{v:.1f}' for i, v in visits.daily.items()),
+                             collisions_2012_2021=int(near[mode].sum())))
+    return pd.DataFrame(rows)
+
+
+def girouard_by_year(d):
+    import spvm
+    coll = spvm.load(); coll = coll[coll.LOC_X.notna()]
+    x, y = spvm.mtm8(45.478338, -73.624871); near = coll[spvm.dist_m(coll, x, y) <= 100]
+    by = near.groupby('year').agg(all=('bike', 'size'), bike=('bike', 'sum'), ped=('ped', 'sum')).reindex(range(2012, 2022), fill_value=0)
+    return by
+
+
+if __name__ == '__main__' and a.stage >= 3:
+    R = rate_table(E, d); R.to_csv(OUT / 'terrebonne_point_rates_time_aware.csv', index=False)
+    by = girouard_by_year(d); by.to_csv(OUT / 'girouard_terrebonne_collisions_100m_by_year.csv', index_label='year')
+    print('\nCollisions within 100 m of Girouard / Terrebonne by year:'); print(by.T.to_string())
+    print('\nTime-aware rates (window = count years ± 1, clipped to 2012–2021; primary exposure from non-winter visits):')
+    print(R[['street', 'intersection', 'mode', 'count_years', 'window', 'visits', 'count_days', 'winter_visits_excluded', 'winter_only', 'implied_mean_daily', 'implied_annual_crossings', 'million_crossings_window', 'collisions_in_window', 'injury_collisions_in_window', 'rate_per_million', 'ci_low', 'ci_high', 'rate_at_highest_visit', 'rate_at_lowest_visit', 'ci_high_at_highest_visit', 'ci_high_at_lowest_visit', 'collisions_2012_2021']].to_string(index=False))
+    t23 = E[(E.intersection == 'Girouard / Terrebonne') & (E.year == 2023)].groupby('mode').implied_annual_crossings.mean()
+    print('\nGirouard / Terrebonne 2023 exposure (no collision data for 2022 onwards in the SPVM file; issue #42): ' + ', '.join(f'{m} {int(v):,}/yr' for m, v in t23.items()))
