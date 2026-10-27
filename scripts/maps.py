@@ -14,6 +14,8 @@ Views (the default run draws every valid combination):
                   of the lane axis or with Terrebonne in a street field), each labelled with its date, by severity
   vru_vehicle, vru_fatal, vru   the same three for the two together (a bicycle involved or a pedestrian victim)
   bike_severity, ped_severity, vru_severity   the severity view restricted to that mode, at every extent
+  heat, bike_heat, ped_heat, vru_heat   island and NDG box: smoothed density of collisions per km² (Gaussian kernel,
+                  σ = 250 m on the island, 100 m in the box), single-hue ramp with a colour bar; for the dense extents
 Extents: island (every collision with coordinates), ndg (the NDG box), corridor (25 m from the lane axis, Belmore to
 Girouard; the street-name selection printed beside as the comparison), h4c (the 2024 H4C box; on request only).
 Collisions recorded at one point are spread on a Fermat spiral (spacing in pixels, the most severe outermost) and a
@@ -24,6 +26,8 @@ from __future__ import annotations
 import argparse, math, textwrap
 from pathlib import Path
 import numpy as np, pandas as pd
+from scipy.ndimage import gaussian_filter
+from matplotlib.colors import LinearSegmentedColormap
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -45,7 +49,7 @@ MODE_LABEL = {'en': {'ped': 'pedestrian', 'bike': 'bicycle', 'moto': 'motorcycle
 VEH = {'car': '#3987e5', 'heavy': '#d95926', 'bus': '#199e70', 'other': '#f0efec'}
 VEH_LABEL = {'en': {'car': 'car or light truck', 'heavy': 'heavy truck or tractor-trailer', 'bus': 'bus or minibus', 'other': 'other or none recorded'},
              'fr': {'car': 'automobile ou camion léger', 'heavy': 'camion lourd ou tracteur routier', 'bus': 'autobus ou minibus', 'other': 'autre ou non précisé'}}
-TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_msev={'bike': 'Collisions involving a bicycle, by severity', 'ped': 'Collisions with a pedestrian victim, by severity', 'vru': 'Collisions involving a bicycle or a pedestrian victim, by severity'},
+TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_heat={'all': 'Density of police-reported collisions', 'bike': 'Density of collisions involving a bicycle', 'ped': 'Density of collisions with a pedestrian victim', 'vru': 'Density of collisions involving a bicycle or a pedestrian victim'}, heat_bar='collisions per km², 2012–2021, smoothed (Gaussian kernel, σ = {} m)', heat_note='Each collision is spread over a Gaussian kernel of standard deviation {} m and the result is expressed as collisions per km²; the colour bar is linear. Collisions recorded at one point (an intersection) add up at that point.', title_msev={'bike': 'Collisions involving a bicycle, by severity', 'ped': 'Collisions with a pedestrian victim, by severity', 'vru': 'Collisions involving a bicycle or a pedestrian victim, by severity'},
                    title_veh={'bike': 'Collisions involving a bicycle, by the other vehicle', 'ped': 'Collisions with a pedestrian victim, by the vehicle', 'vru': 'Collisions involving a bicycle or a pedestrian victim, by the other vehicle'},
                    title_fatal={'bike': 'Collisions in which a cyclist was killed', 'ped': 'Collisions in which a pedestrian was killed', 'vru': 'Collisions in which a cyclist or a pedestrian was killed'},
                    title_corr={'bike': 'Collisions involving a bicycle on rue de Terrebonne', 'ped': 'Collisions with a pedestrian victim on rue de Terrebonne', 'vru': 'Collisions involving a bicycle or a pedestrian victim on rue de Terrebonne'},
@@ -56,7 +60,7 @@ TEXT = {'en': dict(title_sev='Police-reported collisions by severity', title_mse
                    mode='road users involved (shape)', severity='severity (colour, size)', severity_only='severity (colour)',
                    spread='Collisions recorded at the same point (the police locate a collision at the intersection) are spread in a small spiral around it so that every marker is visible; the position of a marker within a cluster carries no meaning.',
                    cmp='Comparison, by street name (RUE_ACCDN or ACCDN_PRES_DE contains TERREBONNE): {n} collisions, {f} fatal, {s} severe injury, {b} with a bicycle, {p} with a pedestrian victim. Dashed line: the lane axis, Belmore to Girouard.'),
-        'fr': dict(title_sev='Collisions déclarées à la police, par gravité', title_msev={'bike': 'Collisions impliquant une bicyclette, par gravité', 'ped': 'Collisions avec victime piétonne, par gravité', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne, par gravité'},
+        'fr': dict(title_sev='Collisions déclarées à la police, par gravité', title_heat={'all': 'Densité des collisions déclarées à la police', 'bike': 'Densité des collisions impliquant une bicyclette', 'ped': 'Densité des collisions avec victime piétonne', 'vru': 'Densité des collisions impliquant une bicyclette ou une victime piétonne'}, heat_bar='collisions par km², 2012–2021, lissées (noyau gaussien, σ = {} m)', heat_note='Chaque collision est étalée sur un noyau gaussien d’écart-type {} m et le résultat est exprimé en collisions par km² ; l’échelle de couleur est linéaire. Les collisions enregistrées au même point (une intersection) s’additionnent en ce point.', title_msev={'bike': 'Collisions impliquant une bicyclette, par gravité', 'ped': 'Collisions avec victime piétonne, par gravité', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne, par gravité'},
                    title_veh={'bike': 'Collisions impliquant une bicyclette, selon l’autre véhicule', 'ped': 'Collisions avec victime piétonne, selon le véhicule', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne, selon l’autre véhicule'},
                    title_fatal={'bike': 'Collisions où un ou une cycliste a été tué(e)', 'ped': 'Collisions où un piéton ou une piétonne a été tué(e)', 'vru': 'Collisions où un ou une cycliste ou un piéton ou une piétonne a été tué(e)'},
                    title_corr={'bike': 'Collisions impliquant une bicyclette sur la rue de Terrebonne', 'ped': 'Collisions avec victime piétonne sur la rue de Terrebonne', 'vru': 'Collisions impliquant une bicyclette ou une victime piétonne sur la rue de Terrebonne'},
@@ -72,7 +76,7 @@ NAME = {'island': {'en': 'Montréal agglomeration (SPVM territory)', 'fr': 'Aggl
         'corridor': {'en': 'Rue de Terrebonne corridor', 'fr': 'Corridor de la rue de Terrebonne'}}
 ZOOM = {'island': 12, 'ndg': 15, 'h4c': 16, 'corridor': 16}
 AXIS = (spvm.mtm8(45.45974, -73.64080), spvm.mtm8(45.47833, -73.62487))  # Belmore → Girouard, MTM 8
-VIEWS = ['severity', 'bike_severity', 'ped_severity', 'vru_severity', 'bike_vehicle', 'ped_vehicle', 'vru_vehicle', 'bike_fatal', 'ped_fatal', 'vru_fatal', 'bike', 'ped', 'vru']
+VIEWS = ['severity', 'bike_severity', 'ped_severity', 'vru_severity', 'heat', 'bike_heat', 'ped_heat', 'vru_heat', 'bike_vehicle', 'ped_vehicle', 'vru_vehicle', 'bike_fatal', 'ped_fatal', 'vru_fatal', 'bike', 'ped', 'vru']
 MARK = {'bike': 's', 'ped': 'v', 'vru': 'o'}
 DEATHS = {'bike': ['NB_DECES_VELO'], 'ped': ['NB_DECES_PIETON'], 'vru': ['NB_DECES_VELO', 'NB_DECES_PIETON']}
 
@@ -85,6 +89,8 @@ def fmt(n, lang):
 def valid(extent, view):
     if view.endswith('_fatal'):
         return extent == 'island'
+    if view.endswith('heat'):
+        return extent in ('island', 'ndg')
     if view in ('bike', 'ped', 'vru'):
         return extent == 'corridor'
     return True
@@ -148,8 +154,8 @@ def select(d, extent, view):
         s, box = d[near], ((45.4574, 45.4800), (-73.6440, -73.6216))
         if view in ('bike', 'ped', 'vru'):
             s = d[(near | spvm.on_street(d, 'TERREBONNE', 'TERREBONE'))]
-    mode = view.split('_')[0] if view != 'severity' else None
-    if view.endswith('_vehicle') or view.endswith('_severity') or view in ('bike', 'ped', 'vru'):
+    mode = view.split('_')[0] if view not in ('severity', 'heat') else None
+    if view.endswith('_vehicle') or view.endswith('_severity') or view.endswith('_heat') or view in ('bike', 'ped', 'vru'):
         s = s[s[mode]]
     if view.endswith('_fatal'):
         s = s[sum(s[c].fillna(0) for c in DEATHS[mode]) > 0]
@@ -195,7 +201,22 @@ def draw(d, extent, view, lang):
         ax_, ay_ = basemap.merc(np.array([-73.64080, -73.62487]), np.array([45.45974, 45.47833]))
         ax.plot(ax_, ay_, color='#c3c2b7', lw=1.0, ls=(0, (4, 3)), zorder=1, alpha=0.8)
     handles = []; counts = {}; notes = []
-    if view == 'severity' or view.endswith('_severity'):
+    if view.endswith('heat'):
+        sigma_m = 250 if extent == 'island' else 100; res_m = 50 if extent == 'island' else 20
+        k_m = 1 / math.cos(math.radians((lat0 + lat1) / 2))  # Web Mercator metres per ground metre
+        nx = int((x1 - x0) / (res_m * k_m)) + 1; ny = int((y1 - y0) / (res_m * k_m)) + 1
+        Hc, xe, ye = np.histogram2d(X, Y, bins=[nx, ny], range=[[x0, x1], [y0, y1]])
+        dens = gaussian_filter(Hc.T, sigma=sigma_m / res_m) / (res_m / 1000) ** 2  # collisions per km²
+        cmap = LinearSegmentedColormap.from_list('heat', [(0, (0.1, 0.1, 0.1, 0.0)), (0.15, (0.22, 0.53, 0.90, 0.55)), (0.6, (0.22, 0.53, 0.90, 0.95)), (1.0, (0.94, 0.94, 0.93, 1.0))])
+        vmax = float(np.percentile(dens[dens > 0], 99.5)) if (dens > 0).any() else 1.0
+        im = ax.imshow(dens, extent=[x0, x1, y0, y1], origin='lower', cmap=cmap, vmin=0, vmax=vmax, interpolation='bilinear', zorder=2)
+        cax = fig.add_axes([0.72, top - 0.95 / H, 0.22, 0.14 / H])
+        cb = fig.colorbar(im, cax=cax, orientation='horizontal'); cb.outline.set_edgecolor('#52514e'); cb.ax.tick_params(colors='#c3c2b7', labelsize=8, length=2)
+        cb.ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, p: fmt(int(round(v)), lang)))
+        fig.text(0.72, top - 0.72 / H, textwrap.fill(T['heat_bar'].format(sigma_m), 44), color='#f0efec', fontsize=9, va='bottom', linespacing=1.3)
+        notes.append(T['heat_note'].format(sigma_m))
+        title = T['title_heat'][mode or 'all']
+    elif view == 'severity' or view.endswith('_severity'):
         for sev in ['damage', 'light', 'severe', 'fatal']:
             st = SEV[sev]
             for m_, marker in MODE.items():
@@ -254,15 +275,15 @@ def draw(d, extent, view, lang):
         notes.append(T['corr_sel'])
         title = T['title_corr'][mode]
     total = len(s)
-    fig.legend(handles=handles, loc='upper left', bbox_to_anchor=(0.705, top - 0.3 / H), frameon=False, labelcolor='#f0efec', fontsize=10, handletextpad=0.6, borderaxespad=0)
+    if handles: fig.legend(handles=handles, loc='upper left', bbox_to_anchor=(0.705, top - 0.3 / H), frameon=False, labelcolor='#f0efec', fontsize=10, handletextpad=0.6, borderaxespad=0)
     fig.text(0.705, top - 0.15 / H, f"{T['total']}: {fmt(total, lang)}", color='#f0efec', fontsize=12, fontweight='bold', va='bottom')
-    if extent != 'island' and view not in ('bike', 'ped', 'vru'):
+    if extent != 'island' and view not in ('bike', 'ped', 'vru') and not view.endswith('heat'):
         notes.append(T['spread'])
     if extent == 'corridor' and (view == 'severity' or view.endswith('_severity') or view.endswith('_vehicle')):
         byname = d[spvm.on_street(d, 'TERREBONNE', 'TERREBONE')]
         if mode: byname = byname[byname[mode]]
         notes.append(T['cmp'].format(n=fmt(len(byname), lang), f=int(byname.fatal.sum()), s=int((byname.severity == 'severe').sum()), b=int(byname.bike.sum()), p=int(byname.ped.sum())))
-    y = min(top - (0.75 + 0.235 * len(handles)) / H, top - 1.2 / H)  # below the legend, within the map's height
+    y = min(top - (0.75 + 0.235 * len(handles)) / H, top - 1.2 / H) if handles else top - 1.25 / H  # below the legend, within the map's height
     for note in notes:
         fig.text(0.705, y, textwrap.fill(note, 44), color='#8f8e87' if note == T['spread'] else '#c3c2b7', fontsize=8.5, va='top', linespacing=1.4)
         y -= (0.19 * (len(textwrap.wrap(note, 44)) + 1.2)) / H
