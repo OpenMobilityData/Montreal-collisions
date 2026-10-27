@@ -1,22 +1,83 @@
-Id_Intersection,Nom_Intersection,Date,bikes,peds,autos,lon,lat,hours,full_day
-118,Girouard / Terrebonne,2009-08-25,157,587,4910,-73.624871,45.478338,9,False
-118,Girouard / Terrebonne,2018-11-27,5,1444,8336,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2018-11-28,1,1485,8981,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2018-11-29,1,1595,9915,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2019-05-28,101,1449,10778,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2019-05-29,163,1742,10660,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2019-05-30,128,1704,11384,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-06,1023,1970,11776,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-07,868,2067,12267,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-08,658,1993,11625,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-09,872,2004,10040,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-10,431,1462,8090,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-11,1128,2122,10621,-73.624871,45.478338,24,True
-118,Girouard / Terrebonne,2023-09-12,1003,2200,11360,-73.624871,45.478338,24,True
-20,Draper / Terrebonne,2018-02-01,8,887,3401,-73.628718,45.474057,24,True
-24,Grand Boulevard / Terrebonne,2019-02-20,1,761,4634,-73.63175,45.470536,10,False
-3691,avenue Madison / rue de Terrebonne,2021-06-16,427,1329,3244,-73.63288408,45.46925516,13,False
-3691,avenue Madison / rue de Terrebonne,2021-10-19,241,931,3088,-73.63288408,45.46925516,13,False
-8,Cavendish / Terrebonne,2009-09-02,174,608,8885,-73.635243,45.46674,9,False
-8,Cavendish / Terrebonne,2023-01-25,15,588,6369,-73.635243,45.46674,8,False
-8173,chemin de la Côte-Saint-Luc / rue de Terrebonne,2015-04-16,87,660,12160,-73.624554,45.479286,24,True
+street,Id_Intersection,Nom_Intersection,Date,bikes,peds,autos,lon,lat,hours,full_day
+Sherbrooke,1531,Clifton / Sherbrooke,2009-02-27,16,744,7284,-73.618804,45.469023,9,False
+Sherbrooke,1531,Clifton / Sherbrooke,2024-05-02,133,1522,6325,-73.618804,45.469023,10,False
+Sherbrooke,1726,Grey / Sherbrooke,2009-05-05,313,4170,10869,-73.606346,45.476454,9,False
+Sherbrooke,17439,rue Sherbrooke / avenue 14e,2022-10-25,41,393,1598,-73.67692755,45.44496197,12,False
+Sherbrooke,29,Addington / Sherbrooke,2009-02-25,41,1361,12977,-73.611144,45.472976,9,False
+Sherbrooke,29,Addington / Sherbrooke,2015-04-16,378,1989,13453,-73.611144,45.472976,24,True
+Sherbrooke,3080,avenue Walkley / rue Sherbrooke,2016-05-03,180,1572,6437,-73.630817,45.462739,24,True
+Sherbrooke,31,Benny / Sherbrooke,2009-02-18,21,1879,8194,-73.626724,45.4649,9,False
+Sherbrooke,31,Benny / Sherbrooke,2024-04-23,117,2650,7107,-73.626724,45.4649,10,False
+Sherbrooke,34,Botrel / Sherbrooke,2009-02-25,38,1122,14469,-73.610422,45.47335,9,False
+Sherbrooke,36,Cavendish / Sherbrooke,2009-02-18,23,2420,16410,-73.62897,45.463725,9,False
+Sherbrooke,36,Cavendish / Sherbrooke,2014-01-27,0,0,12984,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2018-08-07,90,7183,29901,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2018-08-08,120,7153,29608,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2018-08-09,101,6955,31013,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-16,76,6562,26915,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-17,21,4428,26832,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-18,85,6466,28412,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-19,108,5810,27311,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-20,92,5266,23449,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-21,96,6858,24235,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2019-10-22,93,6101,25889,-73.62897,45.463725,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2021-08-31,173,4944,30613,-73.62897131,45.46373384,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2021-09-01,168,5060,30890,-73.62897131,45.46373384,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2021-09-02,176,4686,31164,-73.62897131,45.46373384,24,True
+Sherbrooke,36,Cavendish / Sherbrooke,2023-01-25,19,1954,11476,-73.62897,45.463725,8,False
+Sherbrooke,37,Coronation / Monkland/Sherbrooke,2009-02-25,2,321,1585,-73.636926,45.459672,9,False
+Sherbrooke,37,Coronation / Monkland/Sherbrooke,2024-04-23,84,996,3321,-73.636926,45.459672,10,False
+Sherbrooke,3900,avenue Montclair / rue Sherbrooke,2016-05-03,156,943,5485,-73.631738,45.462258,24,True
+Sherbrooke,40,Côte-Saint-Antoine / Hampton/Sherbrooke,2009-02-27,21,1424,7050,-73.620513,45.468193,9,False
+Sherbrooke,40,Côte-Saint-Antoine / Hampton/Sherbrooke,2024-04-23,157,2669,5750,-73.620513,45.468193,10,False
+Sherbrooke,47,Décarie / Sherbrooke,2009-04-30,475,3616,16648,-73.608829,45.474311,9,False
+Sherbrooke,47,Décarie / Sherbrooke,2014-01-21,0,0,10669,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2016-12-01,23,4017,16561,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-11-26,18,6258,28316,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-11-27,11,5717,26550,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-11-28,19,6691,29343,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-11-29,17,7128,30669,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-11-30,20,7440,30914,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-12-01,14,6953,35134,-73.608829,45.474311,24,True
+Sherbrooke,47,Décarie / Sherbrooke,2018-12-02,15,4571,30453,-73.608829,45.474311,24,True
+Sherbrooke,48,Elmhurst / Sherbrooke,2009-02-12,15,1851,8970,-73.64143,45.455022,9,False
+Sherbrooke,48,Elmhurst / Sherbrooke,2024-04-23,148,585,6057,-73.64143,45.455022,10,False
+Sherbrooke,53,Girouard / Sherbrooke,2009-01-27,10,1615,15130,-73.611981,45.472533,9,False
+Sherbrooke,53,Girouard / Sherbrooke,2013-05-23,403,2808,17272,-73.611981,45.472533,24,True
+Sherbrooke,56,Grand Boulevard / Sherbrooke,2009-02-18,33,1681,7766,-73.623395,45.46665,9,False
+Sherbrooke,56,Grand Boulevard / Sherbrooke,2024-05-02,255,2268,7022,-73.623395,45.46665,10,False
+Sherbrooke,60,Marcil / Sherbrooke,2009-03-17,118,1724,8944,-73.613756,45.471621,9,False
+Sherbrooke,60,Marcil / Sherbrooke,2024-05-02,146,2223,8640,-73.613756,45.471621,10,False
+Sherbrooke,67,Rosedale / Sherbrooke,2009-02-05,20,338,4886,-73.633912,45.461113,9,False
+Sherbrooke,67,Rosedale / Sherbrooke,2024-04-23,78,632,3799,-73.633912,45.461113,10,False
+Sherbrooke,70,Sherbrooke / Vendôme,2009-02-27,36,1919,9340,-73.607023,45.47586,9,False
+Sherbrooke,71,"Sherbrooke / 7141 Ouest (Univ, Concordia)",2009-03-26,67,1203,5538,-73.639005,45.457684,9,False
+Sherbrooke,71,Sherbrooke / 7141 Ouest (Univ. Concordia),2024-04-23,133,842,3860,-73.639005,45.457684,10,False
+Sherbrooke,7193,rue Sherbrooke / avenue Westminster,2009-06-03,205,1921,6078,-73.644389,45.4525,8,False
+Sherbrooke,72,Sherbrooke / West Broadway,2009-02-12,19,2578,7938,-73.640217,45.456534,9,False
+Sherbrooke,72,Sherbrooke / West Broadway,2024-04-23,279,1548,6003,-73.640217,45.456534,10,False
+Sherbrooke,73,Sherbrooke / West Hill,2009-02-05,26,1131,7486,-73.625896,45.465361,9,False
+Sherbrooke,73,Sherbrooke / West Hill,2024-05-02,133,1813,6497,-73.625896,45.465361,10,False
+Sherbrooke,74,Sherbrooke / Wilson,2009-02-27,19,2100,8251,-73.616305,45.470308,9,False
+Sherbrooke,74,Sherbrooke / Wilson,2024-05-02,143,3385,7388,-73.616305,45.470308,10,False
+Terrebonne,118,Girouard / Terrebonne,2009-08-25,157,587,4910,-73.624871,45.478338,9,False
+Terrebonne,118,Girouard / Terrebonne,2018-11-27,5,1444,8336,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2018-11-28,1,1485,8981,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2018-11-29,1,1595,9915,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2019-05-28,101,1449,10778,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2019-05-29,163,1742,10660,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2019-05-30,128,1704,11384,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-06,1023,1970,11776,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-07,868,2067,12267,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-08,658,1993,11625,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-09,872,2004,10040,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-10,431,1462,8090,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-11,1128,2122,10621,-73.624871,45.478338,24,True
+Terrebonne,118,Girouard / Terrebonne,2023-09-12,1003,2200,11360,-73.624871,45.478338,24,True
+Terrebonne,20,Draper / Terrebonne,2018-02-01,8,887,3401,-73.628718,45.474057,24,True
+Terrebonne,24,Grand Boulevard / Terrebonne,2019-02-20,1,761,4634,-73.63175,45.470536,10,False
+Terrebonne,3691,avenue Madison / rue de Terrebonne,2021-06-16,427,1329,3244,-73.63288408,45.46925516,13,False
+Terrebonne,3691,avenue Madison / rue de Terrebonne,2021-10-19,241,931,3088,-73.63288408,45.46925516,13,False
+Terrebonne,8,Cavendish / Terrebonne,2009-09-02,174,608,8885,-73.635243,45.46674,9,False
+Terrebonne,8,Cavendish / Terrebonne,2023-01-25,15,588,6369,-73.635243,45.46674,8,False
+Terrebonne,8173,chemin de la Côte-Saint-Luc / rue de Terrebonne,2015-04-16,87,660,12160,-73.624554,45.479286,24,True

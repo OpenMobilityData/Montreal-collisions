@@ -1,30 +1,103 @@
-                               Nom_Intersection       Date  hours  full_day  bikes  peds  autos
-                          Girouard / Terrebonne 2009-08-25      9     False    157   587   4910
-                          Girouard / Terrebonne 2018-11-27     24      True      5  1444   8336
-                          Girouard / Terrebonne 2018-11-28     24      True      1  1485   8981
-                          Girouard / Terrebonne 2018-11-29     24      True      1  1595   9915
-                          Girouard / Terrebonne 2019-05-28     24      True    101  1449  10778
-                          Girouard / Terrebonne 2019-05-29     24      True    163  1742  10660
-                          Girouard / Terrebonne 2019-05-30     24      True    128  1704  11384
-                          Girouard / Terrebonne 2023-09-06     24      True   1023  1970  11776
-                          Girouard / Terrebonne 2023-09-07     24      True    868  2067  12267
-                          Girouard / Terrebonne 2023-09-08     24      True    658  1993  11625
-                          Girouard / Terrebonne 2023-09-09     24      True    872  2004  10040
-                          Girouard / Terrebonne 2023-09-10     24      True    431  1462   8090
-                          Girouard / Terrebonne 2023-09-11     24      True   1128  2122  10621
-                          Girouard / Terrebonne 2023-09-12     24      True   1003  2200  11360
-                            Draper / Terrebonne 2018-02-01     24      True      8   887   3401
-                   Grand Boulevard / Terrebonne 2019-02-20     10     False      1   761   4634
-             avenue Madison / rue de Terrebonne 2021-06-16     13     False    427  1329   3244
-             avenue Madison / rue de Terrebonne 2021-10-19     13     False    241   931   3088
-                         Cavendish / Terrebonne 2009-09-02      9     False    174   608   8885
-                         Cavendish / Terrebonne 2023-01-25      8     False     15   588   6369
-chemin de la Côte-Saint-Luc / rue de Terrebonne 2015-04-16     24      True     87   660  12160
+    street                                Nom_Intersection       Date  hours  full_day  bikes  peds  autos
+Sherbrooke                            Clifton / Sherbrooke 2009-02-27      9     False     16   744   7284
+Sherbrooke                            Clifton / Sherbrooke 2024-05-02     10     False    133  1522   6325
+Sherbrooke                               Grey / Sherbrooke 2009-05-05      9     False    313  4170  10869
+Sherbrooke                     rue Sherbrooke / avenue 14e 2022-10-25     12     False     41   393   1598
+Sherbrooke                          Addington / Sherbrooke 2009-02-25      9     False     41  1361  12977
+Sherbrooke                          Addington / Sherbrooke 2015-04-16     24      True    378  1989  13453
+Sherbrooke                 avenue Walkley / rue Sherbrooke 2016-05-03     24      True    180  1572   6437
+Sherbrooke                              Benny / Sherbrooke 2009-02-18      9     False     21  1879   8194
+Sherbrooke                              Benny / Sherbrooke 2024-04-23     10     False    117  2650   7107
+Sherbrooke                             Botrel / Sherbrooke 2009-02-25      9     False     38  1122  14469
+Sherbrooke                          Cavendish / Sherbrooke 2009-02-18      9     False     23  2420  16410
+Sherbrooke                          Cavendish / Sherbrooke 2014-01-27     24      True      0     0  12984
+Sherbrooke                          Cavendish / Sherbrooke 2018-08-07     24      True     90  7183  29901
+Sherbrooke                          Cavendish / Sherbrooke 2018-08-08     24      True    120  7153  29608
+Sherbrooke                          Cavendish / Sherbrooke 2018-08-09     24      True    101  6955  31013
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-16     24      True     76  6562  26915
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-17     24      True     21  4428  26832
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-18     24      True     85  6466  28412
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-19     24      True    108  5810  27311
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-20     24      True     92  5266  23449
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-21     24      True     96  6858  24235
+Sherbrooke                          Cavendish / Sherbrooke 2019-10-22     24      True     93  6101  25889
+Sherbrooke                          Cavendish / Sherbrooke 2021-08-31     24      True    173  4944  30613
+Sherbrooke                          Cavendish / Sherbrooke 2021-09-01     24      True    168  5060  30890
+Sherbrooke                          Cavendish / Sherbrooke 2021-09-02     24      True    176  4686  31164
+Sherbrooke                          Cavendish / Sherbrooke 2023-01-25      8     False     19  1954  11476
+Sherbrooke                Coronation / Monkland/Sherbrooke 2009-02-25      9     False      2   321   1585
+Sherbrooke                Coronation / Monkland/Sherbrooke 2024-04-23     10     False     84   996   3321
+Sherbrooke               avenue Montclair / rue Sherbrooke 2016-05-03     24      True    156   943   5485
+Sherbrooke         Côte-Saint-Antoine / Hampton/Sherbrooke 2009-02-27      9     False     21  1424   7050
+Sherbrooke         Côte-Saint-Antoine / Hampton/Sherbrooke 2024-04-23     10     False    157  2669   5750
+Sherbrooke                            Décarie / Sherbrooke 2009-04-30      9     False    475  3616  16648
+Sherbrooke                            Décarie / Sherbrooke 2014-01-21     24      True      0     0  10669
+Sherbrooke                            Décarie / Sherbrooke 2016-12-01     24      True     23  4017  16561
+Sherbrooke                            Décarie / Sherbrooke 2018-11-26     24      True     18  6258  28316
+Sherbrooke                            Décarie / Sherbrooke 2018-11-27     24      True     11  5717  26550
+Sherbrooke                            Décarie / Sherbrooke 2018-11-28     24      True     19  6691  29343
+Sherbrooke                            Décarie / Sherbrooke 2018-11-29     24      True     17  7128  30669
+Sherbrooke                            Décarie / Sherbrooke 2018-11-30     24      True     20  7440  30914
+Sherbrooke                            Décarie / Sherbrooke 2018-12-01     24      True     14  6953  35134
+Sherbrooke                            Décarie / Sherbrooke 2018-12-02     24      True     15  4571  30453
+Sherbrooke                           Elmhurst / Sherbrooke 2009-02-12      9     False     15  1851   8970
+Sherbrooke                           Elmhurst / Sherbrooke 2024-04-23     10     False    148   585   6057
+Sherbrooke                           Girouard / Sherbrooke 2009-01-27      9     False     10  1615  15130
+Sherbrooke                           Girouard / Sherbrooke 2013-05-23     24      True    403  2808  17272
+Sherbrooke                    Grand Boulevard / Sherbrooke 2009-02-18      9     False     33  1681   7766
+Sherbrooke                    Grand Boulevard / Sherbrooke 2024-05-02     10     False    255  2268   7022
+Sherbrooke                             Marcil / Sherbrooke 2009-03-17      9     False    118  1724   8944
+Sherbrooke                             Marcil / Sherbrooke 2024-05-02     10     False    146  2223   8640
+Sherbrooke                           Rosedale / Sherbrooke 2009-02-05      9     False     20   338   4886
+Sherbrooke                           Rosedale / Sherbrooke 2024-04-23     10     False     78   632   3799
+Sherbrooke                            Sherbrooke / Vendôme 2009-02-27      9     False     36  1919   9340
+Sherbrooke       Sherbrooke / 7141 Ouest (Univ, Concordia) 2009-03-26      9     False     67  1203   5538
+Sherbrooke       Sherbrooke / 7141 Ouest (Univ. Concordia) 2024-04-23     10     False    133   842   3860
+Sherbrooke             rue Sherbrooke / avenue Westminster 2009-06-03      8     False    205  1921   6078
+Sherbrooke                      Sherbrooke / West Broadway 2009-02-12      9     False     19  2578   7938
+Sherbrooke                      Sherbrooke / West Broadway 2024-04-23     10     False    279  1548   6003
+Sherbrooke                          Sherbrooke / West Hill 2009-02-05      9     False     26  1131   7486
+Sherbrooke                          Sherbrooke / West Hill 2024-05-02     10     False    133  1813   6497
+Sherbrooke                             Sherbrooke / Wilson 2009-02-27      9     False     19  2100   8251
+Sherbrooke                             Sherbrooke / Wilson 2024-05-02     10     False    143  3385   7388
+Terrebonne                           Girouard / Terrebonne 2009-08-25      9     False    157   587   4910
+Terrebonne                           Girouard / Terrebonne 2018-11-27     24      True      5  1444   8336
+Terrebonne                           Girouard / Terrebonne 2018-11-28     24      True      1  1485   8981
+Terrebonne                           Girouard / Terrebonne 2018-11-29     24      True      1  1595   9915
+Terrebonne                           Girouard / Terrebonne 2019-05-28     24      True    101  1449  10778
+Terrebonne                           Girouard / Terrebonne 2019-05-29     24      True    163  1742  10660
+Terrebonne                           Girouard / Terrebonne 2019-05-30     24      True    128  1704  11384
+Terrebonne                           Girouard / Terrebonne 2023-09-06     24      True   1023  1970  11776
+Terrebonne                           Girouard / Terrebonne 2023-09-07     24      True    868  2067  12267
+Terrebonne                           Girouard / Terrebonne 2023-09-08     24      True    658  1993  11625
+Terrebonne                           Girouard / Terrebonne 2023-09-09     24      True    872  2004  10040
+Terrebonne                           Girouard / Terrebonne 2023-09-10     24      True    431  1462   8090
+Terrebonne                           Girouard / Terrebonne 2023-09-11     24      True   1128  2122  10621
+Terrebonne                           Girouard / Terrebonne 2023-09-12     24      True   1003  2200  11360
+Terrebonne                             Draper / Terrebonne 2018-02-01     24      True      8   887   3401
+Terrebonne                    Grand Boulevard / Terrebonne 2019-02-20     10     False      1   761   4634
+Terrebonne              avenue Madison / rue de Terrebonne 2021-06-16     13     False    427  1329   3244
+Terrebonne              avenue Madison / rue de Terrebonne 2021-10-19     13     False    241   931   3088
+Terrebonne                          Cavendish / Terrebonne 2009-09-02      9     False    174   608   8885
+Terrebonne                          Cavendish / Terrebonne 2023-01-25      8     False     15   588   6369
+Terrebonne chemin de la Côte-Saint-Luc / rue de Terrebonne 2015-04-16     24      True     87   660  12160
 
-                                   intersection  count_days mode  mean_daily_crossings  min_daily  max_daily  collisions_within_100m_2012_2021  injury_collisions  million_crossings_2012_2021  rate_per_million  ci_low  ci_high  mean_daily_autos
-                          Girouard / Terrebonne          13 bike                 490.9          1       1128                                 3                  2                        1.793              1.67    0.34     4.89           10449.0
-                          Girouard / Terrebonne          13  ped                1787.5       1444       2200                                 4                  4                        6.530              0.61    0.17     1.57           10449.0
-                            Draper / Terrebonne           1 bike                   8.0          8          8                                 1                  1                        0.029             34.22    0.87   190.65            3401.0
-                            Draper / Terrebonne           1  ped                 887.0        887        887                                 1                  1                        3.240              0.31    0.01     1.72            3401.0
-chemin de la Côte-Saint-Luc / rue de Terrebonne           1 bike                  87.0         87         87                                 3                  3                        0.318              9.44    1.95    27.59           12160.0
-chemin de la Côte-Saint-Luc / rue de Terrebonne           1  ped                 660.0        660        660                                 2                  2                        2.411              0.83    0.10     3.00           12160.0
+    street                                    intersection  count_days mode  mean_daily_crossings  min_daily  max_daily  collisions_within_100m_2012_2021  injury_collisions  million_crossings_2012_2021  rate_per_million  ci_low  ci_high  mean_daily_autos
+Sherbrooke                          Addington / Sherbrooke           1 bike                 378.0        378        378                                16                 12                        1.381             11.59    6.62    18.82           13453.0
+Sherbrooke                          Addington / Sherbrooke           1  ped                1989.0       1989       1989                                10                 10                        7.266              1.38    0.66     2.53           13453.0
+Sherbrooke                 avenue Walkley / rue Sherbrooke           1 bike                 180.0        180        180                                 2                  2                        0.658              3.04    0.37    10.99            6437.0
+Sherbrooke                 avenue Walkley / rue Sherbrooke           1  ped                1572.0       1572       1572                                 5                  5                        5.743              0.87    0.28     2.03            6437.0
+Sherbrooke                          Cavendish / Sherbrooke          13 bike                 107.6         21        176                                 7                  6                        0.393             17.81    7.16    36.69           27087.0
+Sherbrooke                          Cavendish / Sherbrooke          13  ped                5959.4       4428       7183                                16                 16                       21.770              0.73    0.42     1.19           27087.0
+Sherbrooke               avenue Montclair / rue Sherbrooke           1 bike                 156.0        156        156                                 2                  2                        0.570              3.51    0.43    12.68            5485.0
+Sherbrooke               avenue Montclair / rue Sherbrooke           1  ped                 943.0        943        943                                 5                  5                        3.445              1.45    0.47     3.39            5485.0
+Sherbrooke                            Décarie / Sherbrooke           8 bike                  17.1         11         23                                 8                  6                        0.063            127.88   55.21   251.98           26512.0
+Sherbrooke                            Décarie / Sherbrooke           8  ped                6096.9       4017       7440                                10                 10                       22.272              0.45    0.22     0.83           26512.0
+Sherbrooke                           Girouard / Sherbrooke           1 bike                 403.0        403        403                                12                  9                        1.472              8.15    4.21    14.24           17272.0
+Sherbrooke                           Girouard / Sherbrooke           1  ped                2808.0       2808       2808                                 8                  8                       10.258              0.78    0.34     1.54           17272.0
+Terrebonne                           Girouard / Terrebonne          13 bike                 490.9          1       1128                                 3                  2                        1.793              1.67    0.34     4.89           10449.0
+Terrebonne                           Girouard / Terrebonne          13  ped                1787.5       1444       2200                                 4                  4                        6.530              0.61    0.17     1.57           10449.0
+Terrebonne                             Draper / Terrebonne           1 bike                   8.0          8          8                                 1                  1                        0.029             34.22    0.87   190.65            3401.0
+Terrebonne                             Draper / Terrebonne           1  ped                 887.0        887        887                                 1                  1                        3.240              0.31    0.01     1.72            3401.0
+Terrebonne chemin de la Côte-Saint-Luc / rue de Terrebonne           1 bike                  87.0         87         87                                 3                  3                        0.318              9.44    1.95    27.59           12160.0
+Terrebonne chemin de la Côte-Saint-Luc / rue de Terrebonne           1  ped                 660.0        660        660                                 2                  2                        2.411              0.83    0.10     3.00           12160.0
