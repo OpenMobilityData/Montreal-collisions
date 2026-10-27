@@ -1,0 +1,100 @@
+% The earlier collision record at the 31 locations where a cyclist was killed, Montréal 2012–2021 (SPVM open data).
+% Built by build.py (tables regenerated from the CSVs, version stamped, pdflatex twice).
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[letterpaper,top=0.9in,bottom=0.95in,left=0.9in,right=0.9in]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{seqsplit}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}\def\UrlBreaks{\do\_\do\-}
+\newcommand{\code}[1]{\texttt{\seqsplit{#1}}}
+\urlstyle{same}
+\newcommand{\docversion}{2026-10-26-22-01-32} % set by build (America/Toronto)
+\hypersetup{pdfsubject={version \docversion}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\linespread{1.03}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.6em}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{1.1em}{0.4em}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.25em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{gray}Montreal-collisions -- the earlier record and later deaths, 2012--2021 -- page \thepage}
+\fancyfoot[R]{\tiny\color{gray}v.\,\docversion}
+
+\newcommand{\repourl}{https://github.com/OpenMobilityData/Montreal-collisions}
+\newcommand{\repo}[1]{\href{\repourl}{#1}}
+\newcommand{\doc}[2]{\href{\repourl/blob/main/#1}{#2}}
+
+\begin{document}
+
+{\LARGE\bfseries Does the earlier record at a location predict a later death?}
+
+{\large Montréal 2012--2021, police-reported collisions (SPVM open data): the record of 2012--2016 at every 100\,m cell against the cyclist and pedestrian deaths of 2017--2021}
+
+\medskip
+Data note, October 26, 2026. Repository: \repo{\repourl}. Version \docversion. Companion to \doc{derived/cyclist-fatality-locations/}{\emph{Before a cyclist was killed}}.
+
+\section*{Summary}
+
+The companion note found that at 30 of the 31 locations where a cyclist was killed in 2012--2021, no fatal collision of any kind had been recorded nearby before. This note asks the other half of the question: whether the \emph{volume} of the earlier record at a place, fatal or not, goes with a later death. The territory is cut into 100\,m cells on the City's coordinates; for the 17,593 cells with at least one police-reported collision in 2012--2016, the record of those five years (all collisions, injury collisions, collisions with a bicycle, with a pedestrian victim) is set against the deaths of 2017--2021: 13 collisions in which a cyclist was killed, 87 in which a pedestrian was killed.
+
+\textbf{The earlier record does go with later deaths, in the aggregate. Most cells record no injury collision in five years, and the death sites sit around the 90th percentile of the earlier record (Table~\ref{tab:pct}). Ranked by their 2012--2016 injury collisions, the top tenth of cells (1,759 cells) held 6 of the 13 cyclist deaths and 53 of the 87 pedestrian deaths of 2017--2021; the bottom seven tenths (12,316 cells) held 1 and 13 (Table~\ref{tab:dec}). What the record cannot do is name the place: a cell in the top tenth saw a cyclist killed in one case in about 300 over five years, a pedestrian in one in 33; flagging that tenth catches 46\,\% of the cyclist deaths and 61\,\% of the pedestrian deaths, and catching five in six takes the top 30\,\%, some 5,300 cells (Table~\ref{tab:top}).} The picture is the same with 200\,m cells and with the split moved a year earlier (Table~\ref{tab:sens}).
+
+Rue de Terrebonne on the same scale (Table~\ref{tab:terr}): the cell at avenue Girouard recorded 20 collisions and 11 with an injury in 2012--2016, the 97.6th percentile of all cells, in the top tenth; the pedestrian death of September 3, 2019 fell in that cell. The street's other intersections sit between the 46th and the 89th percentile; of the 20 cells along the lane's axis with a record before 2017, one (Girouard) is in the top tenth.
+
+No measure of exposure enters these tables: the earlier record of a cell rises with the traffic, the cycling and the walking that pass through it, and the association measured here is between a busy record and a later death, not between any feature of the place and the death.
+
+\section{Data and units}
+
+The SPVM open-data file of police-reported collisions 2012--2021 (218,272 rows; 218,261 with coordinates), as described in the companion note and the repository README. Each located collision is assigned to the 100\,m square of the City's MTM zone~8 grid containing its point (200\,m squares as a check). A square is a crude unit: it cuts some intersections in two and joins others; it is the same for every place and needs no choice of intersections. The \emph{before} window is 2012--2016 and the \emph{after} window 2017--2021; the check moves the split to 2016. A death is a collision with \code{NB\_DECES\_VELO} $>$ 0 (cyclist) or \code{NB\_DECES\_PIETON} $>$ 0 (pedestrian); an injury collision has \code{GRAVITE} \emph{Mortel}, \emph{Grave} or \emph{Léger}.
+
+\section{Method}
+
+For every cell with at least one collision in the before window: the before record (all, injury, bicycle, pedestrian, fatal) and the after outcome (cyclist deaths, pedestrian deaths). Three readings:
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{Were the death sites ordinary?} For each death of the after window at a cell with a before record, the percentile of that cell's before record among all cells with a record (one entry per death; four measures of the record). Deaths at cells with no before record (1 cyclist, 2 pedestrians) are counted and set aside.
+\item \textbf{Does the before record predict a death?} Cells ranked by before injury collisions (ties by all collisions, then at random with a fixed seed) and cut into ten equal deciles; deaths per 100 cells by decile with exact Poisson 95\,\% intervals.
+\item \textbf{What would flagging the busiest cells have caught?} The share of after-window deaths in the top 1, 2, 5, 10, 20, 30 and 50\,\% of cells by the same ranking.
+\end{enumerate}
+Everything is produced by \doc{scripts/location\_record\_test.py}{scripts/location\_record\_test.py} from the loader \doc{scripts/spvm.py}{scripts/spvm.py}; the tables are the CSV files beside this note, and \code{decile\_chart.py} draws Figure~\ref{fig:dec}.
+
+\section{Results}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{deaths_by_decile_en.png}
+\caption{Deaths of 2017--2021 per 100 cells by decile of the cells' 2012--2016 injury-collision count, with 95\,\% Poisson intervals; the number on each bar is the count of deaths.}\label{fig:dec}\end{figure}
+
+\input{tables_generated.tex}
+
+\section{Limits}
+
+\begin{itemize}[leftmargin=1.2em]
+\item \textbf{No exposure.} Cycling and walking volumes are not in the file. A busy record is largely a busy place; the tables do not separate the two, and say nothing about the design of any place.
+\item \textbf{Few deaths.} Thirteen cyclist deaths in the after window give a direction, with wide intervals (Table~\ref{tab:dec}); the pedestrian series carries the statistical weight. The two series agree.
+\item \textbf{Units and windows are choices.} Squares cut intersections; the split date is arbitrary. The 200\,m and the earlier-split checks give the same picture (Table~\ref{tab:sens}).
+\item \textbf{Record, not risk.} The file holds collisions reported to the police on the SPVM's territory; the two property-damage classes changed in volume after 2013, which is why the ranking uses injury collisions.
+\item \textbf{One record, one city, one decade.} The result is a description of this file, not a general law.
+\end{itemize}
+
+\section*{About}
+
+Written by Rick Hoge, a resident of Côte-des-Neiges--Notre-Dame-de-Grâce, from the City's open data, as a private citizen. Corrections through the repository's issue tracker.
+
+\end{document}

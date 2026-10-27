@@ -1,0 +1,9 @@
+location,cell_m,before_window,all,injury,bike,ped,percentile_all,percentile_injury,percentile_bike,in_top_decile_by_injury
+Terrebonne / Girouard,100,2012-2016,20.0,11.0,3.0,2.0,92.5,97.6,98.6,True
+Terrebonne / Draper,100,2012-2016,0.0,0.0,0.0,0.0,,,,False
+Terrebonne / Royal,100,2012-2016,5.0,1.0,1.0,0.0,69.8,76.7,95.0,False
+Terrebonne / Grand,100,2012-2016,2.0,0.0,0.0,0.0,46.3,56.7,84.7,False
+Terrebonne / Kensington,100,2012-2016,5.0,0.0,0.0,0.0,69.8,56.7,84.7,False
+Terrebonne / Cavendish,100,2012-2016,14.0,1.0,0.0,1.0,88.6,76.7,84.7,False
+Terrebonne / King Edward,100,2012-2016,4.0,2.0,0.0,0.0,64.3,84.3,84.7,False
+"rue de Terrebonne, cells within 25 m of the axis: 23 cells with any collision 2012-2021, 20 with a record before 2017, 1 of them in the top decile by injury count",100,2012-2016,,,,,,,,
