@@ -48,9 +48,13 @@ Python 3.13 with pandas, numpy and matplotlib; `pdflatex` for the note. Scripts 
 
 Data: CC BY 4.0, as published by the Ville de Montréal and the SAAQ (attribution above). Scripts, tables, figures and notes: CC BY 4.0, Rick Hoge, 2026. Basemap tiles used in the maps are credited on each map and not redistributed.
 
+## Use of AI
+
+Much of the code and many of the drafts in this repository were produced with an AI assistant, Anthropic's Claude, in interactive sessions directed by the author. The author chose the questions, supplied the sources, reviewed every output, and checked every quotation, page reference and figure against the documents; the author alone is responsible for the content. Commits to which the assistant contributed name it as co-author, so the division of work is visible in the history, and errors found in its work are corrected in the open like any other. Nothing in `raw/` is edited by anyone, human or machine.
+
 ## About the author
 
-The analyses were written by Rick Hoge, a resident of Côte-des-Neiges–Notre-Dame-de-Grâce who cycles in every season. He works as a data scientist and is a professor in the Faculty of Medicine at McGill University, where his research is in neuroscience and biomedical engineering, including the effects of physical activity on brain health. The work in this repository is personal: it was done as a resident, on his own time, from open data, and represents no position of McGill University or of any other organization; the affiliation is given for identification only. The commits are co-authored with Claude (Anthropic's model), which wrote the code and drafts under the author's direction and review; the full history is public by design. Corrections are welcome through the repository's issue tracker.
+The analyses were written by Rick Hoge, a resident of Côte-des-Neiges–Notre-Dame-de-Grâce who cycles in every season. He works as a data scientist and is a professor in the Faculty of Medicine at McGill University, where his research is in neuroscience and biomedical engineering, including the effects of physical activity on brain health. The work in this repository is personal: it was done as a resident, on his own time, from open data, and represents no position of McGill University or of any other organization; the affiliation is given for identification only. Corrections are welcome through the repository's issue tracker.
 
 ## Maps and charts (`scripts/maps.py`, `scripts/charts.py`, `scripts/basemap.py`; October 26, 2026)
 
