@@ -1,0 +1,33 @@
+street,intersection,mode,year,visit,days,counts,implied_mean_daily,implied_annual_crossings
+Sherbrooke,Addington / Sherbrooke,bike,2015,2015-04,1,378,468.4,170963
+Sherbrooke,Addington / Sherbrooke,ped,2015,2015-04,1,1989,1896.1,692073
+Sherbrooke,Cavendish / Sherbrooke,bike,2018,2018-08,3,90 120 101,53.7,19611
+Sherbrooke,Cavendish / Sherbrooke,bike,2019,2019-10,7,76 21 85 108 92 96 93,64.7,23627
+Sherbrooke,Cavendish / Sherbrooke,bike,2021,2021-08,1,173,89.7,32728
+Sherbrooke,Cavendish / Sherbrooke,bike,2021,2021-09,2,168 176,80.4,29372
+Sherbrooke,Cavendish / Sherbrooke,ped,2018,2018-08,3,7183 7153 6955,6765.5,2469404
+Sherbrooke,Cavendish / Sherbrooke,ped,2019,2019-10,7,6562 4428 6466 5810 5266 6858 6101,5944.2,2169629
+Sherbrooke,Cavendish / Sherbrooke,ped,2021,2021-08,1,4944,4713.1,1720267
+Sherbrooke,Cavendish / Sherbrooke,ped,2021,2021-09,2,5060 4686,4645.4,1695562
+Sherbrooke,Décarie / Sherbrooke,bike,2016,2016-12,1,23,196.3,71651
+Sherbrooke,Décarie / Sherbrooke,bike,2018,2018-11,5,18 11 19 17 20,28.1,10247
+Sherbrooke,Décarie / Sherbrooke,bike,2018,2018-12,2,14 15,177.8,64912
+Sherbrooke,Décarie / Sherbrooke,ped,2016,2016-12,1,4017,3829.4,1397717
+Sherbrooke,Décarie / Sherbrooke,ped,2018,2018-11,5,6258 5717 6691 7128 7440,6336.3,2312757
+Sherbrooke,Décarie / Sherbrooke,ped,2018,2018-12,2,6953 4571,6562.6,2395364
+Sherbrooke,Girouard / Sherbrooke,bike,2013,2013-05,1,403,263.4,96158
+Sherbrooke,Girouard / Sherbrooke,ped,2013,2013-05,1,2808,2676.8,977045
+Sherbrooke,avenue Montclair / rue Sherbrooke,bike,2016,2016-05,1,156,102.0,37223
+Sherbrooke,avenue Montclair / rue Sherbrooke,ped,2016,2016-05,1,943,899.0,328117
+Sherbrooke,avenue Walkley / rue Sherbrooke,bike,2016,2016-05,1,180,117.7,42949
+Sherbrooke,avenue Walkley / rue Sherbrooke,ped,2016,2016-05,1,1572,1498.6,546978
+Terrebonne,Draper / Terrebonne,bike,2018,2018-02,1,8,78.6,28674
+Terrebonne,Draper / Terrebonne,ped,2018,2018-02,1,887,845.6,308632
+Terrebonne,Girouard / Terrebonne,bike,2018,2018-11,3,5 1 1,3.9,1407
+Terrebonne,Girouard / Terrebonne,bike,2019,2019-05,3,101 163 128,85.4,31178
+Terrebonne,Girouard / Terrebonne,bike,2023,2023-09,7,1023 868 658 872 431 1128 1003,437.9,159846
+Terrebonne,Girouard / Terrebonne,ped,2018,2018-11,3,1444 1485 1595,1437.5,524709
+Terrebonne,Girouard / Terrebonne,ped,2019,2019-05,3,1449 1742 1704,1555.4,567739
+Terrebonne,Girouard / Terrebonne,ped,2023,2023-09,7,1970 2067 1993 2004 1462 2122 2200,1973.7,720409
+Terrebonne,chemin de la Côte-Saint-Luc / rue de Terrebonne,bike,2015,2015-04,1,87,107.8,39349
+Terrebonne,chemin de la Côte-Saint-Luc / rue de Terrebonne,ped,2015,2015-04,1,660,629.2,229647
