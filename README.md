@@ -46,7 +46,7 @@ Python 3.13 with pandas, numpy and matplotlib; `pdflatex` for the note. Scripts 
 
 ## Licence
 
-Data: CC BY 4.0, as published by the Ville de Montréal and the SAAQ (attribution above). Scripts, tables, figures and notes: CC BY 4.0, Rick Hoge, 2026. Basemap tiles used in the maps are credited on each map and not redistributed.
+Data: CC BY 4.0, as published by the Ville de Montréal and the SAAQ (attribution above). Tables, figures and notes: CC BY 4.0, Rick Hoge, 2026 ([`LICENSE`](LICENSE)). Scripts: MIT licence ([`LICENSE-CODE`](LICENSE-CODE)). Basemap tiles used in the maps are credited on each map and not redistributed.
 
 ## Use of AI
 
