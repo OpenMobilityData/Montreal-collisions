@@ -4,7 +4,7 @@
 
 Every number on a slide is read from derived/tables/ at build time; the figures come from derived/figures/. Run first:
 intersections.py, cdn_ndg_tables.py and the figure scripts under derived/figures/{borough-comparison,cdn-ndg-maps,
-cdn-ndg-charts,queen-mary,queen-mary-decarie-hero}/ (and maps.py, point_rates_time_chart.py for the Terrebonne slides). DRAFT footer until --final, which prints « Preliminary results,
+cdn-ndg-charts,queen-mary,queen-mary-decarie-hero}/ (and maps.py, point_rates_time_chart.py for the Terrebonne slides). The figure of each slide is copied to docs/deck_figures_en/NN_<figure>.png (NN = slide number). DRAFT footer until --final, which prints « Preliminary results,
 not peer reviewed » instead."""
 import datetime, subprocess, sys
 from pathlib import Path
@@ -40,7 +40,7 @@ def rank_cell(r):
     return ('=' if r.tied_at_rank > 1 else '') + f"{int(r['rank'])}" + (rf" \textcolor{{gray}}{{\scriptsize({int(r.tied_at_rank)} tied)}}" if r.tied_at_rank > 1 else '')
 
 
-short = lambda s_: s_ if len(s_) <= 24 else s_[:22] + '…'
+short = lambda s_: s_ if len(s_) <= 20 else s_[:18] + '…'
 top3 = IB.sort_values('rec_all', ascending=False).head(3).name.tolist(); assert all('Décarie' in x for x in top3) and a_all_rank == 4
 assert city.residents_2021.max() == me.residents_2021
 
@@ -53,10 +53,6 @@ def rank_rows(Rk, count):
     return '\n'.join(out)
 
 
-firsts = R[(R['rank'] == 1) & (R.value > 0) & R.comparison_set.isin(['cdn_ndg', 'city'])]
-best = R[(R.comparison_set == 'cdn_ndg') & (R.value > 0)].sort_values('rank').iloc[0]
-verdict = (r"\textbf{The record does not support « the most dangerous intersection in the borough ».} Under none of seven measures (the five above and the two severe-or-fatal rows by mode), by collisions recorded at the intersection or within 100 m, is Queen-Mary / Décarie first, in the borough or in the City."
-           if firsts.empty else r"\textbf{Queen-Mary / Décarie is first under: " + '; '.join(f"{x.measure_label} ({x['count']}, {x.comparison_set})" for x in firsts.itertuples()) + ".}")
 a_all = R[(R['count'] == 'rec') & (R.measure == 'all') & (R.comparison_set == 'cdn_ndg')].iloc[0]; a_inj = R[(R['count'] == 'rec') & (R.measure == 'injury') & (R.comparison_set == 'cdn_ndg')].iloc[0]
 c_all = R[(R['count'] == 'rec') & (R.measure == 'all') & (R.comparison_set == 'city')].iloc[0]
 g_all = RG[(RG['count'] == 'rec') & (RG.measure == 'all') & (RG.comparison_set == 'cdn_ndg')].iloc[0]; g_inj = RG[(RG['count'] == 'rec') & (RG.measure == 'injury') & (RG.comparison_set == 'cdn_ndg')].iloc[0]
@@ -205,7 +201,7 @@ Involving a bicycle & """ + f"{rk('bike')} & & {rk('bike_per_10k_res')}" + r""" 
 """ + fig('queen-mary-decarie-hero', 'hero_queen_mary_decarie', 0.86) + r"""
 \end{frame}
 
-\begin{frame}{« The most dangerous intersection in the borough »? The test}
+\begin{frame}{Queen-Mary / Décarie among the intersections of the borough and of the City}
 \scriptsize
 \setlength\tabcolsep{3.5pt}\begin{tabular}{@{}lrllll@{}}\toprule
 Collisions recorded at the intersection & here & \multicolumn{2}{l}{among """ + n(n_int_b) + r""" in the borough: rank, first} & \multicolumn{2}{l}{among """ + n(n_int_c) + r""" in the City: rank, first} \\\midrule
@@ -215,10 +211,10 @@ Collisions recorded at the intersection & here & \multicolumn{2}{l}{among """ + 
 \medskip
 \small
 \begin{itemize}\setlength\itemsep{3pt}
-\item """ + verdict + r"""
-\item What it does support: by collisions recorded at the intersection it is \textbf{""" + f"{int(a_all['rank'])} of {n(n_int_b)}" + r"""} in the borough for all collisions and \textbf{""" + f"{int(a_inj['rank'])}" + r"""} for collisions with an injury, behind three other crossings of the Décarie service roads (""" + ', '.join(x.replace('Décarie / ', '').replace(' / Décarie', '') for x in top3) + r"""), and """ + f"{int(c_all['rank'])} of {n(n_int_c)}" + r""" in the City.
+\item By collisions recorded at the intersection it is \textbf{""" + f"{int(a_all['rank'])} of {n(n_int_b)}" + r"""} in the borough for all collisions and \textbf{""" + f"{int(a_inj['rank'])}" + r"""} for collisions with an injury, behind three other crossings of the Décarie service roads (""" + ', '.join(x.replace('Décarie / ', '').replace(' / Décarie', '') for x in top3) + r"""), and """ + f"{int(c_all['rank'])} of {n(n_int_c)}" + r""" in the City.
 \item Among the borough's """ + str(len(big)) + r""" intersections with 100 recorded collisions or more, its share with an injury (""" + f"{q_sh:.0f}" + r"""~\%) ranks """ + str(q_sh_rank) + r""".
-\item The pedestrian and bicycle rows rest on """ + f"{int(R[(R['count'] == 'rec') & (R.measure == 'ped')].value.iloc[0])} and {int(R[(R['count'] == 'rec') & (R.measure == 'bike')].value.iloc[0])}" + r""" collisions in ten years, with many ties. No traffic, pedestrian or bicycle count enters: this ranks records, not danger.
+\item The pedestrian and bicycle rows rest on """ + f"{int(R[(R['count'] == 'rec') & (R.measure == 'ped')].value.iloc[0])} and {int(R[(R['count'] == 'rec') & (R.measure == 'bike')].value.iloc[0])}" + r""" collisions in ten years, with many ties.
+\item The same ranks with every collision within 100 m, and two further measures (severe or fatal, by mode), are in \texttt{intersection\_ranks\_queen\_mary\_decarie.csv}. No traffic, pedestrian or bicycle count enters: these are ranks of records, not of danger.
 \end{itemize}
 \end{frame}
 
@@ -276,5 +272,11 @@ DOCS.mkdir(exist_ok=True); name = 'cdn_ndg_road_safety_deck_en'
 for _ in range(2):
     r = subprocess.run(['pdflatex', '-interaction=nonstopmode', '-halt-on-error', f'{name}.tex'], cwd=DOCS, capture_output=True, text=True, errors='replace')
     if r.returncode: print(r.stdout[-2500:]); raise SystemExit('pdflatex failed')
+# the figure of each slide, named by slide number, for copying elsewhere
+import re, shutil
+OUTF = DOCS / 'deck_figures_en'; shutil.rmtree(OUTF, ignore_errors=True); OUTF.mkdir()
+for i, frame in enumerate(DECK.split(r'\begin{frame}')[1:], 1):
+    for m in re.finditer(r'\{(\.\./derived/figures/[^}]+\.png)\}', frame):
+        src = (DOCS / m.group(1)).resolve(); shutil.copyfile(src, OUTF / f"{i:02d}_{src.stem.removesuffix('_en')}.png")
 for ext in ('aux', 'log', 'nav', 'out', 'snm', 'toc'): (DOCS / f'{name}.{ext}').unlink(missing_ok=True)
 print('written', DOCS / f'{name}.pdf', TAG, '| overfull:', r.stdout.count('Overfull'))

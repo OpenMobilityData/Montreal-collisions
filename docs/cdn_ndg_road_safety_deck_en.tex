@@ -2,10 +2,10 @@
 \usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{helvet}\usepackage{booktabs,amsmath}
 \DeclareUnicodeCharacter{2019}{\textquoteright}\DeclareUnicodeCharacter{2013}{--}
 \setbeamersize{text margin left=0.6cm,text margin right=0.6cm}\setbeamerfont{frametitle}{size=\large,series=\bfseries}
-\setbeamertemplate{footline}{\hfill{\tiny\textcolor{red!70!black}{DRAFT for the author\textquoteright{}s review, v2026-11-19-10-24-58}\quad\insertframenumber}\hspace{1em}\vspace{0.4em}}
+\setbeamertemplate{footline}{\hfill{\tiny\textcolor{red!70!black}{DRAFT for the author\textquoteright{}s review, v2026-11-19-10-37-45}\quad\insertframenumber}\hspace{1em}\vspace{0.4em}}
 \title{Road safety in Côte-des-Neiges--Notre-Dame-de-Grâce}
 \subtitle{What the police collision record shows, 2012--2021}
-\author{Rick Hoge, PhD}\date{Draft, November 19, 2026 \quad {\footnotesize v2026-11-19-10-24-58}}
+\author{Rick Hoge, PhD}\date{Draft, November 19, 2026 \quad {\footnotesize v2026-11-19-10-37-45}}
 \begin{document}
 \begin{frame}\titlepage
 {\footnotesize I am a researcher, not an engineer (not a member of the Ordre des ingénieurs du Québec): this is a data analysis, not an engineering opinion, done on my own initiative and under no professional mandate.}
@@ -136,24 +136,24 @@ other or none recorded & 34 & 0 & 1 & 25 & 3~\% \\
 \begin{center}\includegraphics[width=\linewidth,height=0.86\textheight,keepaspectratio]{../derived/figures/queen-mary-decarie-hero/hero_queen_mary_decarie_en.png}\end{center}
 \end{frame}
 
-\begin{frame}{« The most dangerous intersection in the borough »? The test}
+\begin{frame}{Queen-Mary / Décarie among the intersections of the borough and of the City}
 \scriptsize
 \setlength\tabcolsep{3.5pt}\begin{tabular}{@{}lrllll@{}}\toprule
 Collisions recorded at the intersection & here & \multicolumn{2}{l}{among 901 in the borough: rank, first} & \multicolumn{2}{l}{among 15{,}506 in the City: rank, first} \\\midrule
-all collisions & 193 & 4 & Décarie / Paré (378) & 19 & Crémazie / Saint-Miche… (646) \\
-with an injury or a death & 49 & 4 & Décarie / Paré (69) & =25 \textcolor{gray}{\scriptsize(2 tied)} & Crémazie / Saint-Miche… (155) \\
-with a severe injury or a death & 2 & =6 \textcolor{gray}{\scriptsize(16 tied)} & Décarie / Paré (4) & =76 \textcolor{gray}{\scriptsize(172 tied)} & Mont-Royal / Saint-Denis (6) \\
-with a pedestrian victim & 9 & =5 \textcolor{gray}{\scriptsize(4 tied)} & Côte-des-Neiges / Van … (14) & =68 \textcolor{gray}{\scriptsize(24 tied)} & Sherbrooke / Trianon (26) \\
-involving a bicycle & 5 & =6 \textcolor{gray}{\scriptsize(6 tied)} & Girouard / Sherbrooke (9) & =190 \textcolor{gray}{\scriptsize(76 tied)} & Christophe-Colomb / Cr… (57) \\
+all collisions & 193 & 4 & Décarie / Paré (378) & 19 & Crémazie / Saint-M… (646) \\
+with an injury or a death & 49 & 4 & Décarie / Paré (69) & =25 \textcolor{gray}{\scriptsize(2 tied)} & Crémazie / Saint-M… (155) \\
+with a severe injury or a death & 2 & =6 \textcolor{gray}{\scriptsize(16 tied)} & Décarie / Paré (4) & =76 \textcolor{gray}{\scriptsize(172 tied)} & Mont-Royal / Saint… (6) \\
+with a pedestrian victim & 9 & =5 \textcolor{gray}{\scriptsize(4 tied)} & Côte-des-Neiges / … (14) & =68 \textcolor{gray}{\scriptsize(24 tied)} & Sherbrooke / Trianon (26) \\
+involving a bicycle & 5 & =6 \textcolor{gray}{\scriptsize(6 tied)} & Girouard / Sherbro… (9) & =190 \textcolor{gray}{\scriptsize(76 tied)} & Christophe-Colomb … (57) \\
 \bottomrule
 \end{tabular}
 \medskip
 \small
 \begin{itemize}\setlength\itemsep{3pt}
-\item \textbf{The record does not support « the most dangerous intersection in the borough ».} Under none of seven measures (the five above and the two severe-or-fatal rows by mode), by collisions recorded at the intersection or within 100 m, is Queen-Mary / Décarie first, in the borough or in the City.
-\item What it does support: by collisions recorded at the intersection it is \textbf{4 of 901} in the borough for all collisions and \textbf{4} for collisions with an injury, behind three other crossings of the Décarie service roads (Paré, Jean-Talon, Côte-Saint-Luc), and 19 of 15{,}506 in the City.
+\item By collisions recorded at the intersection it is \textbf{4 of 901} in the borough for all collisions and \textbf{4} for collisions with an injury, behind three other crossings of the Décarie service roads (Paré, Jean-Talon, Côte-Saint-Luc), and 19 of 15{,}506 in the City.
 \item Among the borough's 14 intersections with 100 recorded collisions or more, its share with an injury (25~\%) ranks 2.
-\item The pedestrian and bicycle rows rest on 9 and 5 collisions in ten years, with many ties. No traffic, pedestrian or bicycle count enters: this ranks records, not danger.
+\item The pedestrian and bicycle rows rest on 9 and 5 collisions in ten years, with many ties.
+\item The same ranks with every collision within 100 m, and two further measures (severe or fatal, by mode), are in \texttt{intersection\_ranks\_queen\_mary\_decarie.csv}. No traffic, pedestrian or bicycle count enters: these are ranks of records, not of danger.
 \end{itemize}
 \end{frame}
 
