@@ -1,6 +1,6 @@
-"""Hero graphic: collision patterns at chemin Queen-Mary / boulevard Décarie, SPVM open data 2012–2021. English and French, PNG.
+"""Overview graphic: collision patterns at chemin Queen-Mary / boulevard Décarie, SPVM open data 2012–2021. English and French, PNG.
 
-  python3 derived/figures/queen-mary-decarie-hero/hero.py
+  python3 derived/figures/queen-mary-decarie-overview/overview.py
 
 The crossing is one intersection: chemin Queen-Mary meets the two service roads of the Décarie expressway, which
 passes underneath; the police record places the collisions reported there on a single point and flags them imprecise
@@ -125,7 +125,7 @@ def draw(h, R, st, nodes, lang):
     fig.text(X0, 1.38 / H, textwrap.fill(t['foot'], 120), color=am.INK2, fontsize=8.6, va='top', linespacing=1.4)
     fig.text(0.03, 0.38 / H, textwrap.fill(am.SRC[lang].split(' Basemap')[0].split(' Fond de carte')[0], 210), color=am.INK3, fontsize=7.8, va='bottom', linespacing=1.4)
     fig.text(0.03, 0.16 / H, am.REPO, color=am.EDGE, fontsize=8, va='bottom')
-    am.save(fig, HERE, f'hero_queen_mary_decarie_{lang}')
+    am.save(fig, HERE, f'overview_queen_mary_decarie_{lang}')
 
 
 if __name__ == '__main__':

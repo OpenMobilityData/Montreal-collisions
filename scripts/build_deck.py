@@ -4,7 +4,7 @@
 
 Every number on a slide is read from derived/tables/ at build time; the figures come from derived/figures/. Run first:
 intersections.py, cdn_ndg_tables.py and the figure scripts under derived/figures/{borough-comparison,cdn-ndg-maps,
-cdn-ndg-charts,queen-mary,queen-mary-decarie-hero}/ (and maps.py, point_rates_time_chart.py for the Terrebonne slides). The figure of each slide is copied to docs/deck_figures_en/NN_<figure>.png (NN = slide number). DRAFT footer until --final, which prints « Preliminary results,
+cdn-ndg-charts,queen-mary,queen-mary-decarie-overview}/ (and maps.py, point_rates_time_chart.py for the Terrebonne slides). The figure of each slide is copied to docs/deck_figures_en/NN_<figure>.png (NN = slide number). DRAFT footer until --final, which prints « Preliminary results,
 not peer reviewed » instead."""
 import datetime, subprocess, sys
 from pathlib import Path
@@ -194,11 +194,11 @@ Involving a bicycle & """ + f"{rk('bike')} & & {rk('bike_per_10k_res')}" + r""" 
 \end{frame}
 
 \begin{frame}{Chemin Queen-Mary}
-""" + fig('queen-mary', 'hero_queen_mary_corridor', 0.86) + r"""
+""" + fig('queen-mary', 'overview_queen_mary_corridor', 0.86) + r"""
 \end{frame}
 
 \begin{frame}{Queen-Mary / Décarie}
-""" + fig('queen-mary-decarie-hero', 'hero_queen_mary_decarie', 0.86) + r"""
+""" + fig('queen-mary-decarie-overview', 'overview_queen_mary_decarie', 0.86) + r"""
 \end{frame}
 
 \begin{frame}{Rue de Terrebonne: every collision within 25 m of the lane's axis}

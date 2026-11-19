@@ -1,7 +1,7 @@
 """Chemin Queen-Mary inside Côte-des-Neiges–Notre-Dame-de-Grâce, SPVM collisions 2012–2021: a map with one marker per
 collision (colour and size = severity, shape = road user) beside the record of each intersection, east to west.
 English and French, PNG. Two versions: queen_mary_<lang> (map and intersections) and
-hero_queen_mary_corridor_<lang> (the same with the headline numbers above and the record by year below).
+overview_queen_mary_corridor_<lang> (the same with the headline numbers above and the record by year below).
 
   python3 derived/figures/queen-mary/queen_mary.py
 
@@ -26,10 +26,10 @@ T = {'en': dict(title='Chemin Queen-Mary: the police record, 2012–2021', sub='
                 note='Un marqueur par collision, au point enregistré ; les collisions enregistrées au même point sont étalées en petite spirale. Les colonnes piéton (▽) et vélo (□) comptent des collisions, quelle que soit leur gravité. Des comptes, pas des risques : les débits de véhicules, de piétons et de vélos de Queen-Mary ne sont pas dans le fichier.')}
 
 
-def draw(c, Q, terr, qm, corr, lang, hero=False):
-    t = T[lang]; W = 14.0; axw = 0.44 * W; axh = axw * am.Map.aspect(BOX); K = 1.25 if hero else 0.0; H = axh + 1.9 + K
+def draw(c, Q, terr, qm, corr, lang, overview=False):
+    t = T[lang]; W = 14.0; axw = 0.44 * W; axh = axw * am.Map.aspect(BOX); K = 1.25 if overview else 0.0; H = axh + 1.9 + K
     fig = plt.figure(figsize=(W, H), dpi=150, facecolor=am.BG); top = (1.05 + axh) / H
-    if hero:
+    if overview:
         k = [len(c), int((c.severity != 'damage').sum()), int((c.severity == 'severe').sum()), int((c.severity == 'fatal').sum()), int(c.ped.sum()), int(c.bike.sum()), int(Q.name.str.contains(' / ').sum())]
         for i, (v, lab) in enumerate(zip(k, t['kpi'])):
             x = 0.03 + i * 0.135
@@ -46,7 +46,7 @@ def draw(c, Q, terr, qm, corr, lang, hero=False):
     h = [Line2D([], [], color='none', label=t['sev'])] + am.sev_handles(lang, {k: sc.get(k, 0) for k in ('fatal', 'severe', 'light', 'damage')}) + [Line2D([], [], color='none', label=' '), Line2D([], [], color='none', label=t['mode'])] + am.mode_handles(lang, mc)
     M.ax.legend(handles=h, loc='lower right', frameon=True, facecolor=am.BG, edgecolor=am.EDGE, framealpha=0.85, labelcolor=am.INK, fontsize=8.5, handletextpad=0.5)
     # bars: one row per intersection, east (top) to west
-    yb = 3.75 if hero else 2.0; ax = fig.add_axes([0.66, yb / H, 0.25, (axh + 0.5 - yb) / H]); ax.set_facecolor(am.BG)
+    yb = 3.75 if overview else 2.0; ax = fig.add_axes([0.66, yb / H, 0.25, (axh + 0.5 - yb) / H]); ax.set_facecolor(am.BG)
     Q = Q[Q.name.str.contains(' / ')].iloc[::-1].reset_index(drop=True); y = np.arange(len(Q))
     dmg = Q.rec_all - Q.rec_injury; light = Q.rec_injury - Q.rec_severe_fatal
     ax.barh(y, dmg, color=am.SEV['damage']['color'], height=0.66, edgecolor=am.BG, lw=1); ax.barh(y, light, left=dmg, color=am.SEV['light']['color'], height=0.66, edgecolor=am.BG, lw=1)
@@ -62,7 +62,7 @@ def draw(c, Q, terr, qm, corr, lang, hero=False):
     fig.text(0.50, top - 0.12 / H, t['bars'], color=am.INK, fontsize=11, fontweight='bold', va='top')
     hb = [matplotlib.patches.Patch(color=am.SEV['damage']['color'], label=t['dmg']), matplotlib.patches.Patch(color=am.SEV['light']['color'], label=t['inj']), matplotlib.patches.Patch(color=am.SEV['severe']['color'], label=t['sf'])]
     fig.legend(handles=hb, loc='upper left', bbox_to_anchor=(0.50, top - 0.38 / H), ncol=3, frameon=False, labelcolor=am.INK2, fontsize=8.5, handlelength=1.2, columnspacing=1.2, borderaxespad=0)
-    if hero:
+    if overview:
         a2 = fig.add_axes([0.53, 2.0 / H, 0.38, 1.05 / H]); a2.set_facecolor(am.BG); yr = c.assign(year=pd.to_datetime(c.date).dt.year).groupby(['year', 'severity']).size().unstack(fill_value=0).reindex(range(2012, 2022), fill_value=0); b = np.zeros(10)
         for sv in ('damage', 'light', 'severe', 'fatal'):
             if sv in yr: a2.bar(yr.index, yr[sv], bottom=b, color=am.SEV[sv]['color'], width=0.7, edgecolor=am.BG, lw=1); b += yr[sv].values
@@ -72,7 +72,7 @@ def draw(c, Q, terr, qm, corr, lang, hero=False):
         fig.text(0.50, 3.2 / H, t['year'], color=am.INK, fontsize=11, fontweight='bold', va='bottom')
     fig.text(0.50, 1.7 / H, textwrap.fill(t['note'], 105), color=am.INK2, fontsize=8.3, va='top', linespacing=1.4)
     am.titles(fig, t['title'], t['sub'] + ' · ' + t['total'].format(n=am.fmt(len(c), lang)), top_t); am.footer(fig, lang, 100)
-    am.save(fig, HERE, f'hero_queen_mary_corridor_{lang}' if hero else f'queen_mary_{lang}')
+    am.save(fig, HERE, f'overview_queen_mary_corridor_{lang}' if overview else f'queen_mary_{lang}')
 
 
 if __name__ == '__main__':
@@ -80,4 +80,4 @@ if __name__ == '__main__':
     Q = pd.read_csv(TB / 'queen_mary_intersections_2012-2021.csv'); corr = pd.read_csv(TB / 'queen_mary_corridor_2012-2021.csv').iloc[0]
     terr = areas.territories(); terr = terr[terr.territory == areas.CDN_NDG]
     st = areas.streets(); qm = gpd.clip(st[st.NOM_VOIE == 'Queen-Mary'], terr.to_crs(areas.MTM8))
-    for lang in ('en', 'fr'): draw(c, Q, terr, qm, corr, lang); draw(c, Q, terr, qm, corr, lang, hero=True)
+    for lang in ('en', 'fr'): draw(c, Q, terr, qm, corr, lang); draw(c, Q, terr, qm, corr, lang, overview=True)
