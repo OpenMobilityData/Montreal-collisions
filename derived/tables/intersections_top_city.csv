@@ -1,0 +1,211 @@
+count,measure,rank,name,territory,district,lat,lon,value,rec_all,rec_injury,rec_severe_fatal,rec_ped,rec_ped_severe_fatal,rec_bike,rec_bike_severe_fatal,r100_all,r100_injury,r100_severe_fatal,r100_ped,r100_ped_severe_fatal,r100_bike,r100_bike_severe_fatal
+rec,all,1,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.562839,-73.60643,646,646,155,1,13,1,3,0,697,162,1,16,1,5,0
+rec,all,2,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.589886,-73.538961,510,510,78,2,26,0,5,0,562,87,2,33,0,5,0
+rec,all,3,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,378,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,all,4,Langelier / Métropolitain,Saint-Léonard,Saint-Léonard-Est,45.593459,-73.578306,328,328,97,0,3,0,1,0,431,111,1,6,0,1,0
+rec,all,5,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,321,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+rec,all,6,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,Villeray,45.550242,-73.629344,318,318,105,1,0,0,57,1,323,106,1,0,0,57,1
+rec,all,7,Non-nommée / Crémazie / Marquette,Villeray–Saint-Michel–Parc-Extension,François-Perrault,45.553842,-73.622544,296,296,40,2,6,1,3,0,319,46,2,6,1,3,0
+rec,all,8,Non-nommée / Saint-Laurent,Ahuntsic-Cartierville,Saint-Sulpice,45.542261,-73.6435,292,292,72,3,10,2,2,0,333,80,3,12,2,2,0
+rec,all,9,Crémazie / Non-nommée,Ahuntsic-Cartierville,Saint-Sulpice,45.532234,-73.648096,291,291,63,1,5,0,0,0,468,88,2,9,0,2,0
+rec,all,10,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,291,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+rec,all,11,Lacordaire / Métropolitain,Saint-Léonard,Saint-Léonard-Est,45.582363,-73.588946,249,249,56,0,1,0,2,0,274,69,0,2,0,3,0
+rec,all,12,Henri-Bourassa / Lacordaire,Montréal-Nord,Ovide-Clermont,45.606674,-73.619969,239,239,71,1,18,0,4,0,259,75,1,18,0,4,0
+rec,all,13,Crémazie / Saint-Hubert,Ahuntsic-Cartierville,Saint-Sulpice,45.549111,-73.635047,234,234,50,2,5,0,3,0,363,70,3,6,1,4,0
+rec,all,14,Assomption / Non-nommée,Rosemont–La Petite-Patrie,Marie-Victorin,45.573059,-73.55883,223,223,18,1,7,0,0,0,258,26,1,9,0,1,0
+rec,all,15,1re / Montréal-Toronto / Non-nommée,Lachine,J.-Émery-Provost,45.444205,-73.663724,217,217,55,2,0,0,0,0,235,56,2,1,0,0,0
+rec,injury,1,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.562839,-73.60643,155,646,155,1,13,1,3,0,697,162,1,16,1,5,0
+rec,injury,2,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,Villeray,45.550242,-73.629344,105,318,105,1,0,0,57,1,323,106,1,0,0,57,1
+rec,injury,3,Langelier / Métropolitain,Saint-Léonard,Saint-Léonard-Est,45.593459,-73.578306,97,328,97,0,3,0,1,0,431,111,1,6,0,1,0
+rec,injury,4,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.589886,-73.538961,78,510,78,2,26,0,5,0,562,87,2,33,0,5,0
+rec,injury,5,Non-nommée / Saint-Laurent,Ahuntsic-Cartierville,Saint-Sulpice,45.542261,-73.6435,72,292,72,3,10,2,2,0,333,80,3,12,2,2,0
+rec,injury,6,Henri-Bourassa / Lacordaire,Montréal-Nord,Ovide-Clermont,45.606674,-73.619969,71,239,71,1,18,0,4,0,259,75,1,18,0,4,0
+rec,injury,7,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,69,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,injury,8,Henri-Bourassa / Renaude-Lapointe / Non-nommée,Anjou,Ouest,45.613784,-73.598984,68,177,68,1,1,0,0,0,200,74,1,1,0,0,0
+rec,injury,9,Crémazie / Métropolitain / 24e / Provencher,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.571483,-73.598715,66,194,66,1,4,1,4,0,207,67,1,4,1,4,0
+rec,injury,10,Crémazie / Non-nommée,Ahuntsic-Cartierville,Saint-Sulpice,45.532234,-73.648096,63,291,63,1,5,0,0,0,468,88,2,9,0,2,0
+rec,injury,11,Grandes-Prairies / Lacordaire,Saint-Léonard,Saint-Léonard-Est,45.599125,-73.611951,63,189,63,4,9,3,7,0,218,69,4,9,3,7,0
+rec,injury,12,Pins / Non-nommée / Hutchison / Utilités publiques,Ville-Marie,Jeanne-Mance,45.510929,-73.578621,63,149,63,4,6,1,12,2,184,71,4,6,1,15,2
+rec,injury,13,Lacordaire / Métropolitain,Saint-Léonard,Saint-Léonard-Est,45.582363,-73.588946,56,249,56,0,1,0,2,0,274,69,0,2,0,3,0
+rec,injury,14,D'Iberville / Saint-Joseph,Le Plateau-Mont-Royal,De Lorimier,45.541151,-73.573704,56,139,56,4,0,0,18,1,139,56,4,0,0,18,1
+rec,injury,15,Angrignon / Newman,LaSalle,Sault-Saint-Louis,45.447747,-73.609682,56,130,56,4,18,2,1,0,148,64,4,20,2,2,0
+rec,severe_fatal,1,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.523958,-73.58292,6,87,30,6,15,6,6,0,198,66,10,27,9,20,1
+rec,severe_fatal,2,Jacques-Bizard / Pierrefonds,Pierrefonds-Roxboro,Cap-Saint-Jacques,45.482311,-73.862289,5,93,29,5,2,1,3,2,105,30,5,2,1,3,2
+rec,severe_fatal,3,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,4,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,severe_fatal,4,Grandes-Prairies / Lacordaire,Saint-Léonard,Saint-Léonard-Est,45.599125,-73.611951,4,189,63,4,9,3,7,0,218,69,4,9,3,7,0
+rec,severe_fatal,5,Pins / Non-nommée / Hutchison / Utilités publiques,Ville-Marie,Jeanne-Mance,45.510929,-73.578621,4,149,63,4,6,1,12,2,184,71,4,6,1,15,2
+rec,severe_fatal,6,Jean-Talon / Langelier,Saint-Léonard,Saint-Léonard-Est,45.59209,-73.575146,4,148,40,4,11,2,1,1,179,42,4,12,2,1,1
+rec,severe_fatal,7,D'Iberville / Saint-Joseph,Le Plateau-Mont-Royal,De Lorimier,45.541151,-73.573704,4,139,56,4,0,0,18,1,139,56,4,0,0,18,1
+rec,severe_fatal,8,Angrignon / Newman,LaSalle,Sault-Saint-Louis,45.447747,-73.609682,4,130,56,4,18,2,1,0,148,64,4,20,2,2,0
+rec,severe_fatal,9,Alphonse-D.-Roy / Notre-Dame,Mercier–Hochelaga-Maisonneuve,Hochelaga,45.536455,-73.541537,4,130,47,4,0,0,11,1,151,52,4,0,0,12,1
+rec,severe_fatal,10,Notre-Dame / Saint-Pierre,Lachine,du Canal,45.442305,-73.647018,4,124,37,4,2,1,12,2,170,50,4,3,1,12,2
+rec,severe_fatal,11,Pierrefonds / Sources,Pierrefonds-Roxboro,Bois-de-Liesse,45.506772,-73.819913,4,114,31,4,8,1,3,0,155,40,5,9,2,3,0
+rec,severe_fatal,12,René-Lévesque / Saint-Laurent,Ville-Marie,Saint-Jacques,45.50883,-73.56158,4,108,24,4,8,3,4,0,184,40,4,15,3,6,0
+rec,severe_fatal,13,Peel / Saint-Antoine,Ville-Marie,Peter-McGill,45.496893,-73.566804,4,96,38,4,12,0,11,3,145,52,4,16,0,15,3
+rec,severe_fatal,14,Honoré-Beaugrand / Sherbrooke,Mercier–Hochelaga-Maisonneuve,Tétreaultville,45.596492,-73.535041,4,96,26,4,11,1,2,0,151,36,4,15,1,4,0
+rec,severe_fatal,15,René-Lévesque / Saint-Urbain,Ville-Marie,Saint-Jacques,45.507698,-73.562571,4,95,30,4,12,3,8,0,141,36,5,15,4,10,0
+rec,ped,1,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.589886,-73.538961,26,510,78,2,26,0,5,0,562,87,2,33,0,5,0
+rec,ped,2,Jarry / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.56379,-73.609564,25,135,54,2,25,2,1,0,186,65,2,27,2,4,0
+rec,ped,3,Beaubien / Pie-IX,Rosemont–La Petite-Patrie,Marie-Victorin,45.562588,-73.579701,19,76,34,3,19,3,2,0,109,40,4,22,3,2,0
+rec,ped,4,Henri-Bourassa / Lacordaire,Montréal-Nord,Ovide-Clermont,45.606674,-73.619969,18,239,71,1,18,0,4,0,259,75,1,18,0,4,0
+rec,ped,5,Angrignon / Newman,LaSalle,Sault-Saint-Louis,45.447747,-73.609682,18,130,56,4,18,2,1,0,148,64,4,20,2,2,0
+rec,ped,6,Jean-Talon / Viau,Saint-Léonard,Saint-Léonard-Ouest,45.57497,-73.584582,17,188,53,2,17,2,4,0,271,71,2,19,2,5,0
+rec,ped,7,De Salaberry / Grenet,Ahuntsic-Cartierville,Bordeaux-Cartierville,45.52761,-73.712925,17,81,35,4,17,2,0,0,96,37,4,18,2,0,0
+rec,ped,8,De Lorimier / De Maisonneuve,Ville-Marie,Sainte-Marie,45.525529,-73.551898,15,110,30,3,15,1,4,0,131,34,3,15,1,5,0
+rec,ped,9,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.523958,-73.58292,15,87,30,6,15,6,6,0,198,66,10,27,9,20,1
+rec,ped,10,Henri-Bourassa / Saint-Vital,Montréal-Nord,Marie-Clarac,45.590632,-73.646848,15,75,38,4,15,1,0,0,120,49,4,20,1,2,0
+rec,ped,11,Désy / Henri-Bourassa,Montréal-Nord,Ovide-Clermont,45.607545,-73.617383,14,93,32,0,14,0,1,0,243,46,1,24,1,2,0
+rec,ped,12,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,14,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+rec,ped,13,Saint-Michel / Shaughnessy,Villeray–Saint-Michel–Parc-Extension,François-Perrault,45.559338,-73.59949,14,73,35,0,14,0,2,0,183,71,3,21,1,6,0
+rec,ped,14,Van Horne / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494364,-73.637631,14,68,18,0,14,0,0,0,116,27,0,20,0,0,0
+rec,ped,15,Guy / Sainte-Catherine,Ville-Marie,Peter-McGill,45.495045,-73.57783,14,56,21,2,14,1,3,0,123,32,3,19,2,4,0
+rec,ped_severe_fatal,1,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.523958,-73.58292,6,87,30,6,15,6,6,0,198,66,10,27,9,20,1
+rec,ped_severe_fatal,2,Grandes-Prairies / Lacordaire,Saint-Léonard,Saint-Léonard-Est,45.599125,-73.611951,3,189,63,4,9,3,7,0,218,69,4,9,3,7,0
+rec,ped_severe_fatal,3,Montagne / René-Lévesque,Ville-Marie,Peter-McGill,45.49659,-73.572334,3,112,24,3,10,3,5,0,130,25,3,10,3,5,0
+rec,ped_severe_fatal,4,René-Lévesque / Saint-Laurent,Ville-Marie,Saint-Jacques,45.50883,-73.56158,3,108,24,4,8,3,4,0,184,40,4,15,3,6,0
+rec,ped_severe_fatal,5,Acadie / Henri-Bourassa / Alfred-Laliberté,Ahuntsic-Cartierville,Bordeaux-Cartierville,45.534287,-73.680979,3,105,31,3,7,3,3,0,115,32,3,7,3,3,0
+rec,ped_severe_fatal,6,René-Lévesque / Saint-Urbain,Ville-Marie,Saint-Jacques,45.507698,-73.562571,3,95,30,4,12,3,8,0,141,36,5,15,4,10,0
+rec,ped_severe_fatal,7,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,3,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+rec,ped_severe_fatal,8,Berri / De Maisonneuve,Ville-Marie,Saint-Jacques,45.51532,-73.561098,3,81,24,4,10,3,11,1,127,35,5,11,4,15,1
+rec,ped_severe_fatal,9,Beaubien / Pie-IX,Rosemont–La Petite-Patrie,Marie-Victorin,45.562588,-73.579701,3,76,34,3,19,3,2,0,109,40,4,22,3,2,0
+rec,ped_severe_fatal,10,Laurier / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.52695,-73.58946,3,73,35,4,7,3,20,1,112,53,4,9,3,38,1
+rec,ped_severe_fatal,11,Newman / Thierry,LaSalle,Cecil-P.-Newman,45.436468,-73.625447,3,69,32,4,13,3,2,1,89,33,4,13,3,2,1
+rec,ped_severe_fatal,12,De Chateaubriand / Jean-Talon / Non-nommée,Villeray–Saint-Michel–Parc-Extension,Villeray,45.539951,-73.61359,3,54,21,3,10,3,3,0,161,45,4,22,4,6,0
+rec,ped_severe_fatal,13,Mackay / Sainte-Catherine,Ville-Marie,Peter-McGill,45.495838,-73.577045,3,44,9,3,8,3,2,0,162,16,3,8,3,7,0
+rec,ped_severe_fatal,14,De Salaberry / O'Brien,Ahuntsic-Cartierville,Bordeaux-Cartierville,45.532394,-73.70697,3,37,14,4,5,3,1,0,76,29,4,7,3,2,0
+rec,ped_severe_fatal,15,Cathédrale / René-Lévesque / Metcalfe,Ville-Marie,Peter-McGill,45.499399,-73.569695,3,37,10,3,7,3,1,0,206,56,6,22,4,8,1
+rec,bike,1,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,Villeray,45.550242,-73.629344,57,318,105,1,0,0,57,1,323,106,1,0,0,57,1
+rec,bike,2,Saint-Urbain / De Maisonneuve / Ontario / Président-Kennedy,Ville-Marie,Saint-Jacques,45.509873,-73.567308,36,94,42,1,5,0,36,1,146,58,2,5,0,46,2
+rec,bike,3,Berri / Ontario,Ville-Marie,Saint-Jacques,45.517042,-73.564839,30,97,36,2,6,2,30,0,160,58,5,14,4,41,1
+rec,bike,4,Rachel / Saint-Denis,Le Plateau-Mont-Royal,Jeanne-Mance,45.521797,-73.578162,29,97,44,0,3,0,29,0,188,60,0,4,0,42,0
+rec,bike,5,Rachel / Saint-Dominique,Le Plateau-Mont-Royal,Jeanne-Mance,45.518488,-73.581236,28,46,24,0,0,0,28,0,130,47,2,4,1,49,1
+rec,bike,6,Côte-Sainte-Catherine / McEachran / Pagnuelo,Outremont,Robert-Bourassa,45.514627,-73.609151,23,54,31,0,1,0,23,0,61,35,0,2,0,26,0
+rec,bike,7,Beloeil / Côte-Sainte-Catherine,Outremont,Jeanne-Sauvé,45.513549,-73.612144,22,28,20,0,0,0,22,0,71,43,1,3,0,44,1
+rec,bike,8,Christophe-Colomb / Parc-La Fontaine / Rachel,Le Plateau-Mont-Royal,Jeanne-Mance,45.525647,-73.57432,21,66,29,1,1,0,21,1,187,45,1,3,0,32,1
+rec,bike,9,Henri-Julien / Rachel,Le Plateau-Mont-Royal,Jeanne-Mance,45.520762,-73.57912,21,63,18,1,0,0,21,1,125,29,1,1,0,31,1
+rec,bike,10,De Maisonneuve / Metcalfe,Ville-Marie,Peter-McGill,45.501594,-73.57402,21,58,21,0,5,0,21,0,182,53,2,16,1,34,1
+rec,bike,11,Davidson / Rachel / Saint-Michel,Rosemont–La Petite-Patrie,Vieux-Rosemont,45.547018,-73.559595,21,46,18,0,0,0,21,0,62,23,0,0,0,21,0
+rec,bike,12,Laurier / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.52695,-73.58946,20,73,35,4,7,3,20,1,112,53,4,9,3,38,1
+rec,bike,13,Ontario / Papineau,Ville-Marie,Sainte-Marie,45.525876,-73.559419,19,169,38,2,6,2,19,0,216,45,2,6,2,25,0
+rec,bike,14,De Maisonneuve / Montagne,Ville-Marie,Peter-McGill,45.498785,-73.576901,19,81,19,2,5,2,19,0,200,38,4,13,3,30,1
+rec,bike,15,Pins / Saint-Urbain,Le Plateau-Mont-Royal,Jeanne-Mance,45.513813,-73.576141,19,65,30,1,3,1,19,0,130,47,2,7,2,31,0
+rec,bike_severe_fatal,1,Frontenac / Notre-Dame,Ville-Marie,Sainte-Marie,45.529424,-73.544185,3,180,33,3,1,0,14,3,278,49,4,1,0,15,3
+rec,bike_severe_fatal,2,Peel / Saint-Antoine,Ville-Marie,Peter-McGill,45.496893,-73.566804,3,96,38,4,12,0,11,3,145,52,4,16,0,15,3
+rec,bike_severe_fatal,3,Pins / Non-nommée / Hutchison / Utilités publiques,Ville-Marie,Jeanne-Mance,45.510929,-73.578621,2,149,63,4,6,1,12,2,184,71,4,6,1,15,2
+rec,bike_severe_fatal,4,Notre-Dame / Saint-Pierre,Lachine,du Canal,45.442305,-73.647018,2,124,37,4,2,1,12,2,170,50,4,3,1,12,2
+rec,bike_severe_fatal,5,Mont-Royal / Parc,Le Plateau-Mont-Royal,Peter-McGill,45.516777,-73.589348,2,111,44,2,7,0,13,2,169,61,4,10,0,17,3
+rec,bike_severe_fatal,6,Jacques-Bizard / Pierrefonds,Pierrefonds-Roxboro,Cap-Saint-Jacques,45.482311,-73.862289,2,93,29,5,2,1,3,2,105,30,5,2,1,3,2
+rec,bike_severe_fatal,7,Montagne / Saint-Antoine,Ville-Marie,Peter-McGill,45.495065,-73.569143,2,75,22,3,5,0,6,2,102,26,5,5,0,7,2
+rec,bike_severe_fatal,8,Atateken / Parc-La Fontaine / Sherbrooke,Le Plateau-Mont-Royal,Jeanne-Mance,45.521364,-73.565572,2,53,15,3,4,1,8,2,116,26,3,8,1,13,2
+rec,bike_severe_fatal,9,Saint-Michel / Saint-Zotique,Rosemont–La Petite-Patrie,Étienne-Desmarteau,45.556207,-73.590096,2,50,21,2,2,0,7,2,86,39,3,7,1,11,2
+rec,bike_severe_fatal,10,Christophe-Colomb / Saint-Zotique,Rosemont–La Petite-Patrie,Saint-Édouard,45.539363,-73.605006,2,44,18,2,5,0,5,2,57,20,2,5,0,6,2
+rec,bike_severe_fatal,11,Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473722,-73.597184,2,44,11,3,1,1,2,2,54,12,3,1,1,2,2
+rec,bike_severe_fatal,12,Charleroi / Saint-Julien,Montréal-Nord,Marie-Clarac,45.593151,-73.638558,2,25,15,2,0,0,2,2,119,41,2,4,0,2,2
+rec,bike_severe_fatal,13,Belleville / Prieur,Montréal-Nord,Marie-Clarac,45.583355,-73.643462,2,8,7,2,1,0,3,2,33,19,3,1,0,3,2
+rec,bike_severe_fatal,14,4e / Laurier,Rosemont–La Petite-Patrie,Vieux-Rosemont,45.545976,-73.572272,2,8,3,2,0,0,2,2,27,4,2,0,0,3,2
+rec,bike_severe_fatal,15,D'Argenson / Saint-Charles,Le Sud-Ouest,Saint-Henri-Est–Petite-Bourgogne–Pointe-Saint-Charles–Griffintown,45.477691,-73.572274,2,4,3,2,0,0,3,2,23,13,2,2,0,10,2
+r100,all,1,Crémazie / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.562253,-73.606973,699,0,0,0,0,0,0,0,699,167,1,16,1,5,0
+r100,all,2,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.562839,-73.60643,697,646,155,1,13,1,3,0,697,162,1,16,1,5,0
+r100,all,3,12e / Crémazie,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.563456,-73.605877,686,24,2,0,1,0,0,0,686,164,1,15,1,4,0
+r100,all,4,Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.590119,-73.539673,562,0,0,0,0,0,0,0,562,87,2,33,0,5,0
+r100,all,5,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.589886,-73.538961,562,510,78,2,26,0,5,0,562,87,2,33,0,5,0
+r100,all,6,Crémazie / Non-nommée,Ahuntsic-Cartierville,Saint-Sulpice,45.532234,-73.648096,468,291,63,1,5,0,0,0,468,88,2,9,0,2,0
+r100,all,7,Crémazie / Non-nommée / Outremont,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.532712,-73.647058,450,62,9,0,1,0,1,0,450,84,2,6,0,2,0
+r100,all,8,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494979,-73.652404,439,7,0,0,0,0,0,0,439,73,4,12,2,3,1
+r100,all,9,Crémazie / Wiseman,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.532154,-73.647339,435,41,4,0,0,0,1,0,435,85,2,8,0,2,0
+r100,all,10,Non-nommée / Wiseman,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.532031,-73.646913,431,2,1,0,0,0,0,0,431,79,2,7,0,2,0
+r100,all,11,Langelier / Métropolitain,Saint-Léonard,Saint-Léonard-Est,45.593459,-73.578306,431,328,97,0,3,0,1,0,431,111,1,6,0,1,0
+r100,all,12,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,428,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+r100,all,13,Décarie / Jean-Talon / Non-nommée,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494122,-73.653323,428,0,0,0,0,0,0,0,428,66,5,12,3,3,1
+r100,all,14,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,421,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+r100,all,15,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,389,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+r100,injury,1,Crémazie / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.562253,-73.606973,167,0,0,0,0,0,0,0,699,167,1,16,1,5,0
+r100,injury,2,12e / Crémazie,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.563456,-73.605877,164,24,2,0,1,0,0,0,686,164,1,15,1,4,0
+r100,injury,3,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.562839,-73.60643,162,646,155,1,13,1,3,0,697,162,1,16,1,5,0
+r100,injury,4,Langelier / Métropolitain,Saint-Léonard,Saint-Léonard-Est,45.593459,-73.578306,111,328,97,0,3,0,1,0,431,111,1,6,0,1,0
+r100,injury,5,Christophe-Colomb / Crémazie,Ahuntsic-Cartierville,Saint-Sulpice,45.550734,-73.629703,109,0,0,0,0,0,0,0,342,109,1,0,0,58,1
+r100,injury,6,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,Villeray,45.550242,-73.629344,106,318,105,1,0,0,57,1,323,106,1,0,0,57,1
+r100,injury,7,Hutchison / Mont-Royal,Ville-Marie,Peter-McGill,45.516259,-73.589821,96,3,1,0,0,0,2,0,239,96,4,17,0,27,3
+r100,injury,8,Berri / Crémazie,Ahuntsic-Cartierville,Villeray,45.545906,-73.638343,90,15,4,0,0,0,0,0,326,90,3,8,1,12,1
+r100,injury,9,Crémazie / Non-nommée,Ahuntsic-Cartierville,Saint-Sulpice,45.532234,-73.648096,88,291,63,1,5,0,0,0,468,88,2,9,0,2,0
+r100,injury,10,Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.590119,-73.539673,87,0,0,0,0,0,0,0,562,87,2,33,0,5,0
+r100,injury,11,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.589886,-73.538961,87,510,78,2,26,0,5,0,562,87,2,33,0,5,0
+r100,injury,12,Crémazie / Drolet,Ahuntsic-Cartierville,Villeray,45.544732,-73.639358,86,15,4,0,1,0,0,0,288,86,3,6,1,5,0
+r100,injury,13,Crémazie / Wiseman,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.532154,-73.647339,85,41,4,0,0,0,1,0,435,85,2,8,0,2,0
+r100,injury,14,Lacordaire / Non-nommée,Saint-Léonard,Saint-Léonard-Est,45.598055,-73.610869,85,13,5,0,0,0,0,0,284,85,4,10,3,8,0
+r100,injury,15,Crémazie / Non-nommée / Outremont,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.532712,-73.647058,84,62,9,0,1,0,1,0,450,84,2,6,0,2,0
+r100,severe_fatal,1,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.523958,-73.58292,10,87,30,6,15,6,6,0,198,66,10,27,9,20,1
+r100,severe_fatal,2,Clark / René-Lévesque,Ville-Marie,Saint-Jacques,45.508436,-73.561912,8,16,1,0,0,0,1,0,238,57,8,21,6,13,0
+r100,severe_fatal,3,Montagne / Torrance,Ville-Marie,Peter-McGill,45.49471,-73.5684,7,13,4,2,0,0,1,0,190,54,7,7,0,11,2
+r100,severe_fatal,4,Drolet / Mont-Royal,Le Plateau-Mont-Royal,Jeanne-Mance,45.523368,-73.583425,7,35,7,0,1,0,4,0,181,56,7,17,6,19,1
+r100,severe_fatal,5,Mont-Royal / Rivard,Le Plateau-Mont-Royal,Jeanne-Mance,45.524521,-73.582422,7,23,6,0,3,0,4,0,176,53,7,23,6,19,1
+r100,severe_fatal,6,Saint-Denis,Le Plateau-Mont-Royal,Jeanne-Mance,45.523496,-73.581902,7,24,3,1,1,1,1,0,158,38,7,17,7,11,0
+r100,severe_fatal,7,Dansereau / Papineau,Ville-Marie,Sainte-Marie,45.522806,-73.552811,6,3,0,0,0,0,0,0,253,57,6,21,6,16,0
+r100,severe_fatal,8,Cathédrale / René-Lévesque / Metcalfe,Ville-Marie,Peter-McGill,45.499399,-73.569695,6,37,10,3,7,3,1,0,206,56,6,22,4,8,1
+r100,severe_fatal,9,Campion / De Lorimier / Laforce,Ville-Marie,Sainte-Marie,45.525237,-73.551283,6,9,2,0,0,0,0,0,198,51,6,20,2,9,1
+r100,severe_fatal,10,De Maisonneuve / Savoie,Ville-Marie,Saint-Jacques,45.514789,-73.561596,6,7,1,0,0,0,0,0,183,43,6,20,5,23,1
+r100,severe_fatal,11,Ontario / Providence,Ville-Marie,Sainte-Marie,45.51741,-73.564562,6,4,2,0,2,0,0,0,159,61,6,15,5,40,1
+r100,severe_fatal,12,Labadie / Parc,Le Plateau-Mont-Royal,Mile-End,45.520011,-73.596694,6,11,4,1,1,1,3,0,133,38,6,11,3,13,1
+r100,severe_fatal,13,Parc / Édouard-Charles,Le Plateau-Mont-Royal,Mile-End,45.519292,-73.595067,6,12,4,0,0,0,2,0,125,41,6,11,3,9,1
+r100,severe_fatal,14,Laurier / Parc,Le Plateau-Mont-Royal,Mile-End,45.519629,-73.595823,6,49,17,3,6,1,2,1,99,31,6,8,3,10,1
+r100,severe_fatal,15,Jeanne-Mance / Laurier,Le Plateau-Mont-Royal,Mile-End,45.520327,-73.595216,6,8,1,0,0,0,1,0,96,28,6,8,2,7,1
+r100,ped,1,Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.590119,-73.539673,33,0,0,0,0,0,0,0,562,87,2,33,0,5,0
+r100,ped,2,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,Louis-Riel,45.589886,-73.538961,33,510,78,2,26,0,5,0,562,87,2,33,0,5,0
+r100,ped,3,Guy / Police,Ville-Marie,Peter-McGill,45.495257,-73.578323,28,6,1,0,1,0,1,0,191,53,2,28,1,16,0
+r100,ped,4,Jarry / Shelley,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.564208,-73.609177,28,14,4,0,1,0,0,0,183,66,2,28,2,4,0
+r100,ped,5,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.523958,-73.58292,27,87,30,6,15,6,6,0,198,66,10,27,9,20,1
+r100,ped,6,Jarry / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.56379,-73.609564,27,135,54,2,25,2,1,0,186,65,2,27,2,4,0
+r100,ped,7,10e / Jarry,Villeray–Saint-Michel–Parc-Extension,Saint-Michel,45.563128,-73.610168,26,26,3,0,1,0,0,0,174,59,2,26,2,1,0
+r100,ped,8,21e / Beaubien,Rosemont–La Petite-Patrie,Marie-Victorin,45.561866,-73.580324,25,23,5,1,3,0,0,0,113,47,5,25,4,2,0
+r100,ped,9,Désy / Henri-Bourassa,Montréal-Nord,Ovide-Clermont,45.607545,-73.617383,24,93,32,0,14,0,1,0,243,46,1,24,1,2,0
+r100,ped,10,Côte-Vertu / Décarie,Saint-Laurent,Côte-de-Liesse,45.514236,-73.682766,24,74,20,0,13,0,3,0,197,49,0,24,0,6,0
+r100,ped,11,Peel / René-Lévesque,Ville-Marie,Peter-McGill,45.498722,-73.570331,24,92,28,2,10,0,6,1,197,52,5,24,3,9,1
+r100,ped,12,Pierce / Police,Ville-Marie,Peter-McGill,45.494694,-73.579007,24,7,0,0,0,0,0,0,185,37,2,24,1,7,0
+r100,ped,13,Shaughnessy / Shelley,Villeray–Saint-Michel–Parc-Extension,François-Perrault,45.559781,-73.599625,24,6,3,0,1,0,1,0,130,59,2,24,1,5,0
+r100,ped,14,Viau / Terbois,Saint-Léonard,Saint-Léonard-Ouest,45.575265,-73.585871,23,14,3,0,0,0,0,0,233,71,2,23,2,4,0
+r100,ped,15,De Maisonneuve / Pierce,Ville-Marie,Peter-McGill,45.495184,-73.579846,23,13,4,0,1,0,2,0,209,54,0,23,0,25,0
+r100,ped_severe_fatal,1,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,Mile-End,45.523958,-73.58292,9,87,30,6,15,6,6,0,198,66,10,27,9,20,1
+r100,ped_severe_fatal,2,Saint-Denis,Le Plateau-Mont-Royal,Jeanne-Mance,45.523496,-73.581902,7,24,3,1,1,1,1,0,158,38,7,17,7,11,0
+r100,ped_severe_fatal,3,Dansereau / Papineau,Ville-Marie,Sainte-Marie,45.522806,-73.552811,6,3,0,0,0,0,0,0,253,57,6,21,6,16,0
+r100,ped_severe_fatal,4,Clark / René-Lévesque,Ville-Marie,Saint-Jacques,45.508436,-73.561912,6,16,1,0,0,0,1,0,238,57,8,21,6,13,0
+r100,ped_severe_fatal,5,Drolet / Mont-Royal,Le Plateau-Mont-Royal,Jeanne-Mance,45.523368,-73.583425,6,35,7,0,1,0,4,0,181,56,7,17,6,19,1
+r100,ped_severe_fatal,6,Mont-Royal / Rivard,Le Plateau-Mont-Royal,Jeanne-Mance,45.524521,-73.582422,6,23,6,0,3,0,4,0,176,53,7,23,6,19,1
+r100,ped_severe_fatal,7,De Maisonneuve / Savoie,Ville-Marie,Saint-Jacques,45.514789,-73.561596,5,7,1,0,0,0,0,0,183,43,6,20,5,23,1
+r100,ped_severe_fatal,8,Ontario / Providence,Ville-Marie,Sainte-Marie,45.51741,-73.564562,5,4,2,0,2,0,0,0,159,61,6,15,5,40,1
+r100,ped_severe_fatal,9,Cathédrale / René-Lévesque / Metcalfe,Ville-Marie,Peter-McGill,45.499399,-73.569695,4,37,10,3,7,3,1,0,206,56,6,22,4,8,1
+r100,ped_severe_fatal,10,Jean-Talon / Saint-Hubert,Villeray–Saint-Michel–Parc-Extension,Saint-Édouard,45.540683,-73.613139,4,58,18,1,11,1,2,0,183,50,4,23,4,8,0
+r100,ped_severe_fatal,11,Jean-Talon / Wiseman,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.525733,-73.624989,4,54,16,2,12,2,1,0,162,29,4,21,4,3,0
+r100,ped_severe_fatal,12,De Chateaubriand / Jean-Talon / Non-nommée,Villeray–Saint-Michel–Parc-Extension,Villeray,45.539951,-73.61359,4,54,21,3,10,3,3,0,161,45,4,22,4,6,0
+r100,ped_severe_fatal,13,Berri / Ontario,Ville-Marie,Saint-Jacques,45.517042,-73.564839,4,97,36,2,6,2,30,0,160,58,5,14,4,41,1
+r100,ped_severe_fatal,14,Papineau / Sainte-Catherine,Ville-Marie,Sainte-Marie,45.522595,-73.552362,4,80,21,2,13,2,4,0,152,32,4,17,4,6,0
+r100,ped_severe_fatal,15,Jean-Talon / Outremont,Villeray–Saint-Michel–Parc-Extension,Parc-Extension,45.526273,-73.624671,4,36,6,1,4,1,0,0,146,29,4,20,4,4,0
+r100,bike,1,Rachel / Saint-Laurent,Le Plateau-Mont-Royal,Jeanne-Mance,45.518007,-73.581676,63,57,18,2,3,1,19,1,150,58,2,5,1,63,1
+r100,bike,2,Christophe-Colomb / Crémazie,Ahuntsic-Cartierville,Saint-Sulpice,45.550734,-73.629703,58,0,0,0,0,0,0,0,342,109,1,0,0,58,1
+r100,bike,3,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,Villeray,45.550242,-73.629344,57,318,105,1,0,0,57,1,323,106,1,0,0,57,1
+r100,bike,4,Drolet / Rachel,Le Plateau-Mont-Royal,Jeanne-Mance,45.521212,-73.578692,55,31,6,0,0,0,5,0,220,70,1,3,0,55,1
+r100,bike,5,Chaumont / Mentana,Le Plateau-Mont-Royal,Jeanne-Mance,45.524819,-73.574745,49,1,0,0,0,0,0,0,237,64,2,3,0,49,2
+r100,bike,6,Rachel / Saint-Dominique,Le Plateau-Mont-Royal,Jeanne-Mance,45.518488,-73.581236,49,46,24,0,0,0,28,0,130,47,2,4,1,49,1
+r100,bike,7,Saint-Urbain / De Maisonneuve / Ontario / Président-Kennedy,Ville-Marie,Saint-Jacques,45.509873,-73.567308,46,94,42,1,5,0,36,1,146,58,2,5,0,46,2
+r100,bike,8,Coloniale / Rachel,Le Plateau-Mont-Royal,Jeanne-Mance,45.51893,-73.58082,46,10,3,0,1,0,1,0,91,46,1,3,0,46,1
+r100,bike,9,Drolet / Laurier,Le Plateau-Mont-Royal,Mile-End,45.526261,-73.590022,45,20,13,0,2,0,12,0,134,62,4,9,3,45,1
+r100,bike,10,Claude-Champagne / Côte-Sainte-Catherine,Outremont,Jeanne-Sauvé,45.513008,-73.613103,45,27,17,1,2,0,18,1,73,45,1,2,0,45,1
+r100,bike,11,De Maisonneuve / Peel,Ville-Marie,Peter-McGill,45.500892,-73.574723,44,61,22,2,7,1,11,1,211,63,2,18,1,44,1
+r100,bike,12,Clark / De Maisonneuve / Ontario,Ville-Marie,Saint-Jacques,45.510621,-73.566786,44,28,5,1,0,0,3,1,187,62,5,11,2,44,2
+r100,bike,13,Beloeil / Côte-Sainte-Catherine,Outremont,Jeanne-Sauvé,45.513549,-73.612144,44,28,20,0,0,0,22,0,71,43,1,3,0,44,1
+r100,bike,14,Ainslie / Côte-Sainte-Catherine,Outremont,Robert-Bourassa,45.513319,-73.612547,44,8,3,0,0,0,1,0,68,42,1,2,0,44,1
+r100,bike,15,De Maisonneuve / Mansfield,Ville-Marie,Peter-McGill,45.502225,-73.5734,43,47,9,0,4,0,2,0,177,59,0,14,0,43,0
+r100,bike_severe_fatal,1,D'Iberville / Cadot / Notre-Dame / Ambroise-Casale,Ville-Marie,Sainte-Marie,45.528973,-73.544905,3,92,16,1,0,0,0,0,375,80,4,4,0,21,3
+r100,bike_severe_fatal,2,Cadot / Frontenac,Ville-Marie,Sainte-Marie,45.529765,-73.54502,3,4,0,0,0,0,1,0,281,62,4,5,1,20,3
+r100,bike_severe_fatal,3,Frontenac / Notre-Dame,Ville-Marie,Sainte-Marie,45.529424,-73.544185,3,180,33,3,1,0,14,3,278,49,4,1,0,15,3
+r100,bike_severe_fatal,4,Hutchison / Mont-Royal,Ville-Marie,Peter-McGill,45.516259,-73.589821,3,3,1,0,0,0,2,0,239,96,4,17,0,27,3
+r100,bike_severe_fatal,5,Sherbrooke / Wolfe,Le Plateau-Mont-Royal,De Lorimier,45.521936,-73.565572,3,19,6,0,3,0,1,0,176,51,4,10,1,29,3
+r100,bike_severe_fatal,6,Mont-Royal / Parc,Le Plateau-Mont-Royal,Peter-McGill,45.516777,-73.589348,3,111,44,2,7,0,13,2,169,61,4,10,0,17,3
+r100,bike_severe_fatal,7,Peel / Saint-Antoine,Ville-Marie,Peter-McGill,45.496893,-73.566804,3,96,38,4,12,0,11,3,145,52,4,16,0,15,3
+r100,bike_severe_fatal,8,Cathédrale / Saint-Antoine,Ville-Marie,Peter-McGill,45.497523,-73.566024,3,36,9,0,4,0,1,0,144,48,4,17,0,12,3
+r100,bike_severe_fatal,9,12e / Saint-Zotique,Rosemont–La Petite-Patrie,Étienne-Desmarteau,45.55691,-73.589476,3,15,7,1,3,1,1,0,81,34,4,6,1,12,3
+r100,bike_severe_fatal,10,Non-nommée / Saint-Pierre / Montréal-Toronto,Lachine,du Canal,45.442637,-73.647131,2,15,8,0,1,0,0,0,266,68,4,3,1,12,2
+r100,bike_severe_fatal,11,Chaumont / Mentana,Le Plateau-Mont-Royal,Jeanne-Mance,45.524819,-73.574745,2,1,0,0,0,0,0,0,237,64,2,3,0,49,2
+r100,bike_severe_fatal,12,Bordeaux / Sherbrooke,Ville-Marie,Sainte-Marie,45.529982,-73.563271,2,28,7,0,0,0,2,0,223,54,3,9,1,8,2
+r100,bike_severe_fatal,13,Saint-Laurent,Rosemont–La Petite-Patrie,Saint-Édouard,45.534438,-73.617794,2,2,0,0,0,0,0,0,207,68,5,21,3,18,2
+r100,bike_severe_fatal,14,Boyer / Rachel,Le Plateau-Mont-Royal,Jeanne-Mance,45.525201,-73.575036,2,110,14,0,1,0,10,0,204,52,2,4,0,37,2
+r100,bike_severe_fatal,15,Montagne / Torrance,Ville-Marie,Peter-McGill,45.49471,-73.5684,2,13,4,2,0,0,1,0,190,54,7,7,0,11,2

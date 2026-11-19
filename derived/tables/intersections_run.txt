@@ -1,0 +1,4 @@
+collisions used: 212,233 (located, LOC_COTE_PD != 4); recorded within 30 m of an intersection node: 144,246
+géobase nodes: 24,787; intersections after merging nodes within 30 m and same-name units within 120 m: 19,898 (largest: 15 nodes); in CDN-NDG 901, City 15,506
+queen_mary_decarie: 1 intersection(s) named with both: Décarie / Queen-Mary [4 nodes, rec 193, r100 269]
+terrebonne_girouard: 1 intersection(s) named with both: Girouard / Terrebonne [1 nodes, rec 23, r100 44]

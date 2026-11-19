@@ -1,0 +1,5 @@
+severity,collisions,injury,severe_fatal,fatal,ped,bike,moto
+fatal,0,0,0,0,0,0,0
+severe,3,3,3,0,2,0,0
+light,53,53,0,0,11,5,3
+damage,213,0,0,0,0,0,2

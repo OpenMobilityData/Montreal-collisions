@@ -1,0 +1,5 @@
+mode,collisions,injury,severe_fatal,fatal,ped,bike,moto
+bicycle involved,5,5,0,0,0,5,0
+motor vehicles only,246,35,1,0,0,0,0
+motorcycle involved,5,3,0,0,0,0,5
+pedestrian victim,13,13,2,0,13,0,0

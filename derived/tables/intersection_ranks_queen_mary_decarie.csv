@@ -1,0 +1,43 @@
+intersection,count,measure,measure_label,comparison_set,n_in_set,value,rank,tied_at_rank,set_median_nonzero,first_name,first_territory,first_value
+Décarie / Queen-Mary,rec,all,all collisions,cdn_ndg,901,193,4,1,7.0,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,378
+Décarie / Queen-Mary,rec,all,all collisions,city,15506,193,19,1,5.0,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,646
+Décarie / Queen-Mary,rec,all,all collisions,agglomeration,19898,193,25,1,4.0,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,646
+Décarie / Queen-Mary,rec,injury,collisions with an injury or a death,cdn_ndg,901,49,4,1,3.0,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,69
+Décarie / Queen-Mary,rec,injury,collisions with an injury or a death,city,15506,49,25,2,2.0,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,155
+Décarie / Queen-Mary,rec,injury,collisions with an injury or a death,agglomeration,19898,49,30,2,2.0,Crémazie / Saint-Michel / Shelley,Villeray–Saint-Michel–Parc-Extension,155
+Décarie / Queen-Mary,rec,severe_fatal,collisions with a severe injury or a death,cdn_ndg,901,2,6,16,1.0,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,4
+Décarie / Queen-Mary,rec,severe_fatal,collisions with a severe injury or a death,city,15506,2,76,172,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,6
+Décarie / Queen-Mary,rec,severe_fatal,collisions with a severe injury or a death,agglomeration,19898,2,81,185,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,6
+Décarie / Queen-Mary,rec,ped,collisions with a pedestrian victim,cdn_ndg,901,9,5,4,2.0,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,14
+Décarie / Queen-Mary,rec,ped,collisions with a pedestrian victim,city,15506,9,68,24,1.0,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,26
+Décarie / Queen-Mary,rec,ped,collisions with a pedestrian victim,agglomeration,19898,9,72,25,1.0,Roméo-Vachon,Dorval,27
+Décarie / Queen-Mary,rec,ped_severe_fatal,pedestrian-victim collisions with a severe injury or a death,cdn_ndg,901,2,2,12,1.0,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,3
+Décarie / Queen-Mary,rec,ped_severe_fatal,pedestrian-victim collisions with a severe injury or a death,city,15506,2,17,83,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,6
+Décarie / Queen-Mary,rec,ped_severe_fatal,pedestrian-victim collisions with a severe injury or a death,agglomeration,19898,2,17,87,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,6
+Décarie / Queen-Mary,rec,bike,collisions involving a bicycle,cdn_ndg,901,5,6,6,1.0,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,9
+Décarie / Queen-Mary,rec,bike,collisions involving a bicycle,city,15506,5,190,76,1.0,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,57
+Décarie / Queen-Mary,rec,bike,collisions involving a bicycle,agglomeration,19898,5,194,78,1.0,Christophe-Colomb / Crémazie / Liège,Villeray–Saint-Michel–Parc-Extension,57
+Décarie / Queen-Mary,rec,bike_severe_fatal,bicycle collisions with a severe injury or a death,cdn_ndg,901,0,16,886,1.0,Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,2
+Décarie / Queen-Mary,rec,bike_severe_fatal,bicycle collisions with a severe injury or a death,city,15506,0,227,15280,1.0,Frontenac / Notre-Dame,Ville-Marie,3
+Décarie / Queen-Mary,rec,bike_severe_fatal,bicycle collisions with a severe injury or a death,agglomeration,19898,0,243,19656,1.0,Frontenac / Notre-Dame,Ville-Marie,3
+Décarie / Queen-Mary,r100,all,all collisions,cdn_ndg,901,269,12,1,28.0,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,439
+Décarie / Queen-Mary,r100,all,all collisions,city,15506,269,53,1,18.0,Crémazie / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,699
+Décarie / Queen-Mary,r100,all,all collisions,agglomeration,19898,269,66,1,14.0,Crémazie / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,699
+Décarie / Queen-Mary,r100,injury,collisions with an injury or a death,cdn_ndg,901,56,9,2,7.0,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,73
+Décarie / Queen-Mary,r100,injury,collisions with an injury or a death,city,15506,56,122,11,5.0,Crémazie / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,167
+Décarie / Queen-Mary,r100,injury,collisions with an injury or a death,agglomeration,19898,56,134,12,5.0,Crémazie / Saint-Michel,Villeray–Saint-Michel–Parc-Extension,167
+Décarie / Queen-Mary,r100,severe_fatal,collisions with a severe injury or a death,cdn_ndg,901,3,13,27,1.0,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,5
+Décarie / Queen-Mary,r100,severe_fatal,collisions with a severe injury or a death,city,15506,3,156,250,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,10
+Décarie / Queen-Mary,r100,severe_fatal,collisions with a severe injury or a death,agglomeration,19898,3,162,269,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,10
+Décarie / Queen-Mary,r100,ped,collisions with a pedestrian victim,cdn_ndg,901,13,18,7,3.0,Linton / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,21
+Décarie / Queen-Mary,r100,ped,collisions with a pedestrian victim,city,15506,13,207,58,2.0,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,33
+Décarie / Queen-Mary,r100,ped,collisions with a pedestrian victim,agglomeration,19898,13,212,58,2.0,Sherbrooke / Trianon,Mercier–Hochelaga-Maisonneuve,33
+Décarie / Queen-Mary,r100,ped_severe_fatal,pedestrian-victim collisions with a severe injury or a death,cdn_ndg,901,2,15,45,1.0,Queen-Mary / Lemieux / Ponsard,Côte-des-Neiges–Notre-Dame-de-Grâce,4
+Décarie / Queen-Mary,r100,ped_severe_fatal,pedestrian-victim collisions with a severe injury or a death,city,15506,2,114,353,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,9
+Décarie / Queen-Mary,r100,ped_severe_fatal,pedestrian-victim collisions with a severe injury or a death,agglomeration,19898,2,114,374,1.0,Mont-Royal / Saint-Denis,Le Plateau-Mont-Royal,9
+Décarie / Queen-Mary,r100,bike,collisions involving a bicycle,cdn_ndg,901,5,45,27,2.0,Bulmer / De Maisonneuve,Côte-des-Neiges–Notre-Dame-de-Grâce,19
+Décarie / Queen-Mary,r100,bike,collisions involving a bicycle,city,15506,5,1120,380,2.0,Rachel / Saint-Laurent,Le Plateau-Mont-Royal,63
+Décarie / Queen-Mary,r100,bike,collisions involving a bicycle,agglomeration,19898,5,1141,385,2.0,Rachel / Saint-Laurent,Le Plateau-Mont-Royal,63
+Décarie / Queen-Mary,r100,bike_severe_fatal,bicycle collisions with a severe injury or a death,cdn_ndg,901,0,55,847,1.0,Côte-des-Neiges / Ellendale,Côte-des-Neiges–Notre-Dame-de-Grâce,2
+Décarie / Queen-Mary,r100,bike_severe_fatal,bicycle collisions with a severe injury or a death,city,15506,0,745,14762,1.0,Hutchison / Mont-Royal,Ville-Marie,3
+Décarie / Queen-Mary,r100,bike_severe_fatal,bicycle collisions with a severe injury or a death,agglomeration,19898,0,797,19102,1.0,Mont-Royal / Parc,Le Plateau-Mont-Royal,3

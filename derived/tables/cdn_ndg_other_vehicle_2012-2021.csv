@@ -1,0 +1,9 @@
+mode,other_vehicle,collisions,fatal,severe,light,damage
+bike,car,446,1,16,325,104
+bike,heavy,8,0,2,6,0
+bike,bus,12,0,1,10,1
+bike,other,34,0,1,25,8
+ped,car,878,9,65,804,0
+ped,heavy,26,5,4,17,0
+ped,bus,30,1,3,26,0
+ped,other,68,1,6,61,0

@@ -1,0 +1,6 @@
+rows 218,272; without coordinates 11; at a police-district centroid (LOC_COTE_PD = 4) 6,039, of which in Côte-des-Neiges–Notre-Dame-de-Grâce: 628
+outside every polygon (with coordinates): 6
+City (19 boroughs): 190,906 collisions, street 4,062 km, residents 1,757,676
+Côte-des-Neiges–Notre-Dame-de-Grâce: 17,182 collisions inside the polygon; districts sum 17,180
+Queen-Mary / Décarie, within 100 m of its 4 nodes: 269 collisions, 193 within 30 m; hour not stated 15; flagged LOC_IMPRECISION 193; with an autoroute named in a street field 1; road category 11 (ramp, collector or service road) 37, 12 (numbered route) 9
+Queen-Mary corridor in the borough: 904 collisions within 30 m of 3.00 km of géobase carriageway

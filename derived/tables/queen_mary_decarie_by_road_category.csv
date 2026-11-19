@@ -1,0 +1,11 @@
+road_category,collisions,injury,severe_fatal,fatal,ped,bike,moto
+lane (ruelle),2,0,0,0,0,0,0
+local road,5,2,0,0,1,1,0
+main artery,183,36,1,0,7,3,3
+not stated,6,0,0,0,0,0,0
+numbered route,9,2,1,0,0,0,0
+other public road,1,0,0,0,0,0,0
+parking lot,6,0,0,0,0,0,1
+private land,2,0,0,0,0,0,0
+"ramp, collector or service road of an expressway",37,13,0,0,3,1,0
+residential street,18,3,1,0,2,0,1

@@ -1,0 +1,270 @@
+NO_SEQ_COLL,date,weekday,hour,severity,mode,ped,bike,moto,other_vehicle,kind,road_category,CD_LOCLN_ACCDN,RUE_ACCDN,ACCDN_PRES_DE,NO_CIVIQ_ACCDN,NB_MORTS,NB_BLESSES_GRAVES,NB_BLESSES_LEGERS,LOC_LAT,LOC_LONG,LOC_IMPRECISION,dist_m,at_recorded_point
+SPVM _ 2012 _ 15346,2012-01-04,Wed,,damage,motor vehicles only,False,False,False,car,another road vehicle,not stated,,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 15430,2012-01-20,Fri,1.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,DECARIE,5332,0,0,0,45.482913,-73.629661,N,70.0,False
+SPVM _ 2012 _ 15598,2012-02-24,Fri,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE BD,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 15664,2012-03-05,Mon,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,,TRANS ISLAND,QUEEN MARY,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2012 _ 15712,2012-03-14,Wed,20.0,damage,motor vehicles only,False,False,False,car,a fixed object,main artery,32,,QUEEN MARY ET DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 15717,2012-03-14,Wed,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,34,TRANS ISLAND,QUEEN MARY,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2012 _ 15813,2012-04-01,Sun,12.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 15832,2012-04-12,Thu,,damage,motor vehicles only,False,False,False,car,another road vehicle,not stated,,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 15878,2012-04-24,Tue,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,TRANS ISLAND,5255,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2012 _ 15901,2012-04-29,Sun,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,99,TRANS ISLAND,,5134,0,0,0,45.484544,-73.628945,N,80.2,False
+SPVM _ 2012 _ 16001,2012-05-27,Sun,20.0,damage,motorcycle involved,False,False,True,other,another road vehicle,residential street,,QUEEN MARY,,5323,0,0,0,45.483104,-73.629664,N,52.2,False
+SPVM _ 2012 _ 16126,2012-06-25,Mon,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,parking lot,99,QUEEN MARY ARR,,5251,0,0,0,45.484397,-73.628619,N,72.3,False
+SPVM _ 2012 _ 16137,2012-06-28,Thu,19.0,light,bicycle involved,False,True,False,car,a cyclist,main artery,32,QUEEN MARY,DECARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16215,2012-07-07,Sat,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,34,AV TRANS ISLAND,ISABELLA,5126,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2012 _ 16195,2012-07-10,Tue,,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,33,QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2012 _ 16288,2012-08-01,Wed,13.0,light,motor vehicles only,False,False,False,car,another road vehicle,residential street,32,,QUEEN MARY ET DECARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16320,2012-08-12,Sun,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE PRES,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16458,2012-08-18,Sat,,damage,motor vehicles only,False,False,False,car,another road vehicle,not stated,,DECARIE,,5112,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16367,2012-08-24,Fri,20.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,,QUEEN MARY ET TRANS ISLAND,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2012 _ 16368,2012-08-25,Sat,11.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16403,2012-09-01,Sat,,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16502,2012-09-22,Sat,13.0,damage,motor vehicles only,False,False,False,car,other or not stated,main artery,33,QUEEN MARY,,5256,0,0,0,45.48403,-73.628717,N,33.1,False
+SPVM _ 2012 _ 16519,2012-09-22,Sat,20.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,33,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16527,2012-09-28,Fri,,light,pedestrian victim,True,False,False,car,a pedestrian,local road,33,QUEEN MARY,DECARIE N VOIE DE SERV,5218,0,0,1,45.484361,-73.628644,N,67.8,False
+SPVM _ 2012 _ 16531,2012-09-29,Sat,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16630,2012-10-24,Wed,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16724,2012-11-16,Fri,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2012 _ 16742,2012-11-19,Mon,8.0,damage,motor vehicles only,False,False,False,car,other or not stated,residential street,33,GLOBERT,DECARIE,,0,0,0,45.483413,-73.628125,N,73.7,False
+SPVM _ 2012 _ 16872,2012-12-20,Thu,22.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15463,2013-01-15,Tue,4.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15546,2013-01-29,Tue,8.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15626,2013-02-13,Wed,15.0,damage,motor vehicles only,False,False,False,other,a fixed object,main artery,32,QUEEN MARY,TRANS ISLAND,5251,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2013 _ 15648,2013-02-16,Sat,16.0,light,pedestrian victim,True,False,False,car,a pedestrian,main artery,32,BD DECARIE,QUEEN MARY,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15741,2013-03-09,Sat,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,parking lot,99,QUEEN MARY,,5345,0,0,0,45.48314,-73.629639,N,47.8,False
+SPVM _ 2013 _ 15774,2013-03-17,Sun,20.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15781,2013-03-18,Mon,,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,33,WELLSTEED,DECARIE,,0,0,0,45.482952,-73.628116,N,99.7,False
+SPVM _ 2013 _ 15807,2013-03-21,Thu,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,,QUEEN MARY,,5240,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2013 _ 15812,2013-03-21,Thu,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2013 _ 15819,2013-03-24,Sun,3.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15827,2013-03-25,Mon,11.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15828,2013-03-25,Mon,12.0,light,pedestrian victim,True,False,False,car,a pedestrian,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15830,2013-03-25,Mon,12.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15859,2013-04-01,Mon,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,BD DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 15936,2013-04-20,Sat,21.0,damage,motor vehicles only,False,False,False,car,other or not stated,main artery,32,,DECARIE ET QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16005,2013-05-05,Sun,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",33,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16018,2013-05-07,Tue,7.0,light,bicycle involved,False,True,False,car,a cyclist,local road,32,QUEEN MARY,DECARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16117,2013-05-28,Tue,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16220,2013-06-18,Tue,10.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,QUEEN MARY,CH DECARIE PRES,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16265,2013-06-26,Wed,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16273,2013-06-29,Sat,12.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16346,2013-07-17,Wed,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,numbered route,32,QUEEN MARY FACE,,5220,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2013 _ 16368,2013-07-21,Sun,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,QUEEN MARY,,5212,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2013 _ 16457,2013-08-15,Thu,8.0,damage,motor vehicles only,False,False,False,other,other or not stated,numbered route,99,DECARIE,QUEEN MARY,,0,0,0,45.483849,-73.629029,O,3.8,True
+SPVM _ 2013 _ 16504,2013-08-23,Fri,22.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16508,2013-08-25,Sun,17.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16515,2013-08-26,Mon,8.0,damage,motor vehicles only,False,False,False,car,another road vehicle,parking lot,99,QUEEN MARY,,5345,0,0,0,45.48314,-73.629639,N,47.8,False
+SPVM _ 2013 _ 16523,2013-08-29,Thu,11.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16535,2013-08-31,Sat,21.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE COIN N O,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16764,2013-09-24,Tue,,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2013 _ 16655,2013-09-27,Fri,20.0,damage,motor vehicles only,False,False,False,bus,another road vehicle,main artery,33,QUEEN MARY,TRANS ISLAND,5248,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2013 _ 16682,2013-10-03,Thu,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,,5345,0,0,0,45.483104,-73.629664,N,52.2,False
+SPVM _ 2013 _ 16745,2013-10-15,Tue,17.0,damage,motor vehicles only,False,False,False,car,other or not stated,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16819,2013-10-30,Wed,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,34,TRANS ISLAND,,5140,0,0,0,45.484571,-73.62911,N,82.7,False
+SPVM _ 2013 _ 16890,2013-11-22,Fri,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,99,DECARIE,GLOBERT,,0,0,0,45.483449,-73.6281,N,73.3,False
+SPVM _ 2013 _ 16892,2013-11-22,Fri,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16895,2013-11-23,Sat,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,34,TRANS ISLAND,,5152,0,0,0,45.484697,-73.629389,N,99.8,False
+SPVM _ 2013 _ 16930,2013-12-01,Sun,1.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 16956,2013-12-09,Mon,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2013 _ 17007,2013-12-18,Wed,18.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,34,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10307,2014-02-02,Sun,5.0,damage,motor vehicles only,False,False,False,car,a fixed object,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10363,2014-02-16,Sun,22.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10406,2014-03-01,Sat,,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10504,2014-04-07,Mon,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10586,2014-05-06,Tue,23.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10704,2014-06-16,Mon,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,QUEEN MARY,,5324,0,0,0,45.483047,-73.629542,N,52.4,False
+SPVM _ 2014 _ 10700,2014-06-17,Tue,22.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,,5212,0,0,0,45.484361,-73.628645,N,67.8,False
+SPVM _ 2014 _ 10758,2014-07-02,Wed,15.0,damage,motor vehicles only,False,False,False,heavy,other or not stated,main artery,33,BD DECARIE,GLOBERT,,0,0,0,45.483413,-73.628126,N,73.6,False
+SPVM _ 2014 _ 10883,2014-08-26,Tue,15.0,light,motorcycle involved,False,False,True,car,another road vehicle,main artery,32,QUEEN MARY,TRANS ISLAND,,0,0,1,45.484361,-73.628645,N,67.8,False
+SPVM _ 2014 _ 10901,2014-09-03,Wed,10.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",34,DECARIE,QUEEN MARY,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 10927,2014-09-14,Sun,1.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 11021,2014-10-26,Sun,11.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 11050,2014-11-06,Thu,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2014 _ 11180,2014-12-23,Tue,19.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,CH QUEEN MARY,BD DECARIE,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10408,2015-01-11,Sun,4.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE N,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10456,2015-01-23,Fri,8.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10538,2015-02-17,Tue,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECAIRE ET QUEEN MARY,,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10562,2015-02-21,Sat,22.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10592,2015-03-06,Fri,7.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10631,2015-03-19,Thu,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10674,2015-04-02,Thu,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10683,2015-04-07,Tue,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,parking lot,99,TRANS ISLAND,,5132,0,0,0,45.484397,-73.628619,N,72.3,False
+SPVM _ 2015 _ 10686,2015-04-10,Fri,20.0,light,bicycle involved,False,True,False,car,other or not stated,main artery,32,QUEEN MARY,DECARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10687,2015-04-11,Sat,3.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10748,2015-05-09,Sat,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10750,2015-05-10,Sun,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10756,2015-05-14,Thu,16.0,damage,motor vehicles only,False,False,False,car,other or not stated,main artery,32,QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628645,N,67.8,False
+SPVM _ 2015 _ 10763,2015-05-17,Sun,,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,QUEEN MARY,,5257,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2015 _ 10828,2015-06-06,Sat,20.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10893,2015-06-28,Sun,13.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10942,2015-07-21,Tue,13.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10956,2015-07-21,Tue,10.0,severe,pedestrian victim,True,False,False,other,a pedestrian,residential street,33,QUEEN MARY,DECARIE,,0,1,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 10987,2015-08-12,Wed,9.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11010,2015-08-20,Thu,17.0,light,pedestrian victim,True,False,False,car,a pedestrian,main artery,32,QUEEN MARY,TRANS ISLAND,,0,0,1,45.484361,-73.628645,N,67.8,False
+SPVM _ 2015 _ 11012,2015-08-21,Fri,15.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11085,2015-09-16,Wed,10.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11097,2015-09-17,Thu,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,,DECARIE ET QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11113,2015-09-25,Fri,16.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,TRANS ISLAND,,0,0,1,45.484361,-73.628645,N,67.8,False
+SPVM _ 2015 _ 11129,2015-09-29,Tue,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",33,QUEEN MARY,BD DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11231,2015-11-06,Fri,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,,QUEEN MARY ET DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11284,2015-11-21,Sat,3.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11286,2015-11-21,Sat,3.0,damage,motor vehicles only,False,False,False,car,a fixed object,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2015 _ 11342,2015-12-09,Wed,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,CH QUEEN MARY,BD DECARIE N,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11584,2016-01-05,Tue,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 10604,2016-01-07,Thu,11.0,damage,motor vehicles only,False,False,False,car,another road vehicle,lane (ruelle),34,DECARIE,QUEEN MARY,5136,0,0,0,45.483879,-73.630053,N,72.3,False
+SPVM _ 2016 _ 10609,2016-01-10,Sun,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,local road,33,QUEEN MARY,,5328,0,0,0,45.48298,-73.629601,N,61.2,False
+SPVM _ 2016 _ 10814,2016-03-26,Sat,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 10843,2016-04-07,Thu,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,32,TRANS ISLAND,,,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2016 _ 10861,2016-04-13,Wed,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 10867,2016-04-16,Sat,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 10901,2016-05-03,Tue,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 10950,2016-05-19,Thu,,damage,motor vehicles only,False,False,False,car,another road vehicle,parking lot,99,QUEEN MARY,,5345,0,0,0,45.48314,-73.629639,N,47.8,False
+SPVM _ 2016 _ 10962,2016-05-24,Tue,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",33,DECARIE VOIE SERV,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 10964,2016-05-25,Wed,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11043,2016-06-22,Wed,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,,BD QUEEN MARY,,5208,0,0,0,45.484361,-73.628645,N,67.8,False
+SPVM _ 2016 _ 11044,2016-06-22,Wed,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,PRES DE DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11109,2016-07-11,Mon,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,99,CH DE LA QUEEN MARY,DECARIE,,0,0,0,45.483849,-73.629029,O,3.8,True
+SPVM _ 2016 _ 11113,2016-07-12,Tue,9.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11132,2016-07-18,Mon,3.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,BD DECARIE,,0,0,4,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11141,2016-07-19,Tue,21.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11179,2016-08-02,Tue,12.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,33,BD DECARIE,QUEEN MARY,5136,0,0,0,45.483843,-73.630079,N,71.7,False
+SPVM _ 2016 _ 11183,2016-08-04,Thu,5.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,QUEEN MARY,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11246,2016-08-26,Fri,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11253,2016-08-31,Wed,7.0,damage,motor vehicles only,False,False,False,bus,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11262,2016-09-01,Thu,,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11273,2016-09-06,Tue,13.0,damage,motor vehicles only,False,False,False,heavy,a fixed object,main artery,33,QUEEN MARY,,5320,0,0,0,45.483115,-73.629483,N,43.6,False
+SPVM _ 2016 _ 11327,2016-09-26,Mon,15.0,damage,motor vehicles only,False,False,False,bus,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11383,2016-10-18,Tue,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11409,2016-10-24,Mon,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,,TRANS ISLAND ET QUEEN MARY,,0,0,0,45.484361,-73.628645,N,67.8,False
+SPVM _ 2016 _ 11402,2016-10-28,Fri,0.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11412,2016-11-01,Tue,5.0,damage,motor vehicles only,False,False,False,car,a pedestrian,"ramp, collector or service road of an expressway",32,BD DECARIE N,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11425,2016-11-05,Sat,23.0,damage,motor vehicles only,False,False,False,car,another road vehicle,other public road,32,CH QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628645,N,67.8,False
+SPVM _ 2016 _ 11510,2016-12-04,Sun,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,BD DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2016 _ 11519,2016-12-06,Tue,1.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 10776,2017-01-06,Fri,4.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 10808,2017-01-19,Thu,11.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 10924,2017-03-02,Thu,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,,QUEEN MARY,,5208,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2017 _ 10936,2017-03-08,Wed,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 10964,2017-03-16,Thu,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,private land,99,DECARIE,,5136,0,0,0,45.483879,-73.630053,N,72.3,False
+SPVM _ 2017 _ 11112,2017-05-06,Sat,6.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,BD DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11181,2017-05-26,Fri,17.0,damage,motor vehicles only,False,False,False,bus,another road vehicle,numbered route,34,,,,0,0,0,45.483104,-73.629664,N,52.2,False
+SPVM _ 2017 _ 11182,2017-05-26,Fri,22.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,,DECARIE ET QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11206,2017-06-05,Mon,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11265,2017-06-18,Sun,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,local road,32,QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2017 _ 11300,2017-06-30,Fri,14.0,light,pedestrian victim,True,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11326,2017-07-11,Tue,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,,DECARIE ET QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11328,2017-07-13,Thu,14.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11349,2017-07-19,Wed,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,DECARIE,5330,0,0,0,45.482947,-73.629631,N,65.6,False
+SPVM _ 2017 _ 11362,2017-07-22,Sat,0.0,light,motor vehicles only,False,False,False,car,another road vehicle,numbered route,32,QUEEN MARY,DECARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11370,2017-07-24,Mon,,severe,pedestrian victim,True,False,False,car,a pedestrian,main artery,32,QUEEN MARY,DECARIE,,0,1,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11393,2017-08-06,Sun,21.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,MONTREAL,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11421,2017-08-14,Mon,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,not stated,,AUT DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11438,2017-08-24,Thu,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11473,2017-09-03,Sun,0.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11567,2017-10-01,Sun,0.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,DECARIE,FACE AU,4960,0,0,0,45.482952,-73.628116,N,99.7,False
+SPVM _ 2017 _ 11627,2017-10-20,Fri,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,numbered route,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11634,2017-10-20,Fri,14.0,severe,motor vehicles only,False,False,False,bus,other or not stated,numbered route,32,QUEEN MARY,TRANS ISLAND,,0,1,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2017 _ 11635,2017-10-21,Sat,20.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11677,2017-11-04,Sat,,light,pedestrian victim,True,False,False,car,a pedestrian,"ramp, collector or service road of an expressway",32,BD DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11716,2017-11-18,Sat,4.0,damage,motor vehicles only,False,False,False,car,another road vehicle,numbered route,32,BD DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11720,2017-11-19,Sun,17.0,light,pedestrian victim,True,False,False,car,a pedestrian,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11741,2017-11-26,Sun,3.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11766,2017-12-04,Mon,13.0,damage,motor vehicles only,False,False,False,car,other or not stated,residential street,34,TRANS ISLAND,QUEEN MARY,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2017 _ 11806,2017-12-13,Wed,12.0,damage,motor vehicles only,False,False,False,car,other or not stated,residential street,34,TRANS ISLAND,QUEEN MARY,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2017 _ 11796,2017-12-14,Thu,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,residential street,33,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11803,2017-12-15,Fri,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,CH QUEEN MARY ET BD DECARIE,,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2017 _ 11863,2017-12-18,Mon,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10674,2018-01-10,Wed,11.0,light,pedestrian victim,True,False,False,car,a pedestrian,residential street,32,,GLOBERT,,0,0,1,45.483413,-73.628125,N,73.7,False
+SPVM _ 2018 _ 10689,2018-01-13,Sat,19.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10699,2018-01-15,Mon,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN-MARY,DECARIE S,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10729,2018-01-23,Tue,20.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10775,2018-02-07,Wed,17.0,damage,motor vehicles only,False,False,False,heavy,other or not stated,main artery,33,DECARIE,WELLSTEAD,,0,0,0,45.482952,-73.628116,N,99.7,False
+SPVM _ 2018 _ 10781,2018-02-09,Fri,8.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10798,2018-02-17,Sat,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10829,2018-03-04,Sun,4.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10883,2018-03-24,Sat,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,local road,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10946,2018-04-14,Sat,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,not stated,,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10954,2018-04-20,Fri,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 10976,2018-05-02,Wed,3.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11010,2018-05-11,Fri,17.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE BD,CH QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11013,2018-05-13,Sun,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,CH QUEEN MARY,,5255,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2018 _ 11032,2018-05-19,Sat,11.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11041,2018-05-25,Fri,8.0,light,bicycle involved,False,True,False,car,a cyclist,main artery,33,QUEEN MARY,DECARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11059,2018-05-30,Wed,17.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11157,2018-07-01,Sun,19.0,light,motorcycle involved,False,False,True,car,another road vehicle,main artery,32,DECARIE,QUEEN MARIE,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11227,2018-07-23,Mon,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11228,2018-07-23,Mon,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY ET BD DECARIE,,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11233,2018-07-25,Wed,1.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11266,2018-08-09,Thu,21.0,light,motorcycle involved,False,False,True,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11324,2018-08-29,Wed,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,BD DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11327,2018-08-31,Fri,10.0,damage,motor vehicles only,False,False,False,heavy,a fixed object,main artery,33,5295 QUEEN MARY FACE,,,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2018 _ 11450,2018-10-07,Sun,20.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11491,2018-10-18,Thu,15.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",32,,BD DECARIE ET CH QUEEN MARY VOIE S,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11534,2018-11-02,Fri,3.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11576,2018-11-14,Wed,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11589,2018-11-17,Sat,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",34,DECARIE,,5022,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11609,2018-11-22,Thu,11.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11622,2018-11-27,Tue,19.0,light,pedestrian victim,True,False,False,car,a pedestrian,main artery,32,QUEEN MARY,TRANS ISLAND,,0,0,1,45.484361,-73.628644,N,67.8,False
+SPVM _ 2018 _ 11634,2018-11-30,Fri,18.0,light,pedestrian victim,True,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11683,2018-12-18,Tue,21.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,,DECARIE ET QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2018 _ 11686,2018-12-20,Thu,6.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,2,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9260,2019-01-22,Tue,22.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9348,2019-02-20,Wed,8.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9380,2019-03-03,Sun,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9416,2019-03-19,Tue,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,,5000,0,0,0,45.482952,-73.628116,N,99.7,False
+SPVM _ 2019 _ 9421,2019-03-20,Wed,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9547,2019-04-25,Thu,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,FACE A L ADRESSE,5326,0,0,0,45.483014,-73.629572,N,56.8,False
+SPVM _ 2019 _ 9582,2019-05-05,Sun,17.0,damage,motorcycle involved,False,False,True,car,another road vehicle,parking lot,,DECARIE,,5008,0,0,0,45.483169,-73.628479,N,62.8,False
+SPVM _ 2019 _ 9795,2019-07-04,Thu,14.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,"ramp, collector or service road of an expressway",99,QUEEN MARY,DECARIE,,0,0,0,45.483849,-73.629029,O,3.8,True
+SPVM _ 2019 _ 9816,2019-07-09,Tue,10.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,lane (ruelle),99,QUEEN MARY,A L ARR,5335,0,0,0,45.48314,-73.629639,N,47.8,False
+SPVM _ 2019 _ 9841,2019-07-16,Tue,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9862,2019-07-23,Tue,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9864,2019-07-24,Wed,9.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9877,2019-07-29,Mon,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 9934,2019-08-14,Wed,8.0,damage,motor vehicles only,False,False,False,heavy,other or not stated,residential street,32,GLOBERT,,5256,0,0,0,45.483413,-73.628125,N,73.7,False
+SPVM _ 2019 _ 9932,2019-08-14,Wed,,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 10044,2019-09-11,Wed,23.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 10240,2019-10-31,Thu,10.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",34,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 10336,2019-11-18,Mon,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,BD DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 10348,2019-11-21,Thu,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 10353,2019-11-23,Sat,7.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2019 _ 10518,2019-11-24,Sun,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN MARY,TRANS ISLAND,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2019 _ 10455,2019-12-10,Tue,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,CH QUEEN MARY,FACE AU,5255,0,0,0,45.484087,-73.628849,N,33.5,False
+SPVM _ 2019 _ 10508,2019-12-26,Thu,8.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 5886,2020-01-17,Fri,15.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6003,2020-02-14,Fri,18.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,,BD DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6048,2020-02-26,Wed,8.0,damage,motor vehicles only,False,False,False,car,other or not stated,main artery,32,QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6066,2020-03-03,Tue,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD QUEEN MARY,BD DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6148,2020-05-02,Sat,6.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE N,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6237,2020-06-17,Wed,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,BD DECARIE,,5136,0,0,0,45.483843,-73.630079,N,71.7,False
+SPVM _ 2020 _ 6255,2020-06-23,Tue,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6286,2020-07-05,Sun,11.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,AV TRAINS ISLAND,CH QUEEN MARY,,0,0,0,45.484361,-73.628644,N,67.8,False
+SPVM _ 2020 _ 6311,2020-07-14,Tue,18.0,light,bicycle involved,False,True,False,car,a cyclist,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6331,2020-07-18,Sat,17.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6423,2020-08-15,Sat,21.0,light,pedestrian victim,True,False,False,other,a pedestrian,main artery,32,DECARIE,QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6544,2020-09-23,Wed,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6644,2020-10-23,Fri,6.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,BD DECARIE,CH QUEEN MARY,,0,0,1,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6669,2020-10-29,Thu,19.0,damage,motor vehicles only,False,False,False,bus,another road vehicle,main artery,33,CH QUEEN MARY,DECARIE,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6709,2020-11-09,Mon,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6721,2020-11-12,Thu,9.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2020 _ 6742,2020-11-18,Wed,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,DECARIE,QUEEN MARY,,0,0,0,45.483813,-73.629054,O,1.9,True
+SPVM _ 2021 _ 6300,2021-01-18,Mon,23.0,damage,motor vehicles only,False,False,False,other,a fixed object,private land,34,CH QUEEN MARY,,5206,0,0,0,45.484404,-73.628609,N,73.3,False
+SPVM _ 2021 _ 6378,2021-02-20,Sat,14.0,damage,motor vehicles only,False,False,False,car,another road vehicle,not stated,,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6376,2021-02-20,Sat,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,CH QUEEN MARY,BD DECARIE,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6413,2021-03-04,Thu,10.0,light,motor vehicles only,False,False,False,car,another road vehicle,"ramp, collector or service road of an expressway",32,BD DECARIE,CH QUEEN MARY,,0,0,2,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6459,2021-03-16,Tue,17.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6542,2021-04-30,Fri,12.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,2,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6555,2021-05-06,Thu,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,CH QUEEN MARY,AV TRANS ISLAND,,0,0,0,45.484368,-73.628635,N,68.9,False
+SPVM _ 2021 _ 6563,2021-05-09,Sun,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,BD DECARIE,CH QUEEN MARY,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6780,2021-07-16,Fri,16.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,DECARIE BOUL,QUEEN-MARY CHEM,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6838,2021-08-02,Mon,15.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,DECARIE BOUL,,5136,0,0,0,45.483844,-73.630068,N,71.0,False
+SPVM _ 2021 _ 6897,2021-08-22,Sun,12.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,QUEEN-MARY CHEM,DECARIE BOUL,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 6917,2021-08-31,Tue,13.0,damage,motor vehicles only,False,False,False,heavy,another road vehicle,numbered route,32,DECARIE BOUL,,5006,0,0,0,45.48296,-73.62812,N,98.9,False
+SPVM _ 2021 _ 6951,2021-09-06,Mon,19.0,damage,motor vehicles only,False,False,False,car,another road vehicle,numbered route,32,QUEEN-MARY CHEM,DECARIE BOUL,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 7023,2021-09-27,Mon,10.0,damage,motor vehicles only,False,False,False,bus,another road vehicle,main artery,34,QUEEN-MARY CHEM,,5285,0,0,0,45.484097,-73.628853,N,34.3,False
+SPVM _ 2021 _ 7033,2021-09-29,Wed,18.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,33,QUEEN-MARY CHEM,,5285,0,0,0,45.484097,-73.628853,N,34.3,False
+SPVM _ 2021 _ 7069,2021-10-06,Wed,10.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,QUEEN-MARY CHEM,,5248,0,0,0,45.484368,-73.628635,N,68.9,False
+SPVM _ 2021 _ 7256,2021-11-23,Tue,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE BOUL,QUEEN-MARY CHEM,,0,0,0,45.483826,-73.629069,O,0.2,True
+SPVM _ 2021 _ 7332,2021-12-10,Fri,13.0,damage,motor vehicles only,False,False,False,car,another road vehicle,main artery,34,DECARIE BOUL,GLOBERT RUE,,0,0,0,45.483418,-73.628132,N,72.9,False
+SPVM _ 2021 _ 7368,2021-12-28,Tue,0.0,light,motor vehicles only,False,False,False,car,another road vehicle,main artery,32,DECARIE BOUL,QUEEN-MARY CHEM,,0,0,1,45.483826,-73.629069,O,0.2,True

@@ -1,0 +1,211 @@
+count,measure,rank,name,territory,district,lat,lon,value,rec_all,rec_injury,rec_severe_fatal,rec_ped,rec_ped_severe_fatal,rec_bike,rec_bike_severe_fatal,r100_all,r100_injury,r100_severe_fatal,r100_ped,r100_ped_severe_fatal,r100_bike,r100_bike_severe_fatal
+rec,all,1,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,378,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,all,2,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,321,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+rec,all,3,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,291,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+rec,all,4,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,193,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+rec,all,5,Cavendish / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.46372,-73.62897,156,156,37,1,13,1,6,0,173,44,3,16,2,7,1
+rec,all,6,Côte-des-Neiges / Goyer,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.50288,-73.636689,137,137,13,1,4,0,0,0,258,47,1,16,0,8,0
+rec,all,7,Décarie / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47431,-73.608831,129,129,22,0,7,0,3,0,232,38,1,10,0,8,1
+rec,all,8,Décarie / Isabella,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.485088,-73.632377,123,123,23,1,4,0,3,0,149,32,1,5,0,3,0
+rec,all,9,Décarie / Vézina,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.491973,-73.647893,120,120,28,3,7,1,1,0,163,36,3,10,1,3,0
+rec,all,10,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,116,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+rec,all,11,Côte-des-Neiges / Jean-Talon / Laird / Saint-Clare,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.50535,-73.642244,114,114,25,0,4,0,3,0,142,27,0,4,0,3,0
+rec,all,12,Jean-Talon / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.49899,-73.647925,103,103,19,0,1,0,1,0,139,24,0,1,0,3,0
+rec,all,13,Décarie / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.489501,-73.642248,103,103,24,2,8,2,1,0,137,26,2,9,2,2,0
+rec,all,14,Côte-Sainte-Catherine / Côte-des-Neiges,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.498584,-73.627516,102,102,24,1,11,1,3,0,182,39,3,15,1,8,1
+rec,all,15,Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473467,-73.610175,94,94,23,0,2,0,5,0,160,31,0,3,0,8,0
+rec,injury,1,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,69,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,injury,2,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,51,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+rec,injury,3,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,50,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+rec,injury,4,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,49,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+rec,injury,5,Cavendish / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.46372,-73.62897,37,156,37,1,13,1,6,0,173,44,3,16,2,7,1
+rec,injury,6,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,35,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+rec,injury,7,Décarie / Plamondon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.490903,-73.645389,31,85,31,2,7,2,3,0,113,37,2,8,2,5,0
+rec,injury,8,Décarie / Vézina,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.491973,-73.647893,28,120,28,3,7,1,1,0,163,36,3,10,1,3,0
+rec,injury,9,Côte-des-Neiges / Jean-Talon / Laird / Saint-Clare,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.50535,-73.642244,25,114,25,0,4,0,3,0,142,27,0,4,0,3,0
+rec,injury,10,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,25,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+rec,injury,11,Décarie / Royalmount / Savane,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.498783,-73.6607,25,84,25,2,5,1,0,0,98,28,2,5,1,1,0
+rec,injury,12,Décarie / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.489501,-73.642248,24,103,24,2,8,2,1,0,137,26,2,9,2,2,0
+rec,injury,13,Côte-Sainte-Catherine / Côte-des-Neiges,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.498584,-73.627516,24,102,24,1,11,1,3,0,182,39,3,15,1,8,1
+rec,injury,14,Côte-des-Neiges / Linton,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500317,-73.630976,24,89,24,2,6,0,4,1,179,45,3,13,0,9,1
+rec,injury,15,Décarie / Isabella,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.485088,-73.632377,23,123,23,1,4,0,3,0,149,32,1,5,0,3,0
+rec,severe_fatal,1,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,4,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,severe_fatal,2,Décarie / Vézina,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.491973,-73.647893,3,120,28,3,7,1,1,0,163,36,3,10,1,3,0
+rec,severe_fatal,3,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,3,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+rec,severe_fatal,4,Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473722,-73.597184,3,44,11,3,1,1,2,2,54,12,3,1,1,2,2
+rec,severe_fatal,5,De Maisonneuve / Décarie / Upper-Lachine,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472963,-73.605845,3,36,15,3,4,2,5,1,56,22,3,4,2,12,1
+rec,severe_fatal,6,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,2,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+rec,severe_fatal,7,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,2,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+rec,severe_fatal,8,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,2,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+rec,severe_fatal,9,Décarie / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.489501,-73.642248,2,103,24,2,8,2,1,0,137,26,2,9,2,2,0
+rec,severe_fatal,10,Côte-des-Neiges / Linton,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500317,-73.630976,2,89,24,2,6,0,4,1,179,45,3,13,0,9,1
+rec,severe_fatal,11,Décarie / Plamondon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.490903,-73.645389,2,85,31,2,7,2,3,0,113,37,2,8,2,5,0
+rec,severe_fatal,12,Décarie / Royalmount / Savane,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.498783,-73.6607,2,84,25,2,5,1,0,0,98,28,2,5,1,1,0
+rec,severe_fatal,13,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,2,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+rec,severe_fatal,14,Décarie / Snowdon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.482645,-73.626749,2,53,23,2,8,2,2,0,73,24,2,8,2,2,0
+rec,severe_fatal,15,Décarie / Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.471024,-73.601349,2,49,11,2,0,0,1,0,89,15,2,2,0,3,0
+rec,ped,1,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,14,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+rec,ped,2,Van Horne / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494364,-73.637631,14,68,18,0,14,0,0,0,116,27,0,20,0,0,0
+rec,ped,3,Cavendish / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.46372,-73.62897,13,156,37,1,13,1,6,0,173,44,3,16,2,7,1
+rec,ped,4,Côte-Sainte-Catherine / Côte-des-Neiges,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.498584,-73.627516,11,102,24,1,11,1,3,0,182,39,3,15,1,8,1
+rec,ped,5,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,9,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+rec,ped,6,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,9,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+rec,ped,7,Côte-Sainte-Catherine / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.492353,-73.633123,9,66,19,0,9,0,0,0,100,24,0,10,0,1,0
+rec,ped,8,Lavoie / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.496381,-73.635832,9,32,16,0,9,0,1,0,54,22,0,9,0,2,0
+rec,ped,9,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,8,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+rec,ped,10,Décarie / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.489501,-73.642248,8,103,24,2,8,2,1,0,137,26,2,9,2,2,0
+rec,ped,11,Côte-Sainte-Catherine / Lavoie,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.494367,-73.631317,8,53,17,0,8,0,2,0,74,20,0,8,0,2,0
+rec,ped,12,Décarie / Snowdon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.482645,-73.626749,8,53,23,2,8,2,2,0,73,24,2,8,2,2,0
+rec,ped,13,Côte-des-Neiges / Bedford,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.503319,-73.637664,8,45,17,0,8,0,4,0,254,42,2,17,0,8,0
+rec,ped,14,Sherbrooke / West Broadway,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.456535,-73.640218,8,35,17,0,8,0,3,0,59,21,0,11,0,3,0
+rec,ped,15,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,7,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,ped_severe_fatal,1,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,3,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+rec,ped_severe_fatal,2,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,2,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+rec,ped_severe_fatal,3,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,2,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+rec,ped_severe_fatal,4,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,2,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+rec,ped_severe_fatal,5,Décarie / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.489501,-73.642248,2,103,24,2,8,2,1,0,137,26,2,9,2,2,0
+rec,ped_severe_fatal,6,Décarie / Plamondon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.490903,-73.645389,2,85,31,2,7,2,3,0,113,37,2,8,2,5,0
+rec,ped_severe_fatal,7,Décarie / Snowdon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.482645,-73.626749,2,53,23,2,8,2,2,0,73,24,2,8,2,2,0
+rec,ped_severe_fatal,8,De Maisonneuve / Décarie / Upper-Lachine,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472963,-73.605845,2,36,15,3,4,2,5,1,56,22,3,4,2,12,1
+rec,ped_severe_fatal,9,Queen-Mary / Lemieux / Ponsard,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.487084,-73.626167,2,35,10,2,4,2,0,0,74,19,4,10,4,1,0
+rec,ped_severe_fatal,10,Girouard / Terrebonne,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47833,-73.624865,2,23,13,2,3,2,3,0,44,21,2,4,2,3,0
+rec,ped_severe_fatal,11,Côte-Sainte-Catherine / Mountain Sights,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.488543,-73.636351,2,22,10,2,4,2,0,0,84,20,2,8,2,1,0
+rec,ped_severe_fatal,12,Bourret / Lavoie,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.495116,-73.633002,2,17,6,2,6,2,0,0,29,6,2,6,2,0,0
+rec,ped_severe_fatal,13,Woodbury / Édouard-Montpetit,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.50527,-73.617036,2,5,4,2,3,2,0,0,13,6,2,3,2,0,0
+rec,ped_severe_fatal,14,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,1,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+rec,ped_severe_fatal,15,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,1,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+rec,bike,1,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,9,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+rec,bike,2,De Maisonneuve / Grey,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.475004,-73.603217,9,22,10,0,0,0,9,0,44,19,2,3,1,14,0
+rec,bike,3,De Maisonneuve / Northcliffe,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473355,-73.605107,7,13,6,0,0,0,7,0,66,31,3,6,2,18,1
+rec,bike,4,Cavendish / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.46372,-73.62897,6,156,37,1,13,1,6,0,173,44,3,16,2,7,1
+rec,bike,5,Bourret / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.488117,-73.639151,6,19,5,1,2,0,6,1,41,6,1,2,0,6,1
+rec,bike,6,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,5,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+rec,bike,7,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,5,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+rec,bike,8,Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473467,-73.610175,5,94,23,0,2,0,5,0,160,31,0,3,0,8,0
+rec,bike,9,De Maisonneuve / Décarie / Upper-Lachine,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472963,-73.605845,5,36,15,3,4,2,5,1,56,22,3,4,2,12,1
+rec,bike,10,Côte-des-Neiges / Ellendale,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.499543,-73.629269,5,23,9,1,1,0,5,1,74,24,2,5,0,12,2
+rec,bike,11,De Maisonneuve / Marlowe,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473873,-73.604519,5,15,9,0,2,0,5,0,50,25,2,5,1,17,0
+rec,bike,12,Côte-des-Neiges / Linton,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500317,-73.630976,4,89,24,2,6,0,4,1,179,45,3,13,0,9,1
+rec,bike,13,Côte-des-Neiges / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.495032,-73.619039,4,80,20,1,7,1,4,0,184,51,2,15,1,7,0
+rec,bike,14,Queen-Mary / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.488624,-73.624786,4,63,22,1,2,0,4,1,95,34,1,3,0,4,1
+rec,bike,15,Côte-des-Neiges / Bedford,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.503319,-73.637664,4,45,17,0,8,0,4,0,254,42,2,17,0,8,0
+rec,bike_severe_fatal,1,Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473722,-73.597184,2,44,11,3,1,1,2,2,54,12,3,1,1,2,2
+rec,bike_severe_fatal,2,Côte-des-Neiges / Linton,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500317,-73.630976,1,89,24,2,6,0,4,1,179,45,3,13,0,9,1
+rec,bike_severe_fatal,3,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,1,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+rec,bike_severe_fatal,4,Queen-Mary / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.488624,-73.624786,1,63,22,1,2,0,4,1,95,34,1,3,0,4,1
+rec,bike_severe_fatal,5,De Maisonneuve / Décarie / Upper-Lachine,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472963,-73.605845,1,36,15,3,4,2,5,1,56,22,3,4,2,12,1
+rec,bike_severe_fatal,6,Northcliffe / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.474792,-73.608269,1,26,7,1,2,0,2,1,206,41,1,13,0,8,1
+rec,bike_severe_fatal,7,Côte-des-Neiges / Ellendale,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.499543,-73.629269,1,23,9,1,1,0,5,1,74,24,2,5,0,12,2
+rec,bike_severe_fatal,8,Victoria / Vézina,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.496908,-73.643325,1,21,9,1,1,0,1,1,66,21,1,5,0,5,1
+rec,bike_severe_fatal,9,Linton / Légaré,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.497962,-73.633066,1,21,5,1,3,0,1,1,54,11,2,6,1,1,1
+rec,bike_severe_fatal,10,Bourret / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.488117,-73.639151,1,19,5,1,2,0,6,1,41,6,1,2,0,6,1
+rec,bike_severe_fatal,11,Decelles / Ellendale,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.501507,-73.627521,1,19,1,1,0,0,2,1,48,6,1,2,0,2,1
+rec,bike_severe_fatal,12,Carlton / Côte-des-Neiges,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.501616,-73.633868,1,16,8,1,0,0,1,1,75,26,1,2,0,7,1
+rec,bike_severe_fatal,13,Barclay / Hudson,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.507036,-73.631833,1,16,5,1,2,0,3,1,43,7,1,3,0,4,1
+rec,bike_severe_fatal,14,Décarie / Brillon / Brodeur,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.478831,-73.618864,1,12,2,1,0,0,1,1,56,11,2,2,0,2,1
+rec,bike_severe_fatal,15,Mayfair / Somerled,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.462566,-73.642381,1,4,2,1,0,0,1,1,18,7,2,2,1,2,1
+r100,all,1,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494979,-73.652404,439,7,0,0,0,0,0,0,439,73,4,12,2,3,1
+r100,all,2,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,428,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+r100,all,3,Décarie / Jean-Talon / Non-nommée,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494122,-73.653323,428,0,0,0,0,0,0,0,428,66,5,12,3,3,1
+r100,all,4,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,421,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+r100,all,5,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,389,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+r100,all,6,Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.49413,-73.651865,363,11,1,0,0,0,0,0,363,54,2,6,1,2,0
+r100,all,7,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,338,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+r100,all,8,Décarie / Jacques-Grenier,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.481287,-73.623394,318,5,0,0,0,0,0,0,318,56,1,11,1,6,0
+r100,all,9,Côte-Saint-Luc,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.481162,-73.622345,309,7,0,0,0,0,0,0,309,53,1,9,1,5,0
+r100,all,10,Queen-Mary / Trans Island,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484339,-73.628566,295,33,6,1,3,0,0,0,295,63,4,17,3,5,0
+r100,all,11,Prud'homme / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473702,-73.609699,273,46,5,0,1,0,1,0,273,52,0,9,0,11,0
+r100,all,12,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,269,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+r100,all,13,Côte-des-Neiges / Goyer,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.50288,-73.636689,258,137,13,1,4,0,0,0,258,47,1,16,0,8,0
+r100,all,14,Côte-des-Neiges / Bedford,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.503319,-73.637664,254,45,17,0,8,0,4,0,254,42,2,17,0,8,0
+r100,all,15,Côte-des-Neiges / Barclay,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.502525,-73.635898,247,71,16,0,4,0,3,0,247,42,1,10,0,6,0
+r100,injury,1,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494979,-73.652404,73,7,0,0,0,0,0,0,439,73,4,12,2,3,1
+r100,injury,2,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,71,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+r100,injury,3,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,66,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+r100,injury,4,Décarie / Jean-Talon / Non-nommée,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494122,-73.653323,66,0,0,0,0,0,0,0,428,66,5,12,3,3,1
+r100,injury,5,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,66,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+r100,injury,6,Queen-Mary / Trans Island,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484339,-73.628566,63,33,6,1,3,0,0,0,295,63,4,17,3,5,0
+r100,injury,7,Addington / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472976,-73.61113,62,0,0,0,0,0,0,0,229,62,3,10,2,16,1
+r100,injury,8,Côte-Saint-Luc / Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.480749,-73.622712,58,291,51,1,9,1,5,0,338,58,2,11,2,5,0
+r100,injury,9,Décarie / Jacques-Grenier,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.481287,-73.623394,56,5,0,0,0,0,0,0,318,56,1,11,1,6,0
+r100,injury,10,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,56,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+r100,injury,11,Côte-des-Neiges / Édouard-Montpetit,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.49724,-73.624319,55,45,16,0,3,0,2,0,168,55,1,16,1,4,0
+r100,injury,12,Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.49413,-73.651865,54,11,1,0,0,0,0,0,363,54,2,6,1,2,0
+r100,injury,13,Côte-Saint-Luc,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.481162,-73.622345,53,7,0,0,0,0,0,0,309,53,1,9,1,5,0
+r100,injury,14,Prud'homme / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473702,-73.609699,52,46,5,0,1,0,1,0,273,52,0,9,0,11,0
+r100,injury,15,Décarie / Globert,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483419,-73.628132,51,6,1,0,1,0,0,0,223,51,2,10,2,5,0
+r100,severe_fatal,1,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,5,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+r100,severe_fatal,2,Décarie / Jean-Talon / Non-nommée,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494122,-73.653323,5,0,0,0,0,0,0,0,428,66,5,12,3,3,1
+r100,severe_fatal,3,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494979,-73.652404,4,7,0,0,0,0,0,0,439,73,4,12,2,3,1
+r100,severe_fatal,4,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,4,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+r100,severe_fatal,5,Décarie / Paré,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.495947,-73.655615,4,378,69,4,7,2,1,0,389,71,4,7,2,1,0
+r100,severe_fatal,6,Queen-Mary / Trans Island,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484339,-73.628566,4,33,6,1,3,0,0,0,295,63,4,17,3,5,0
+r100,severe_fatal,7,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,4,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+r100,severe_fatal,8,Côte-des-Neiges / Kent,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.501233,-73.633016,4,18,5,0,0,0,2,0,138,41,4,14,3,6,1
+r100,severe_fatal,9,Mountain Sights / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484845,-73.628167,4,42,7,1,4,1,0,0,135,25,4,13,3,1,0
+r100,severe_fatal,10,Côte-Saint-Luc / Earnscliffe,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.479081,-73.625059,4,0,0,0,0,0,0,0,87,26,4,5,3,6,0
+r100,severe_fatal,11,Queen-Mary / Lemieux / Ponsard,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.487084,-73.626167,4,35,10,2,4,2,0,0,74,19,4,10,4,1,0
+r100,severe_fatal,12,De La Peltrie / Légaré,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.497529,-73.63215,4,6,2,1,2,1,0,0,48,12,4,7,3,3,1
+r100,severe_fatal,13,Décarie / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.483635,-73.629118,3,193,49,2,9,2,5,0,269,56,3,13,2,5,0
+r100,severe_fatal,14,Addington / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472976,-73.61113,3,0,0,0,0,0,0,0,229,62,3,10,2,16,1
+r100,severe_fatal,15,Décarie,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.492371,-73.648188,3,0,0,0,0,0,0,0,213,36,3,11,1,1,0
+r100,ped,1,Linton / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.493933,-73.636664,21,15,3,0,3,0,0,0,129,34,1,21,1,3,0
+r100,ped,2,Van Horne / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494364,-73.637631,20,68,18,0,14,0,0,0,116,27,0,20,0,0,0
+r100,ped,3,Queen-Mary / Trans Island,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484339,-73.628566,17,33,6,1,3,0,0,0,295,63,4,17,3,5,0
+r100,ped,4,Côte-des-Neiges / Bedford,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.503319,-73.637664,17,45,17,0,8,0,4,0,254,42,2,17,0,8,0
+r100,ped,5,Kent / Victoria,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.494821,-73.63865,17,24,3,0,1,0,0,0,126,28,0,17,0,1,0
+r100,ped,6,Côte-des-Neiges / Goyer,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.50288,-73.636689,16,137,13,1,4,0,0,0,258,47,1,16,0,8,0
+r100,ped,7,Cavendish / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.46372,-73.62897,16,156,37,1,13,1,6,0,173,44,3,16,2,7,1
+r100,ped,8,Côte-des-Neiges / Édouard-Montpetit,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.49724,-73.624319,16,45,16,0,3,0,2,0,168,55,1,16,1,4,0
+r100,ped,9,Cavendish / Prince-of-Wales,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.464138,-73.629904,16,5,2,0,1,0,0,0,166,41,2,16,2,6,0
+r100,ped,10,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,16,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+r100,ped,11,Belmore / Côte-Saint-Luc,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.465395,-73.653814,15,20,6,0,0,0,0,0,187,33,2,15,2,2,0
+r100,ped,12,Côte-des-Neiges / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.495032,-73.619039,15,80,20,1,7,1,4,0,184,51,2,15,1,7,0
+r100,ped,13,Côte-Sainte-Catherine / Côte-des-Neiges,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.498584,-73.627516,15,102,24,1,11,1,3,0,182,39,3,15,1,8,1
+r100,ped,14,Côte-Sainte-Catherine,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.498902,-73.627227,15,3,0,0,0,0,0,0,176,38,3,15,1,8,1
+r100,ped,15,Coronation / Côte-Saint-Luc,Côte-des-Neiges–Notre-Dame-de-Grâce,Loyola,45.46598,-73.653388,14,29,11,1,6,1,1,0,193,36,2,14,2,2,0
+r100,ped_severe_fatal,1,Queen-Mary / Lemieux / Ponsard,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.487084,-73.626167,4,35,10,2,4,2,0,0,74,19,4,10,4,1,0
+r100,ped_severe_fatal,2,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,3,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+r100,ped_severe_fatal,3,Décarie / Jean-Talon / Non-nommée,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494122,-73.653323,3,0,0,0,0,0,0,0,428,66,5,12,3,3,1
+r100,ped_severe_fatal,4,Queen-Mary / Trans Island,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484339,-73.628566,3,33,6,1,3,0,0,0,295,63,4,17,3,5,0
+r100,ped_severe_fatal,5,Côte-des-Neiges / Van Horne,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500858,-73.632183,3,91,25,3,14,3,1,0,160,42,4,16,3,7,0
+r100,ped_severe_fatal,6,Côte-des-Neiges / Swail,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.4954,-73.620169,3,38,8,0,3,0,1,0,156,31,3,13,3,5,0
+r100,ped_severe_fatal,7,Côte-des-Neiges / Kent,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.501233,-73.633016,3,18,5,0,0,0,2,0,138,41,4,14,3,6,1
+r100,ped_severe_fatal,8,Mountain Sights / Queen-Mary,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.484845,-73.628167,3,42,7,1,4,1,0,0,135,25,4,13,3,1,0
+r100,ped_severe_fatal,9,Circle / Queen-Mary / Westbury,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.485251,-73.62781,3,32,10,1,4,1,1,0,94,21,3,11,3,1,0
+r100,ped_severe_fatal,10,Côte-Saint-Luc / Earnscliffe,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.479081,-73.625059,3,0,0,0,0,0,0,0,87,26,4,5,3,6,0
+r100,ped_severe_fatal,11,Dornal / Westbury,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.485623,-73.628758,3,1,0,0,0,0,0,0,85,19,3,9,3,1,0
+r100,ped_severe_fatal,12,Côte-Sainte-Catherine / Westbury,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.489223,-73.635809,3,32,8,0,3,0,0,0,78,22,3,9,3,0,0
+r100,ped_severe_fatal,13,De La Peltrie / Légaré,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.497529,-73.63215,3,6,2,1,2,1,0,0,48,12,4,7,3,3,1
+r100,ped_severe_fatal,14,Bourret / Légaré,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.49712,-73.631202,3,16,3,0,0,0,2,0,32,10,3,6,3,2,0
+r100,ped_severe_fatal,15,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494979,-73.652404,2,7,0,0,0,0,0,0,439,73,4,12,2,3,1
+r100,bike,1,Bulmer / De Maisonneuve,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.475351,-73.602821,19,7,1,0,0,0,3,0,52,20,0,0,0,19,0
+r100,bike,2,De Maisonneuve / Northcliffe,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473355,-73.605107,18,13,6,0,0,0,7,0,66,31,3,6,2,18,1
+r100,bike,3,De Maisonneuve / Vendôme,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.474423,-73.603887,18,14,8,2,3,1,2,0,57,28,2,5,1,18,0
+r100,bike,4,De Maisonneuve / Marlowe,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473873,-73.604519,17,15,9,0,2,0,5,0,50,25,2,5,1,17,0
+r100,bike,5,Addington / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472976,-73.61113,16,0,0,0,0,0,0,0,229,62,3,10,2,16,1
+r100,bike,6,Côte-des-Neiges / De La Peltrie,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.499893,-73.630044,14,15,7,0,3,0,2,0,159,47,3,12,0,14,2
+r100,bike,7,De Maisonneuve / Grey,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.475004,-73.603217,14,22,10,0,0,0,9,0,44,19,2,3,1,14,0
+r100,bike,8,Girouard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47253,-73.611993,12,116,35,2,8,2,9,0,153,39,3,8,2,12,1
+r100,bike,9,Côte-des-Neiges / Ellendale,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.499543,-73.629269,12,23,9,1,1,0,5,1,74,24,2,5,0,12,2
+r100,bike,10,De Maisonneuve / Décarie / Upper-Lachine,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472963,-73.605845,12,36,15,3,4,2,5,1,56,22,3,4,2,12,1
+r100,bike,11,Prud'homme / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473702,-73.609699,11,46,5,0,1,0,1,0,273,52,0,9,0,11,0
+r100,bike,12,Old Orchard / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472088,-73.612849,11,16,1,0,0,0,1,0,169,39,2,9,2,11,0
+r100,bike,13,Côte-des-Neiges / Linton,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.500317,-73.630976,9,89,24,2,6,0,4,1,179,45,3,13,0,9,1
+r100,bike,14,Côte-des-Neiges / Mackenzie,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.503686,-73.638631,9,25,5,1,1,0,3,0,128,32,1,14,0,9,0
+r100,bike,15,Côte-des-Neiges / Goyer,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.50288,-73.636689,8,137,13,1,4,0,0,0,258,47,1,16,0,8,0
+r100,bike_severe_fatal,1,Côte-des-Neiges / De La Peltrie,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.499893,-73.630044,2,15,7,0,3,0,2,0,159,47,3,12,0,14,2
+r100,bike_severe_fatal,2,Côte-des-Neiges / Ellendale,Côte-des-Neiges–Notre-Dame-de-Grâce,Darlington,45.499543,-73.629269,2,23,9,1,1,0,5,1,74,24,2,5,0,12,2
+r100,bike_severe_fatal,3,Saint-Jacques / Saint-Rémi / Tanneries,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47327,-73.597265,2,6,1,0,0,0,0,0,54,12,3,1,1,2,2
+r100,bike_severe_fatal,4,Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.473722,-73.597184,2,44,11,3,1,1,2,2,54,12,3,1,1,2,2
+r100,bike_severe_fatal,5,Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47338,-73.597893,2,0,0,0,0,0,0,0,50,12,3,1,1,2,2
+r100,bike_severe_fatal,6,Non-nommée / Tanneries,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472903,-73.597554,2,0,0,0,0,0,0,0,49,11,2,0,0,2,2
+r100,bike_severe_fatal,7,Non-nommée / Saint-Jacques,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.474256,-73.596648,2,0,0,0,0,0,0,0,44,11,3,1,1,2,2
+r100,bike_severe_fatal,8,Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494979,-73.652404,1,7,0,0,0,0,0,0,439,73,4,12,2,3,1
+r100,bike_severe_fatal,9,Décarie / Jockeys,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494712,-73.653613,1,67,15,2,6,1,1,1,428,66,5,12,3,3,1
+r100,bike_severe_fatal,10,Décarie / Jean-Talon / Non-nommée,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494122,-73.653323,1,0,0,0,0,0,0,0,428,66,5,12,3,3,1
+r100,bike_severe_fatal,11,Décarie / Jean-Talon,Côte-des-Neiges–Notre-Dame-de-Grâce,Snowdon,45.494643,-73.652832,1,321,50,2,5,1,2,0,421,66,4,11,2,3,1
+r100,bike_severe_fatal,12,Décarie / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.47431,-73.608831,1,129,22,0,7,0,3,0,232,38,1,10,0,8,1
+r100,bike_severe_fatal,13,Addington / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.472976,-73.61113,1,0,0,0,0,0,0,0,229,62,3,10,2,16,1
+r100,bike_severe_fatal,14,Northcliffe / Sherbrooke,Côte-des-Neiges–Notre-Dame-de-Grâce,Notre-Dame-de-Grâce,45.474792,-73.608269,1,26,7,1,2,0,2,1,206,41,1,13,0,8,1
+r100,bike_severe_fatal,15,Côte-Sainte-Catherine / Côte-des-Neiges,Côte-des-Neiges–Notre-Dame-de-Grâce,Côte-des-Neiges,45.498584,-73.627516,1,102,24,1,11,1,3,0,182,39,3,15,1,8,1
