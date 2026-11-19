@@ -201,23 +201,6 @@ Involving a bicycle & """ + f"{rk('bike')} & & {rk('bike_per_10k_res')}" + r""" 
 """ + fig('queen-mary-decarie-hero', 'hero_queen_mary_decarie', 0.86) + r"""
 \end{frame}
 
-\begin{frame}{Queen-Mary / Décarie among the intersections of the borough and of the City}
-\scriptsize
-\setlength\tabcolsep{3.5pt}\begin{tabular}{@{}lrllll@{}}\toprule
-Collisions recorded at the intersection & here & \multicolumn{2}{l}{among """ + n(n_int_b) + r""" in the borough: rank, first} & \multicolumn{2}{l}{among """ + n(n_int_c) + r""" in the City: rank, first} \\\midrule
-""" + rank_rows(R, 'rec') + r"""
-\bottomrule
-\end{tabular}
-\medskip
-\small
-\begin{itemize}\setlength\itemsep{3pt}
-\item By collisions recorded at the intersection it is \textbf{""" + f"{int(a_all['rank'])} of {n(n_int_b)}" + r"""} in the borough for all collisions and \textbf{""" + f"{int(a_inj['rank'])}" + r"""} for collisions with an injury, behind three other crossings of the Décarie service roads (""" + ', '.join(x.replace('Décarie / ', '').replace(' / Décarie', '') for x in top3) + r"""), and """ + f"{int(c_all['rank'])} of {n(n_int_c)}" + r""" in the City.
-\item Among the borough's """ + str(len(big)) + r""" intersections with 100 recorded collisions or more, its share with an injury (""" + f"{q_sh:.0f}" + r"""~\%) ranks """ + str(q_sh_rank) + r""".
-\item The pedestrian and bicycle rows rest on """ + f"{int(R[(R['count'] == 'rec') & (R.measure == 'ped')].value.iloc[0])} and {int(R[(R['count'] == 'rec') & (R.measure == 'bike')].value.iloc[0])}" + r""" collisions in ten years, with many ties.
-\item The same ranks with every collision within 100 m, and two further measures (severe or fatal, by mode), are in \texttt{intersection\_ranks\_queen\_mary\_decarie.csv}. No traffic, pedestrian or bicycle count enters: these are ranks of records, not of danger.
-\end{itemize}
-\end{frame}
-
 \begin{frame}{Rue de Terrebonne: every collision within 25 m of the lane's axis}
 """ + fig('maps', 'corridor_severity') + r"""
 \end{frame}

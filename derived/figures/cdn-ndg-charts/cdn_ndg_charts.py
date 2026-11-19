@@ -4,8 +4,7 @@
 
   cdn_ndg_districts_<lang>       the five electoral districts (2025 boundaries): four panels, each from zero
   cdn_ndg_yearly_<lang>          the borough by year: four panels, each from zero
-  cdn_ndg_intersections_<lang>   the ten intersections with the longest record in the borough under four measures,
-                                 chemin Queen-Mary / boulevard Décarie marked wherever it appears
+  cdn_ndg_intersections_<lang>   the ten intersections with the longest record in the borough under four measures
 Every value is read from derived/tables/ (scripts/cdn_ndg_tables.py, scripts/intersections.py)."""
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parents[2]; TB = ROOT / 'derived/tables'
@@ -23,7 +22,7 @@ T = {'en': dict(m={'collisions': 'All collisions', 'injury': 'With an injury or 
                 df='A district’s count follows its streets: Snowdon holds the Décarie service roads from Queen-Mary to Jean-Talon. Counts, not risks: no traffic, pedestrian or bicycle volume by district.',
                 yt='Côte-des-Neiges–Notre-Dame-de-Grâce by year', ys='Police-reported collisions inside the borough · each panel from zero on its own scale',
                 yf='2020 and 2021 are the pandemic years. The record ends in 2021. First and last values labelled.',
-                it='The ten intersections with the longest record in the borough, by four measures', is_='Collisions recorded at the intersection (within 30 m of its nodes), 2012–2021 · {n} intersections in the borough · Queen-Mary / Décarie in blue',
+                it='The ten intersections with the longest record in the borough, by four measures', is_='Collisions recorded at the intersection (within 30 m of its nodes), 2012–2021 · {n} intersections in the borough',
                 if_='An intersection crossing both service roads of the Décarie expressway is one unit. A long record is a count, not a risk: the busiest intersections have the most collisions, and no traffic, pedestrian or bicycle volume enters.',
                 rank='{v} · rank {r} of {n}', src='Source: Ville de Montréal open data « Collisions routières » (SPVM reports, CC BY 4.0); intersections from the City géobase.'),
      'fr': dict(m={'collisions': 'Toutes les collisions', 'injury': 'Avec blessés ou décès', 'ped': 'Avec victime piétonne', 'bike': 'Impliquant une bicyclette', 'all': 'Toutes les collisions'},
@@ -31,7 +30,7 @@ T = {'en': dict(m={'collisions': 'All collisions', 'injury': 'With an injury or 
                 df='Le compte d’un district suit ses rues : Snowdon contient les voies de service de Décarie de Queen-Mary à Jean-Talon. Des comptes, pas des risques : aucun débit de véhicules, de piétons ou de vélos par district.',
                 yt='Côte-des-Neiges–Notre-Dame-de-Grâce par année', ys='Collisions déclarées à la police dans l’arrondissement · chaque panneau part de zéro, à sa propre échelle',
                 yf='2020 et 2021 sont les années de la pandémie. Le fichier s’arrête en 2021. Première et dernière valeurs indiquées.',
-                it='Les dix intersections au dossier le plus long de l’arrondissement, selon quatre mesures', is_='Collisions enregistrées à l’intersection (à 30 m ou moins de ses nœuds), 2012–2021 · {n} intersections dans l’arrondissement · Queen-Mary / Décarie en bleu',
+                it='Les dix intersections au dossier le plus long de l’arrondissement, selon quatre mesures', is_='Collisions enregistrées à l’intersection (à 30 m ou moins de ses nœuds), 2012–2021 · {n} intersections dans l’arrondissement',
                 if_='Une intersection qui traverse les deux voies de service de l’autoroute Décarie compte pour une seule. Un long dossier est un compte, pas un risque : les intersections les plus achalandées comptent le plus de collisions, et aucun débit n’entre dans le calcul.',
                 rank='{v} · rang {r} sur {n}', src='Source : données ouvertes de la Ville de Montréal « Collisions routières » (rapports du SPVM, CC BY 4.0) ; intersections tirées de la géobase de la Ville.')}
 
@@ -90,12 +89,10 @@ def top_intersections(lang):
     for ax, m in zip(axes, I4):
         s = t[(t.measure == m) & (t['rank'] <= 10)].iloc[::-1]; style(ax, 'x'); ax.spines['left'].set_visible(False)
         hi = (s.name == QMD).values
-        ax.barh(range(10), s.value, color=[HI if h else LO for h in hi], height=0.66)
+        ax.barh(range(10), s.value, color=HI, height=0.66)
         ax.set_yticks(range(10)); ax.set_yticklabels([n if len(n) < 30 else n[:28] + '…' for n in s.name], fontsize=8)
-        for lab, h in zip(ax.get_yticklabels(), hi): lab.set_color(INK if h else INK2); lab.set_fontweight('bold' if h else 'normal')
         for yv, v in enumerate(s.value): ax.text(v + s.value.max() * 0.02, yv, fmt(v, lang), va='center', fontsize=8, color=INK2)
-        ax.set_xlim(0, s.value.max() * 1.15); ax.set_title(tx['m'][m], loc='left', fontsize=10.5, color=INK, fontweight='bold', pad=20)
-        ax.text(0, 1.025, tx['rank'].format(v=int(r.value[m]), r=int(r['rank'][m]), n=fmt(r.n_in_set[m], lang)), transform=ax.transAxes, fontsize=8.6, color=HI, fontweight='bold')
+        ax.set_xlim(0, s.value.max() * 1.15); ax.set_title(tx['m'][m], loc='left', fontsize=10.5, color=INK, fontweight='bold', pad=8)
         ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, p: fmt(v, lang)))
     finish(fig, tx, tx['it'], tx['is_'].format(n=fmt(r.n_in_set['all'], lang)), tx['if_'], f'cdn_ndg_intersections_{lang}', top=0.80, bottom=0.17, left=0.125, right=0.985, wspace=0.95)
 
