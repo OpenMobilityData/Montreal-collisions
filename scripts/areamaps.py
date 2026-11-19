@@ -19,7 +19,7 @@ MODE_MARK = {'ped': 'v', 'bike': 's', 'moto': 'D', 'motor_only': 'o'}
 SRC = {'en': 'Source: Ville de Montréal, open data « Collisions routières » (SPVM reports, 2012–2021), CC BY 4.0. Boundaries and streets: Ville de Montréal open data, CC BY 4.0. Basemap: ',
        'fr': 'Source : Ville de Montréal, données ouvertes « Collisions routières » (rapports du SPVM, 2012–2021), CC BY 4.0. Limites et rues : données ouvertes de la Ville de Montréal, CC BY 4.0. Fond de carte : '}
 REPO = 'github.com/OpenMobilityData/Montreal-collisions'
-CMAP = LinearSegmentedColormap.from_list('heat', [(0, (0.22, 0.53, 0.90, 0.0)), (0.12, (0.22, 0.53, 0.90, 0.25)), (0.45, (0.22, 0.53, 0.90, 0.6)), (0.8, (0.55, 0.75, 0.97, 0.9)), (1.0, (0.97, 0.97, 0.95, 1.0))])
+CMAP = maps.HEAT_CMAP
 
 
 def fmt(n, lang):
@@ -78,7 +78,8 @@ class Map:
         Hc, _, _ = np.histogram2d(X, Y, bins=[nx, ny], range=[[self.x0, self.x1], [self.y0, self.y1]])
         dens = gaussian_filter(Hc.T, sigma=sigma_m / res_m) / (res_m / 1000) ** 2
         if vmax is None: vmax = float(np.percentile(dens[dens > 0], 99.5)) if (dens > 0).any() else 1.0
-        return self.ax.imshow(dens, extent=[self.x0, self.x1, self.y0, self.y1], origin='lower', cmap=CMAP, vmin=0, vmax=vmax, interpolation='bilinear', zorder=2)
+        dens = np.minimum(dens, vmax)  # values above the bar's top take its last colour
+        return self.ax.imshow(dens, extent=[self.x0, self.x1, self.y0, self.y1], origin='lower', cmap=CMAP, vmin=0, vmax=vmax, interpolation='bilinear', zorder=4)
 
     def severity_markers(self, s, step_px=5.5, scale=1.0, by_mode=True, z0=7):
         """Markers coloured and sized by severity; shape by road user when by_mode. Returns the spread positions."""

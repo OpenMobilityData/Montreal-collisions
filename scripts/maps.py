@@ -46,6 +46,9 @@ SEV_LABEL = {'en': {'damage': 'property damage', 'light': 'light injury', 'sever
 MODE = {'ped': 'v', 'bike': 's', 'moto': 'D', 'motor_only': 'o'}
 MODE_LABEL = {'en': {'ped': 'pedestrian', 'bike': 'bicycle', 'moto': 'motorcycle', 'motor_only': 'motor vehicles only'},
               'fr': {'ped': 'piéton', 'bike': 'bicyclette', 'moto': 'motocyclette', 'motor_only': 'véhicules motorisés seulement'}}
+# density ramp: transparent → indigo → violet → red → orange → yellow → near white, lightness rising throughout
+HEAT_CMAP = LinearSegmentedColormap.from_list('heat', [(0, (0.10, 0.06, 0.38, 0.0)), (0.07, (0.20, 0.13, 0.58, 0.40)), (0.28, (0.40, 0.16, 0.68, 0.68)), (0.50, (0.82, 0.16, 0.22, 0.85)),
+                                                       (0.70, (0.98, 0.50, 0.10, 0.93)), (0.88, (1.0, 0.86, 0.30, 0.98)), (1.0, (1.0, 1.0, 0.90, 1.0))])
 VEH = {'car': '#3987e5', 'heavy': '#d95926', 'bus': '#199e70', 'other': '#f0efec'}
 VEH_LABEL = {'en': {'car': 'car or light truck', 'heavy': 'heavy truck or tractor-trailer', 'bus': 'bus or minibus', 'other': 'other or none recorded'},
              'fr': {'car': 'automobile ou camion léger', 'heavy': 'camion lourd ou tracteur routier', 'bus': 'autobus ou minibus', 'other': 'autre ou non précisé'}}
@@ -187,7 +190,7 @@ def draw(d, extent, view, lang):
     W = 11.0; axw = 0.66 * W; axh = axw * aspect; H = axh + 1.9 + keyh
     fig = plt.figure(figsize=(W, H), dpi=150, facecolor='#1a1a19')
     ax = fig.add_axes([0.03, (1.05 + keyh) / H, 0.66, axh / H]); ax.set_facecolor('#1a1a19')
-    ax.imshow(np.clip(img * 1.45, 0, 1) if view.endswith('heat') else img, extent=ext, interpolation='bilinear', zorder=0)
+    ax.imshow(img, extent=ext, interpolation='bilinear', zorder=0)
     ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_xticks([]); ax.set_yticks([])
     for sp in ax.spines.values(): sp.set_edgecolor('#52514e')
     top = (1.05 + keyh + axh) / H
@@ -210,10 +213,11 @@ def draw(d, extent, view, lang):
         nx = int((x1 - x0) / (res_m * k_m)) + 1; ny = int((y1 - y0) / (res_m * k_m)) + 1
         Hc, xe, ye = np.histogram2d(X, Y, bins=[nx, ny], range=[[x0, x1], [y0, y1]])
         dens = gaussian_filter(Hc.T, sigma=sigma_m / res_m) / (res_m / 1000) ** 2  # collisions per km²
-        cmap = LinearSegmentedColormap.from_list('heat', [(0, (0.22, 0.53, 0.90, 0.0)), (0.12, (0.22, 0.53, 0.90, 0.25)), (0.45, (0.22, 0.53, 0.90, 0.6)), (0.8, (0.55, 0.75, 0.97, 0.9)), (1.0, (0.97, 0.97, 0.95, 1.0))])
+        cmap = HEAT_CMAP
         vmax = float(np.percentile(dens[dens > 0], 99.5)) if (dens > 0).any() else 1.0
+        dens = np.minimum(dens, vmax)  # values above the bar's top take its last colour
         im = ax.imshow(dens, extent=[x0, x1, y0, y1], origin='lower', cmap=cmap, vmin=0, vmax=vmax, interpolation='bilinear', zorder=2)
-        cax = fig.add_axes([0.72, top - 0.95 / H, 0.22, 0.14 / H])
+        cax = fig.add_axes([0.72, top - 0.95 / H, 0.22, 0.14 / H]); cax.set_facecolor('#1a1a19')
         cb = fig.colorbar(im, cax=cax, orientation='horizontal'); cb.outline.set_edgecolor('#52514e'); cb.ax.tick_params(colors='#c3c2b7', labelsize=8, length=2)
         cb.ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, p: fmt(int(round(v)), lang)))
         fig.text(0.72, top - 0.72 / H, textwrap.fill(T['heat_bar'].format(sigma_m), 44), color='#f0efec', fontsize=9, va='bottom', linespacing=1.3)

@@ -36,13 +36,13 @@ VIEWS = ['heat', 'ped_heat', 'bike_heat', 'ped_serious', 'bike_serious']
 def draw(s, terr, dist, qm, view, lang):
     t = T[lang]; W = 11.0; axw = 0.66 * W; axh = axw * am.Map.aspect(BOX); H = axh + 1.9
     fig = plt.figure(figsize=(W, H), dpi=150, facecolor=am.BG); top = (1.05 + axh) / H
-    M = am.Map(fig, [0.03, 1.05 / H, 0.66, axh / H], BOX, 15, brighten=1.45 if 'heat' in view else 1.15)
+    M = am.Map(fig, [0.03, 1.05 / H, 0.66, axh / H], BOX, 15, brighten=1.0 if 'heat' in view else 1.15)
     mode = view.split('_')[0] if '_' in view else None
     q = s if mode is None else s[s[mode]]
     M.shade_outside(terr, 0.5)
     if 'heat' in view:
         im = M.heat(q.LOC_LONG.values, q.LOC_LAT.values, 100, 20)
-        cax = fig.add_axes([0.72, top - 0.95 / H, 0.22, 0.14 / H]); cb = fig.colorbar(im, cax=cax, orientation='horizontal'); cb.outline.set_edgecolor(am.EDGE); cb.ax.tick_params(colors=am.INK2, labelsize=8, length=2)
+        cax = fig.add_axes([0.72, top - 0.95 / H, 0.22, 0.14 / H]); cax.set_facecolor(am.BG); cb = fig.colorbar(im, cax=cax, orientation='horizontal'); cb.outline.set_edgecolor(am.EDGE); cb.ax.tick_params(colors=am.INK2, labelsize=8, length=2)
         cb.ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, p: am.fmt(round(v), lang)))
         fig.text(0.72, top - 0.72 / H, textwrap.fill(t['bar'], 44), color=am.INK, fontsize=9, va='bottom', linespacing=1.3)
         fig.text(0.705, top - 1.3 / H, textwrap.fill(t['note'], 44), color=am.INK2, fontsize=8.5, va='top', linespacing=1.4); title = t['heat'][view]
