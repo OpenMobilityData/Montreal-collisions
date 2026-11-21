@@ -79,7 +79,7 @@ DECK = r"""\documentclass[aspectratio=169,10pt]{beamer}\usetheme{default}\usecol
 \author{Rick Hoge, PhD}\date{""" + ("" if FINAL else "Draft, ") + now.strftime('%B %-d, %Y') + r""" \quad {\footnotesize """ + TAG + r"""}}
 \begin{document}
 \begin{frame}\titlepage
-{\footnotesize I am a researcher, not an engineer (not a member of the Ordre des ingénieurs du Québec): this is a data analysis, not an engineering opinion, done on my own initiative and under no professional mandate.}
+{\footnotesize The views expressed here are the author's own and do not reflect the position of any institution or organization. Nothing in this document should be considered an engineering opinion or legal advice.}
 \end{frame}
 
 \begin{frame}{What the record is, and what it is not}
