@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="518.4pt" viewBox="0 0 864 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-18T08:39:00.109598</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 864 518.4 
+L 864 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 76.32 186.84 
+L 234.72 186.84 
+L 234.72 178.56 
+L 76.32 178.56 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #52514e"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 76.32 199.44 
+L 162.72 199.44 
+L 162.72 191.16 
+L 76.32 191.16 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #52514e"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 76.32 212.04 
+L 150.72 212.04 
+L 150.72 203.76 
+L 76.32 203.76 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #52514e"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 76.32 224.64 
+L 117.12 224.64 
+L 117.12 216.36 
+L 76.32 216.36 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 76.32 237.24 
+L 117.12 237.24 
+L 117.12 228.96 
+L 76.32 228.96 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 28.8 321.48 
+L 244.8 321.48 
+L 244.8 310.68 
+L 28.8 310.68 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 28.8 321.48 
+L 225.741176 321.48 
+L 225.741176 310.68 
+L 28.8 310.68 
+z
+" clip-path="url(#p2f98cfda25)" style="fill: #2a78d6"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 28.8 110.88 
+L 266.4 110.88 
+" clip-path="url(#p2f98cfda25)" style="fill: none; stroke: #0b0b0b; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 313.2 110.88 
+L 550.8 110.88 
+" clip-path="url(#p2f98cfda25)" style="fill: none; stroke: #0b0b0b; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 597.6 110.88 
+L 835.2 110.88 
+" clip-path="url(#p2f98cfda25)" style="fill: none; stroke: #0b0b0b; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 28.8 449.28 
+L 835.2 449.28 
+" clip-path="url(#p2f98cfda25)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="41.761" transform="rotate(-0 28.8 41.761)">Young cyclists: how to read the numbers</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="66.16925" transform="rotate(-0 28.8 66.16925)">A companion to the chart of deaths and hospital stays. The counts are small. That is not the same as a small risk.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="103.4155" transform="rotate(-0 28.8 103.4155)">What the counts show</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 14.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="313.2" y="103.4155" transform="rotate(-0 313.2 103.4155)">What the counts cannot show</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 14.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="597.6" y="103.4155" transform="rotate(-0 597.6 103.4155)">What other studies add</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="136.2" transform="rotate(-0 28.8 136.2)">Few deaths, and fewer than before</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 152.262121)">Cyclists under 15 killed in Canada, by five-year</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 168.60566)">period:</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="186.2794" transform="rotate(-0 28.8 186.2794)">2000–04</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="239.76" y="186.5184" transform="rotate(-0 239.76 186.5184)">66</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="198.8794" transform="rotate(-0 28.8 198.8794)">2005–09</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="167.76" y="199.1184" transform="rotate(-0 167.76 199.1184)">36</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="211.4794" transform="rotate(-0 28.8 211.4794)">2010–14</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="155.76" y="211.7184" transform="rotate(-0 155.76 211.7184)">31</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="224.0794" transform="rotate(-0 28.8 224.0794)">2015–19</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="122.16" y="224.3184" transform="rotate(-0 122.16 224.3184)">17</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="236.6794" transform="rotate(-0 28.8 236.6794)">2020–24</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="122.16" y="236.9184" transform="rotate(-0 122.16 236.9184)">17</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="269.76" transform="rotate(-0 28.8 269.76)">Almost all of them in traffic</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 286.748699)">31 of the 34 killed in 2015–2024 were in a collision</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 303.086824)">with a motor vehicle.</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="351.12" transform="rotate(-0 28.8 351.12)">Many more injuries than deaths</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 367.138035)">615 hospital stays a year under 18, 106 of them in</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 383.50555)">the table of brain injuries, against about 3 deaths</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 399.85373)">a year under 15.</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="313.2" y="136.2" transform="rotate(-0 313.2 136.2)">The risk</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 152.17859)">No source measures how much children cycle, or how</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 169.566269)">much of it is in traffic. A low count can mean safe</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 184.96312)">streets, or few children riding in them.</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="313.2" y="212.16" transform="rotate(-0 313.2 212.16)">Why the deaths fell</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 228.212066)">The table gives no cause. Safer streets, less riding</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 244.858019)">in traffic, helmets and better trauma care are all</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 260.94323)">possible.</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="313.2" y="288.12" transform="rotate(-0 313.2 288.12)">Injuries outside the hospital ward</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 304.12798)">About 5 % of cyclists’ emergency visits end in</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 320.52566)">admission, and police reports capture about a tenth</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 336.927206)">of hospital-treated injuries (all ages).</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="313.2" y="364.08" transform="rotate(-0 313.2 364.08)">A city</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 380.048535)">These are national totals. No public source gives</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 396.475605)">deaths or hospital stays of child cyclists for</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(313.2 414.061284)">Montréal.</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="597.6" y="136.2" transform="rotate(-0 597.6 136.2)">Per kilometre, the risk is high</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 152.50498)">On trips between home and school in the Montréal</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 168.546105)">area, children aged 5 to 12 were injured 22.2 times</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 184.973175)">as often per kilometre by bicycle as by car, mostly</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 201.3608)">with minor injuries.</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="597.6" y="228.36" transform="rotate(-0 597.6 228.36)">A motor vehicle makes it worse</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 244.36798)">In one study of young cyclists, a collision with a</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 260.74555)">moving motor vehicle multiplied the odds of hospital</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 277.09373)">admission by 4.17.</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="597.6" y="304.32" transform="rotate(-0 597.6 304.32)">Children’s heads</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 320.57548)">In Québec the rate of hospital stays with a head</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 336.666105)">injury is about three times higher among children</text>
+    <text style="font-size: 9.9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(597.6 353.043675)">than among adults.</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 11.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="438.4806" transform="rotate(-0 28.8 438.4806)">The charts show how often the worst outcomes are recorded. They do not show how safe a street is for a child on a bicycle.</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 464.882275)">Sources: deaths, Statistics Canada, table 13-10-0156-01 (cyclists, ICD-10 V10–V19, ages under 15; grouping of codes by this review; pedal cycles only: riders of electric scooters are counted as pedestrians, riders</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 477.720575)">of electric bicycles as motorcyclists). Hospital stays and emergency visits, Canadian Institute for Health Information, injury and trauma tables 2024–2025. Police reports, Toronto (PMID 38195658). Home-to-school</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 490.715031)">trips, Montréal area, 2003–2007 (PMID 25408178, abstract). Odds of admission, one study in a systematic review of risk factors in children (PMID 27940760). Québec rates and the remark that exposure data are almost</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 503.553331)">non-existent, Institut national de santé publique du Québec, La sécurité des cyclistes (2018).</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2f98cfda25">
+   <rect x="0" y="0" width="864" height="518.4"/>
+  </clipPath>
+ </defs>
+</svg>

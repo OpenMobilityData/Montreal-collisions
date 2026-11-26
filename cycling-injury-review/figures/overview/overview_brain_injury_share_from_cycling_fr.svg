@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="518.4pt" viewBox="0 0 864 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T16:06:31.940348</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 864 518.4 
+L 864 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 172.8 126.72 
+L 705.6 126.72 
+L 705.6 108 
+L 172.8 108 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 172.8 126.72 
+L 204.768 126.72 
+L 204.768 108 
+L 172.8 108 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 172.8 172.8 
+L 705.6 172.8 
+L 705.6 154.08 
+L 172.8 154.08 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 172.8 172.8 
+L 205.969525 172.8 
+L 205.969525 154.08 
+L 172.8 154.08 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 172.8 226.08 
+L 705.6 226.08 
+L 705.6 207.36 
+L 172.8 207.36 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 172.8 226.08 
+L 290.016 226.08 
+L 290.016 207.36 
+L 172.8 207.36 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 172.8 279.36 
+L 705.6 279.36 
+L 705.6 260.64 
+L 172.8 260.64 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 172.8 279.36 
+L 386.114808 279.36 
+L 386.114808 260.64 
+L 172.8 260.64 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 172.8 325.44 
+L 705.6 325.44 
+L 705.6 306.72 
+L 172.8 306.72 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 172.8 325.44 
+L 235.952588 325.44 
+L 235.952588 306.72 
+L 172.8 306.72 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 172.8 378.72 
+L 705.6 378.72 
+L 705.6 360 
+L 172.8 360 
+L 172.8 378.72 
+z
+" clip-path="url(#pbc5bd73073)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: #c3c2b7; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 28.8 183.24 
+L 835.2 183.24 
+" clip-path="url(#pbc5bd73073)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 28.8 236.52 
+L 835.2 236.52 
+" clip-path="url(#pbc5bd73073)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 28.8 335.88 
+L 835.2 335.88 
+" clip-path="url(#pbc5bd73073)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 28.8 447.12 
+L 835.2 447.12 
+" clip-path="url(#pbc5bd73073)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="41.761" transform="rotate(-0 28.8 41.761)">Traumatismes du cerveau et de la moelle épinière documentés : quelle part vient du vélo ?</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="65.9106" transform="rotate(-0 28.8 65.9106)">Chaque barre est une source : tout ce qu’elle compte et, en noir, la part du vélo. Les sources ne comptent pas la même chose : les barres ne s’additionnent pas.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 97.776289)">Toutes les causes</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 114.911289)">de traumatisme</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 132.45418)">cérébral</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="100.28585" transform="rotate(-0 172.8 100.28585)">Visites à l’urgence pour un traumatisme craniocérébral, Ontario, 2002–2010 : 986 194 visites</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="211.248" y="121.529" transform="rotate(-0 211.248 121.529)">vélo : 6 %</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="146.36585" transform="rotate(-0 172.8 146.36585)">Admissions avec un traumatisme craniocérébral, Hôpital général de Montréal (centre de traumatologie), 2007–2011 : 2 297 admissions</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="212.449525" y="167.609" transform="rotate(-0 212.449525 167.609)">cyclistes : 6 %  (143 sur 2 297)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 204.657109)">Usagers de la route</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 222.838789)">seulement</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="199.64585" transform="rotate(-0 172.8 199.64585)">Usagers de la route hospitalisés avec un traumatisme craniocérébral, région de Montréal, 2006–2013 : 3 305 hospitalisations</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="296.496" y="220.889" transform="rotate(-0 296.496 220.889)">cyclistes : 22 %</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 258.115)">Sports et loisirs</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 276.118789)">seulement</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="252.92585" transform="rotate(-0 172.8 252.92585)">Hospitalisations pour un traumatisme cérébral lié aux sports et loisirs, Canada, 2024–2025 : 1 641 séjours</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="392.594808" y="274.169" transform="rotate(-0 392.594808 274.169)">vélo : 40 %  (657 sur 1 641)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="299.00585" transform="rotate(-0 172.8 299.00585)">Visites à l’urgence pour un traumatisme cérébral lié aux sports et loisirs, Ontario et Alberta, 2024–2025 : 13 330 visites</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="242.432588" y="320.249" transform="rotate(-0 242.432588 320.249)">vélo : 12 %  (1 580 sur 13 330)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="366.353359" transform="rotate(-0 28.8 366.353359)">Moelle épinière</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="352.28585" transform="rotate(-0 172.8 352.28585)">Lésions de la moelle épinière, toutes causes, Canada ou Québec</text>
+   </g>
+   <g id="text_18">
+    <text style="font-style: italic; font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="180" y="373.1916" transform="rotate(-0 180 373.1916)">part du vélo : aucune source lue ne la donne</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 399.555956)">Lecture : là où toutes les causes de traumatisme cérébral sont comptées, le vélo en représente environ 6 % (deux sources). Sa part est plus grande dans des ensembles plus</text>
+    <text style="font-size: 10.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 416.786306)">étroits : environ un cinquième des usagers de la route hospitalisés avec un traumatisme cérébral autour de Montréal, et la première activité parmi les traumatismes</text>
+    <text style="font-size: 10.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 434.078016)">cérébraux de sports et loisirs hospitalisés.</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 462.870712)">Sources : visites à l’urgence en Ontario, Fu et collab., 2016 (PMID 26760779). Hôpital général de Montréal, Dagher et collab., 2016 (PMID 26786638); la part est la division, par cette revue, des deux nombres</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 475.709012)">publiés. Région de Montréal, Direction régionale de santé publique de Montréal, « Prévenir les blessures à la tête sur le réseau routier » (2017). Sports et loisirs, Institut canadien d’information sur la santé,</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 488.547312)">tableaux sur les traumatismes 2024–2025 (traumatisme cérébral = CIM-10-CA S06). Le rapport de l’Agence de la santé publique du Canada sur les traumatismes cérébraux (2020) regroupe le vélo avec les sports et loisirs</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 501.431331)">et ne donne aucun chiffre pour lui. Aucune étude lue ne donne la part du vélo dans les lésions médullaires; voir la revue.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbc5bd73073">
+   <rect x="0" y="0" width="864" height="518.4"/>
+  </clipPath>
+ </defs>
+</svg>

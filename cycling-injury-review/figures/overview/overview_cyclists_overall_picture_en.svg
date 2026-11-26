@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="518.4pt" viewBox="0 0 864 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T17:02:59.875137</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 864 518.4 
+L 864 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 28.8 169.92 
+L 56.177407 169.92 
+L 388.8 239.04 
+L 28.8 239.04 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #f0efec"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 28.8 260.64 
+L 30.816 260.64 
+L 388.8 324 
+L 28.8 324 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #f0efec"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 468 169.92 
+L 501.356637 169.92 
+L 828 239.04 
+L 468 239.04 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #f0efec"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 468 260.64 
+L 473.303289 260.64 
+L 828 324 
+L 468 324 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #f0efec"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 28.8 169.92 
+L 388.8 169.92 
+L 388.8 148.32 
+L 28.8 148.32 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 28.8 169.92 
+L 56.177407 169.92 
+L 56.177407 148.32 
+L 28.8 148.32 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #52514e"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 28.8 260.64 
+L 388.8 260.64 
+L 388.8 239.04 
+L 28.8 239.04 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 28.8 260.64 
+L 30.816 260.64 
+L 30.816 239.04 
+L 28.8 239.04 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 33.12 354.24 
+L 246.802946 354.24 
+Q 250.042946 354.24 250.042946 351 
+L 250.042946 327.24 
+Q 250.042946 324 246.802946 324 
+L 33.12 324 
+Q 29.88 324 29.88 327.24 
+L 29.88 351 
+Q 29.88 354.24 33.12 354.24 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 255.442946 354.24 
+L 365.613144 354.24 
+Q 368.853144 354.24 368.853144 351 
+L 368.853144 327.24 
+Q 368.853144 324 365.613144 324 
+L 255.442946 324 
+Q 252.202946 324 252.202946 327.24 
+L 252.202946 351 
+Q 252.202946 354.24 255.442946 354.24 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #eb6834"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 374.253144 354.24 
+L 384.48 354.24 
+Q 387.72 354.24 387.72 351 
+L 387.72 327.24 
+Q 387.72 324 384.48 324 
+L 374.253144 324 
+Q 371.013144 324 371.013144 327.24 
+L 371.013144 351 
+Q 371.013144 354.24 374.253144 354.24 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 28.8 376.92 
+L 36.72 376.92 
+L 36.72 369 
+L 28.8 369 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 28.8 393.48 
+L 36.72 393.48 
+L 36.72 385.56 
+L 28.8 385.56 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #eb6834"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 28.8 410.04 
+L 36.72 410.04 
+L 36.72 402.12 
+L 28.8 402.12 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 468 169.92 
+L 828 169.92 
+L 828 148.32 
+L 468 148.32 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 468 169.92 
+L 501.356637 169.92 
+L 501.356637 148.32 
+L 468 148.32 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #52514e"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 468 260.64 
+L 828 260.64 
+L 828 239.04 
+L 468 239.04 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 468 260.64 
+L 473.303289 260.64 
+L 473.303289 239.04 
+L 468 239.04 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 472.32 354.24 
+L 513.367912 354.24 
+Q 516.607912 354.24 516.607912 351 
+L 516.607912 327.24 
+Q 516.607912 324 513.367912 324 
+L 472.32 324 
+Q 469.08 324 469.08 327.24 
+L 469.08 351 
+Q 469.08 354.24 472.32 354.24 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 522.007912 354.24 
+L 809.754725 354.24 
+Q 812.994725 354.24 812.994725 351 
+L 812.994725 327.24 
+Q 812.994725 324 809.754725 324 
+L 522.007912 324 
+Q 518.767912 324 518.767912 327.24 
+L 518.767912 351 
+Q 518.767912 354.24 522.007912 354.24 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #eb6834"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 818.394725 354.24 
+L 823.68 354.24 
+Q 826.92 354.24 826.92 351 
+L 826.92 327.24 
+Q 826.92 324 823.68 324 
+L 818.394725 324 
+Q 815.154725 324 815.154725 327.24 
+L 815.154725 351 
+Q 815.154725 354.24 818.394725 354.24 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 468 376.92 
+L 475.92 376.92 
+L 475.92 369 
+L 468 369 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 468 393.48 
+L 475.92 393.48 
+L 475.92 385.56 
+L 468 385.56 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #eb6834"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 468 410.04 
+L 475.92 410.04 
+L 475.92 402.12 
+L 468 402.12 
+z
+" clip-path="url(#pe5add405a3)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 28.8 463.68 
+L 835.2 463.68 
+" clip-path="url(#pe5add405a3)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="41.761" transform="rotate(-0 28.8 41.761)">Cyclists in the overall picture of deaths and hospital stays</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="66.16925" transform="rotate(-0 28.8 66.16925)">Canada, per year. Each bar zooms in on the dark part of the bar above it.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 15.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="92.2745" transform="rotate(-0 28.8 92.2745)">Deaths  (2015–2024)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="114.77875" transform="rotate(-0 28.8 114.77875)">Cyclists: about 1 death in 4,200</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="141.76925" transform="rotate(-0 28.8 141.76925)">All deaths: 299,700 a year</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="62.657407" y="162.99975" transform="rotate(-0 62.657407 162.99975)">injuries: 22,790 (7.6 %)</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="232.48925" transform="rotate(-0 28.8 232.48925)">Deaths from injuries: 22,790 a year</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="37.296" y="253.71975" transform="rotate(-0 37.296 253.71975)">cyclists: 71 (0.3 %)</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="317.44925" transform="rotate(-0 28.8 317.44925)">Cyclists killed: 71 a year</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="36.36" y="343.4785" transform="rotate(-0 36.36 343.4785)">62 %</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="258.682946" y="343.4785" transform="rotate(-0 258.682946 343.4785)">33 %</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="42.48" y="376.83975" transform="rotate(-0 42.48 376.83975)">collision with a motor vehicle</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="42.48" y="393.39975" transform="rotate(-0 42.48 393.39975)">no motor vehicle (fall, object, other cyclist)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="42.48" y="409.95975" transform="rotate(-0 42.48 409.95975)">other or not specified (5 %)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 15.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="468" y="92.2745" transform="rotate(-0 468 92.2745)">Hospital stays  (2024–2025)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="468" y="114.77875" transform="rotate(-0 468 114.77875)">Cyclists: about 1 hospital stay in 730</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="468" y="141.76925" transform="rotate(-0 468 141.76925)">All hospital stays: 3.14 million a year</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="507.836637" y="162.99975" transform="rotate(-0 507.836637 162.99975)">injuries: 290,900 (9.3 %)</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="468" y="232.48925" transform="rotate(-0 468 232.48925)">Stays for an injury: 290,900 a year</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="479.783289" y="253.71975" transform="rotate(-0 479.783289 253.71975)">cyclists: 4,286 (1.5 %)</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="468" y="317.44925" transform="rotate(-0 468 317.44925)">Cyclists admitted: 4,286 a year</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="475.56" y="343.4785" transform="rotate(-0 475.56 343.4785)">14 %</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="525.247912" y="343.4785" transform="rotate(-0 525.247912 343.4785)">82 %</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="481.68" y="376.83975" transform="rotate(-0 481.68 376.83975)">collision with a motor vehicle</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="481.68" y="393.39975" transform="rotate(-0 481.68 393.39975)">no motor vehicle (fall, object, other cyclist)</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="481.68" y="409.95975" transform="rotate(-0 481.68 409.95975)">other or not specified (4 %)</text>
+   </g>
+   <g id="text_27">
+    <text style="font-style: italic; font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="468" y="427.614" transform="rotate(-0 468 427.614)">Split from Québec’s hospital file (MED-ÉCHO), 2020–2026</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="454.59975" transform="rotate(-0 28.8 454.59975)">Québec: about 19 cyclists killed a year (2010–2019) and 1,135 hospital stays of cyclists (2024–2025).</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 479.289994)">Sources: deaths, Statistics Canada, table 13-10-0156-01, yearly mean 2015–2024 (cyclists: ICD-10 V10–V19, by code). Hospital stays, Canadian Institute for Health Information, 2024–2025: acute inpatient</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 492.87345)">hospitalizations and injury hospitalizations by cause (stays, not patients). Split of stays: Québec health ministry, MED-ÉCHO report S19 (open data), tabulated by ICD-10 code. Québec line: INSPQ (deaths)</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 504.966594)">and CIHI (stays). Shares are of the bar they sit in.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe5add405a3">
+   <rect x="0" y="0" width="864" height="518.4"/>
+  </clipPath>
+ </defs>
+</svg>

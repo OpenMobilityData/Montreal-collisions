@@ -6,6 +6,8 @@ Two public series of police-reported collisions, kept with their provenance, the
 
 **Slide deck (November 19, 2026; preliminary results, not peer reviewed):** road safety in Côte-des-Neiges–Notre-Dame-de-Grâce from the SPVM record: [deck (PDF, 22 slides)](docs/cdn_ndg_road_safety_deck_en.pdf) · [the borough among the 19 boroughs](derived/figures/borough-comparison/borough_comparison_en.png) · [chemin Queen-Mary](derived/figures/queen-mary/overview_queen_mary_corridor_en.png) · [Queen-Mary / Décarie](derived/figures/queen-mary-decarie-overview/overview_queen_mary_decarie_en.png) · [section below](#road-safety-in-côte-des-neigesnotre-dame-de-grâce-slide-deck-november-19-2026-draft).
 
+**Review (November 26, 2026; preliminary results, not peer reviewed):** cycling injuries and collisions with motor vehicles as a public-health question, an umbrella review with Canadian studies and official statistics: [folder](cycling-injury-review/README.md) · [review (PDF, 47 pp.)](cycling-injury-review/docs/cycling_injury_review_en.pdf) · [deck (PDF, 21 slides)](cycling-injury-review/docs/cycling_injury_review_deck_en.pdf).
+
 ## The two series
 
 | | SPVM (City of Montréal open data) | SAAQ (Données Québec open data) |

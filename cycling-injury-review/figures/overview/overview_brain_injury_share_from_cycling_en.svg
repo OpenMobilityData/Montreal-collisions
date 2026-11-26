@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="518.4pt" viewBox="0 0 864 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T16:06:31.709904</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 864 518.4 
+L 864 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 172.8 126.72 
+L 705.6 126.72 
+L 705.6 108 
+L 172.8 108 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 172.8 126.72 
+L 204.768 126.72 
+L 204.768 108 
+L 172.8 108 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 172.8 172.8 
+L 705.6 172.8 
+L 705.6 154.08 
+L 172.8 154.08 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 172.8 172.8 
+L 205.969525 172.8 
+L 205.969525 154.08 
+L 172.8 154.08 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 172.8 226.08 
+L 705.6 226.08 
+L 705.6 207.36 
+L 172.8 207.36 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 172.8 226.08 
+L 290.016 226.08 
+L 290.016 207.36 
+L 172.8 207.36 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 172.8 279.36 
+L 705.6 279.36 
+L 705.6 260.64 
+L 172.8 260.64 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 172.8 279.36 
+L 386.114808 279.36 
+L 386.114808 260.64 
+L 172.8 260.64 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 172.8 325.44 
+L 705.6 325.44 
+L 705.6 306.72 
+L 172.8 306.72 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #e1e0d9"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 172.8 325.44 
+L 235.952588 325.44 
+L 235.952588 306.72 
+L 172.8 306.72 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: #0b0b0b"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 172.8 378.72 
+L 705.6 378.72 
+L 705.6 360 
+L 172.8 360 
+L 172.8 378.72 
+z
+" clip-path="url(#p2ad766b43b)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: #c3c2b7; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 28.8 183.24 
+L 835.2 183.24 
+" clip-path="url(#p2ad766b43b)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 28.8 236.52 
+L 835.2 236.52 
+" clip-path="url(#p2ad766b43b)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 28.8 335.88 
+L 835.2 335.88 
+" clip-path="url(#p2ad766b43b)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 28.8 447.12 
+L 835.2 447.12 
+" clip-path="url(#p2ad766b43b)" style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="41.761" transform="rotate(-0 28.8 41.761)">Of all documented brain and spinal cord injuries, what share is from cycling?</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="28.8" y="65.9106" transform="rotate(-0 28.8 65.9106)">Each bar is one source: everything it counts, and in black the part from cycling. The sources count different things, so the bars are not to be added.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 106.343789)">All causes of brain</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 122.512969)">injury</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="100.28585" transform="rotate(-0 172.8 100.28585)">Emergency visits for a traumatic brain injury, Ontario, 2002–2010: 986,194 visits</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="211.248" y="121.529" transform="rotate(-0 211.248 121.529)">cycling: 6 %</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="146.36585" transform="rotate(-0 172.8 146.36585)">Hospital admissions with a traumatic brain injury, Montreal General Hospital (a trauma centre), 2007–2011: 2,297 admissions</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="212.449525" y="167.609" transform="rotate(-0 212.449525 167.609)">cyclists: 6 %  (143 of 2,297)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="213.305469" transform="rotate(-0 28.8 213.305469)">Road users only</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="199.64585" transform="rotate(-0 172.8 199.64585)">Road users hospitalized with a traumatic brain injury, Montréal region, 2006–2013: 3,305 hospital stays</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="296.496" y="220.889" transform="rotate(-0 296.496 220.889)">cyclists: 22 %</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 258.115)">Sport and</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 275.152969)">recreation only</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="252.92585" transform="rotate(-0 172.8 252.92585)">Hospital stays for a brain injury in sport and recreation, Canada, 2024–2025: 1,641 stays</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="392.594808" y="274.169" transform="rotate(-0 392.594808 274.169)">cycling: 40 %  (657 of 1,641)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="299.00585" transform="rotate(-0 172.8 299.00585)">Emergency visits for a brain injury in sport and recreation, Ontario and Alberta, 2024–2025: 13,330 visits</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="242.432588" y="320.249" transform="rotate(-0 242.432588 320.249)">cycling: 12 %  (1,580 of 13,330)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="28.8" y="366.0425" transform="rotate(-0 28.8 366.0425)">Spinal cord</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="172.8" y="352.28585" transform="rotate(-0 172.8 352.28585)">Spinal cord injuries, all causes, Canada or Québec</text>
+   </g>
+   <g id="text_18">
+    <text style="font-style: italic; font-size: 10.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="180" y="373.1916" transform="rotate(-0 180 373.1916)">share from cycling: no source read gives it</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 399.356737)">Read this way: where every cause of brain injury is counted, cycling is about 6 % (two sources). It is a larger part of narrower counts: about a fifth of road users</text>
+    <text style="font-size: 10.2px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #0b0b0b" transform="translate(28.8 416.786306)">hospitalized with a brain injury around Montréal, and the largest single activity among sport and recreation brain injuries admitted to hospital.</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 462.722275)">Sources: Ontario emergency visits, Fu and colleagues, 2016 (PMID 26760779). Montreal General Hospital, Dagher and colleagues, 2016 (PMID 26786638); the share is this review’s division of the two published counts.</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 475.709012)">Montréal region, Direction régionale de santé publique de Montréal, « Prévenir les blessures à la tête sur le réseau routier » (2017). Sport and recreation, Canadian Institute for Health Information, injury and</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 488.398875)">trauma tables 2024–2025 (brain injury = ICD-10-CA S06). The Public Health Agency of Canada’s report on brain injuries (2020) groups cycling with sport and recreation and gives no figure for it. No study read gives</text>
+    <text style="font-size: 7.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #52514e" transform="translate(28.8 501.203331)">cycling’s share of spinal cord injuries; see the review.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2ad766b43b">
+   <rect x="0" y="0" width="864" height="518.4"/>
+  </clipPath>
+ </defs>
+</svg>
